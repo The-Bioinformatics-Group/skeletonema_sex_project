@@ -6,10 +6,13 @@
 #$ -j y
 #$ -S /bin/bash
 
-fastqc -t 4 -o /nobackup/data5/skeletonema_sex_project/data/fastqc_results -f fastq /nobackup/data5/skeletonema_sex_project/data/C6D2PACXX_CL10_15s010306-1-1_Ferrante_lane115s010306_sequence.txt
-
+mkdir /nobackup/data5/skeletonema_sex_project/data/fastqc_results/NoCL9
 wait
-echo "Done with script" date
+
+fastqc -t 4 -o /nobackup/data5/skeletonema_sex_project/data/fastqc_results/NoCL9 -f fastq /nobackup/data5/skeletonema_sex_project/data/C6D2PACXX_NoCL9_15s010305-1-1_Ferrante_lane115s010305_sequence.txt
+wait
+echo "Done with script" 
+date
 
 
 
