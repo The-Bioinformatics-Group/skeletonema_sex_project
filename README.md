@@ -114,6 +114,22 @@ ___________________________________________________
 
 ##What has been done
 
-Created a bash-script to run fastqc on the samples using 4 processor cores on sandbox.
+
+Extracted all sample files using gunzip.
+
+Created and ran a bash-script to run fastqc on the samples using 4 processor cores on sandbox.
+
+Merged all 14 raw data-files into one txt file to be used in subsequent assembly.
+
+###Assembly 1
+
+Without trimming the the data Trinity was run on the high_mem node using 4 CPU-cores and 20G RAM and the default settings. 
+
+
+
+
+
+
+
 
 
