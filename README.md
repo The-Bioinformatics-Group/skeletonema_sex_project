@@ -1,5 +1,5 @@
 
-#This is the _Skeletonema_ RNA-sex project
+#This is the _Skeletonema_-sex-project
 
 ____________________________________________________
 
@@ -113,3 +113,7 @@ Time: 2
 ___________________________________________________
 
 ##What has been done
+
+Created a bash-script to run fastqc on the samples using 4 processor cores on sandbox.
+
+
