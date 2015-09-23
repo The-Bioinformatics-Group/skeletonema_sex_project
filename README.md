@@ -3,6 +3,12 @@
 
 ____________________________________________________
 
+##Purpose and outline of this projet
+
+
+
+____________________________________________________
+
 ##Some background regarding the data
 
 Originally 21 RNA samples were intended to be sequenced from 7 different cultures during 3 different time points after exposure to the increased salinity resulting in sexual behaviour. However, something happened to the samples from the 1st timepoint and as such only 14 samples remains. 
@@ -122,8 +128,10 @@ Created and ran a bash-script to run fastqc on the samples using 4 processor cor
 Merged all 14 raw data-files into one txt file to be used in subsequent assembly.
 
 ###Assembly 1
+See test/assembly/README.md
 
-Without trimming the the data Trinity was run on the high_mem node using 4 CPU-cores and 20G RAM and the default settings. 
+
+ 
 
 
 
