@@ -40,26 +40,8 @@ The reason for this was that the butterfly stage of Trinity did not have enough 
 
 Used same data.
 
-Used the following script:
-
-#!/bin/bash
-#$ -cwd
-#$ -q high_mem
-#$ -o stdout_trinity.txt
-#$ -e stderr_trinity.txt
-#$ -j y
-#$ -S /bin/bash
-#$ -l mem_free=100G
-
-wait 
-
-Trinity --seqType fq --JM 20G --single /state/partition2/mathias/C6D2PACXX-All.txt
- --CPU 6 --bflyCalculateCPU --output /nobackup/data5/skeletonema_sex_project/data/trinity_assembly
-
-wait
-echo "Done with script" 
-date
-
+Used the script located in:
+/code/Bash-scripts/Trinity-bash-scripts/trinity_run.sh
 Called the script with the command:
 qsub -pe mpich 6 trinity_run.sh
 
