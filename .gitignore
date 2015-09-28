@@ -1,1 +1,7 @@
 data/*Ferrante*
+code/Bash-scripts/Trinity-bash-scripts/stdout*
+code/Bash-scripts/Misc-scripts/stdout*
+code/Bash-scripts/FastQC-bash-scripts/stdout*
+data/CL*.txt
+data/CS*.txt
+data/NoCL*.txt
