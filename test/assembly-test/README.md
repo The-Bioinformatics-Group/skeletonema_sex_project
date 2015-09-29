@@ -41,7 +41,9 @@ The reason for this was that the butterfly stage of Trinity did not have enough 
 Used same data.
 
 Used the script located in:
+
 /code/Bash-scripts/Trinity-bash-scripts/trinity_run.sh
+
 Called the script with the command:
 qsub -pe mpich 6 trinity_run.sh
 
@@ -52,7 +54,7 @@ This assembly finished in roughly 19 hours.
 
 ###Transcript abundance estimate using bowtie and RSEM
 
-_*NOTE* should have evaluated quality first as I don't even know if this assembly is the best one, so let's just interpret this as a learning-step, as this might be wasted time if the assembly turns out to have poor quality afterwards_
+_**NOTE**: should have evaluated quality first as I don't even know if this assembly is the best one, so let's just interpret this as a learning-step, as this might be wasted time if the assembly turns out to have poor quality afterwards_
 
 Created script to run align_and_estimate_abundance.pl to first create a reference against which the individual samples will be aligned and their abundance estimated later.
 The script can be found in code/Bash-scripts/Trinity-bash-scripts/trinity_prepref_a-ev.sh
@@ -64,8 +66,10 @@ Created script to run align_and_estimate_abundance.pl, this time to do the actua
 The script can be found in code/Bash-scripts/Trinity-bash-scripts/trinity_RSEM_a-ev.sh
 To run this script for each sample change the filename in --single "sample.txt"
 
-Ran script on each sample using:
+Ran script on sample:CL10 using:
 qsub -pe mpich 4 trinity_RSEM_a-ev.sh
+
+Did not do any more transcript abundance estimation as I wasn't sure if it was going to be used. Will focus on generating the best assembly first. 
 
 ###Evaluation of assembly quality
 
