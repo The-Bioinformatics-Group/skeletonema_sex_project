@@ -73,11 +73,19 @@ Did not do any more transcript abundance estimation as I wasn't sure if it was g
 
 ###Evaluation of assembly quality
 
-
-
-
-
-
-
-
 ##Assembly 2
+
+Used a Trinity run script located in /code/Bash-scripts/Trinity-bash-scripts/trinity_run.sh
+Which is used to simply run a trinity assembly on the high_mem node.
+The only difference between this assembly and assembly 1, is that in this case read normalization with a coverage treshold of 40 was used.
+The same unfiltered/untrimmed raw read data was used in the assembly. Data that can be found:
+/data/rna-sex-data.
+
+###Evaluation of assembly quality
+
+
+
+
+
+
+
