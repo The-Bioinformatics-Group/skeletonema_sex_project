@@ -6,8 +6,13 @@
 #$ -j y
 #$ -S /bin/bash
 
-gunzip /nobackup/data5/skeletonema_sex_project/data/C6D2PACXX_*gz
-
+echo "Unzipping 1_131004_AH72EEADXX_P705_101F_dual93_1.fastq.gz and 1_131004_AH72EEADXX_P705_101F_dual93_2.fastq.gz" 
+wait
+gunzip /nobackup/data5/skeletonema_sex_project/test/data-test/skeletonema-pairend-data/1*
+wait
+echo "Finished unzipping first files. Now unzipping 2_131004_AH72EEADXX_P705_101F_dual93_2.fastq.gz and
+2_131004_AH72EEADXX_P705_101F_dual93_1.fastq.gz"
+gunzip /nobackup/data5/skeletonema_sex_project/test/data-test/skeletonema-pairend-data/2*
 wait
 echo "Done with script" 
 date

@@ -16,100 +16,114 @@ Originally 21 RNA samples were intended to be sequenced from 7 different culture
 The raw sequence data can be found at the location:
 /./nobackup/data5/skeletonema_sex_project/data
 
-The data starts off in a compressed .gz format, and are named and correspond to:
+The data started off in a compressed .gz format. It has subsequently been extracted and renamed according to the sample name:
 
-C6D2PACXX_CL10_15s010306-1-1_Ferrante_lane115s010306_sequence.txt.gz
+CL10.txt
+
 Strain: 17BI.
 Replicate: 1.
 Cellsize: Large.
 Treatment: Cue.
 Time: 2.
 
-C6D2PACXX_CL11_15s010307-1-1_Ferrante_lane115s010307_sequence.txt.gz.
+CL11.txt
+
 Strain: 17BI.
 Replicate: 2.
 Cellsize: Large.
 Treatment: Cue.
 Time: 2.
 
-C6D2PACXX_CL17_15s010313-1-1_Ferrante_lane115s010313_sequence.txt.gz.
+CL17.txt
+
 Strain: 17BI.
 Replicate: 1.
 Cellsize: Large.
 Treatment: Cue.
 Time: 3.
 
-C6D2PACXX_CL18_15s010314-1-1_Ferrante_lane115s010314_sequence.txt.gz.
+CL18.txt
+
 Strain: 17BI.
 Replicate: 2.
 Cellsize: Large.
 Treatment: Cue.
 Time: 3.
 
-C6D2PACXX_CS12_15s010308-1-1_Ferrante_lane115s010308_sequence.txt.gz.
+CS12.txt
+
 Strain: 17AS.
 Replicate: .
 Cellsize: Small.
 Treatment: Cue.
 Time: 2.
 
-C6D2PACXX_CS13_15s010309-1-1_Ferrante_lane115s010309_sequence.txt.gz.
+CS13.txt
+
 Strain: 17CS.
 Replicate: .
 Cellsize: Small.
 Treatment: Cue.
 Time: 2.
 
-C6D2PACXX_CS14_15s010310-1-1_Ferrante_lane115s010310_sequence.txt.gz.
+CS14.txt
+
 Strain: 17DS.
 Replicate: .
 Cellsize: Small.
 Treatment: Cue.
 Time: 2.
 
-C6D2PACXX_CS19_15s010315-1-1_Ferrante_lane115s010315_sequence.txt.gz.
+CS19.txt
+
 Strain: 17AS.
 Replicate: .
 Cellsize: Small.
 Treatment: Cue.
 Time: 3.
 
-C6D2PACXX_CS20_15s010316-1-1_Ferrante_lane115s010316_sequence.txt.gz.
+CS20.txt
+
 Strain: 17CS.
 Replicate: .
 Cellsize: Small.
 Treatment: Cue.
 Time: 3.
 
-C6D2PACXX_CS21_15s010317-1-1_Ferrante_lane115s010317_sequence.txt.gz.
+CS21.txt
+
 Strain: 17DS.
 Replicate: .
 Cellsize: Small.
 Treatment: Cue.
 Time: 3.
 
-C6D2PACXX_NoCL15_15s010311-1-1_Ferrante_lane115s010311_sequence.txt.gz.
+NoCL15.txt
+
 Strain: 17BI.
 Replicate: 1.
 Cellsize: Large.
 Treatment: No Cue.
 Time: 3.
 
-C6D2PACXX_NoCL16_15s010312-1-1_Ferrante_lane115s010312_sequence.txt.gz.
+NoCL16.txt
+
 Strain: 17BI.
 Replicate: 2.
 Cellsize: Large.
 Treatment: No Cue.
 Time: 3.
 
-C6D2PACXX_NoCL8_15s010304-1-1_Ferrante_lane115s010304_sequence.txt.gz.
+NoCL8.txt
+
 Strain: 17BI.
 Replicate: 1.
 Cellsize: Large.
 Treatment: No Cue.
 Time: 2.
 
-C6D2PACXX_NoCL9_15s010305-1-1_Ferrante_lane115s010305_sequence.txt.gz.
+NoCL9.txt
+
 Strain: 17BI.
 Replicate: 2.
 Cellsize: Large.
@@ -142,9 +156,11 @@ This file was called and located in /data/C6D2PACXX-ALL.txt
 
 ###Test assemblies
 
-Made some test-assemblies using Trinity, and evaluated their quality using DETONATE.
+Made some test-assemblies using Trinity, and evaluated their quality using DETONATE in an attempt to find the best reference assembly to be used to align the reads.
 Read more in:
 test/assembly-test/README.md
+
+
 
 
  

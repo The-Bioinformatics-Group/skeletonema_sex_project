@@ -1,67 +1,38 @@
 #!/bin/bash
 #$ -cwd
 #$ -q sandbox
-#$ -o stdout_join-text.txt
-#$ -e stderr_join-text.txt
+#$ -e /nobackup/data5/skeletonema_sex_project/data/rna-sex-data/stderr_joindata.txt
+#$ -o /nobackup/data5/skeletonema_sex_project/data/rna-sex-data/stdout_joindata.txt
 #$ -j y
 #$ -S /bin/bash
 
-cat /nobackup/data5/skeletonema_sex_project/data/C6D2PACXX_CL10* >> /nobackup/data5/skeletonema_sex_project/data/C6D2PACXX-All.txt
-wait
-echo "CL10 finished"
 
-cat /nobackup/data5/skeletonema_sex_project/data/C6D2PACXX_CL11* >> /nobackup/data5/skeletonema_sex_project/data/C6D2PACXX-All.txt
-wait
-echo "CL11 finished"
-
-cat /nobackup/data5/skeletonema_sex_project/data/C6D2PACXX_CL17* >> /nobackup/data5/skeletonema_sex_project/data/C6D2PACXX-All.txt
-wait
-echo "CL17 finished"
-
-cat /nobackup/data5/skeletonema_sex_project/data/C6D2PACXX_CL18* >> /nobackup/data5/skeletonema_sex_project/data/C6D2PACXX-All.txt
-wait
-echo "CL18 finished"
-
-cat /nobackup/data5/skeletonema_sex_project/data/C6D2PACXX_CS12* >> /nobackup/data5/skeletonema_sex_project/data/C6D2PACXX-All.txt
-wait
-echo "CS12 finished"
-
-cat /nobackup/data5/skeletonema_sex_project/data/C6D2PACXX_CS13* >> /nobackup/data5/skeletonema_sex_project/data/C6D2PACXX-All.txt
-wait
-echo "CS13 finished"
-
-cat /nobackup/data5/skeletonema_sex_project/data/C6D2PACXX_CS14* >> /nobackup/data5/skeletonema_sex_project/data/C6D2PACXX-All.txt
-wait
-echo "CS14 finished"
-
-cat /nobackup/data5/skeletonema_sex_project/data/C6D2PACXX_CS19* >> /nobackup/data5/skeletonema_sex_project/data/C6D2PACXX-All.txt
-wait
-echo "CS19 finished"
-
-cat /nobackup/data5/skeletonema_sex_project/data/C6D2PACXX_CS20* >> /nobackup/data5/skeletonema_sex_project/data/C6D2PACXX-All.txt
-wait
-echo "CS20 finished"
-
-cat /nobackup/data5/skeletonema_sex_project/data/C6D2PACXX_CS21* >> /nobackup/data5/skeletonema_sex_project/data/C6D2PACXX-All.txt
-wait
-echo "CS21 finished"
-
-cat /nobackup/data5/skeletonema_sex_project/data/C6D2PACXX_NoCL15* >> /nobackup/data5/skeletonema_sex_project/data/C6D2PACXX-All.txt
-wait
-echo "NoCL15 finished"
-
-cat /nobackup/data5/skeletonema_sex_project/data/C6D2PACXX_NoCL16* >> /nobackup/data5/skeletonema_sex_project/data/C6D2PACXX-All.txt
-wait
-echo "NoCL16 finished"
-
-cat /nobackup/data5/skeletonema_sex_project/data/C6D2PACXX_NoCL8* >> /nobackup/data5/skeletonema_sex_project/data/C6D2PACXX-All.txt
-wait
-echo "NoCL8 finished"
-
-cat /nobackup/data5/skeletonema_sex_project/data/C6D2PACXX_NoCL9* >> /nobackup/data5/skeletonema_sex_project/data/C6D2PACXX-All.txt
-wait
-echo "NoCL9 finished"
+#This script will join together all seperate raw RNA-sex data
 
 wait
-echo "Done with script"
+echo "Starting join-data script"
+wait
+ls /nobackup/data5/skeletonema_sex_project/data/rna-sex-data | grep -e "txt" > /nobackup/data5/skeletonema_sex_project/test/temporary_files/ls-output_joinraw.txt
+wait
+NUMFILES=$(wc /nobackup/data5/skeletonema_sex_project/test/temporary_files/ls-output_joinraw.txt | cut -d " " -f2)
+wait
+echo "There are $NUMFILES files to be joined in the specified folder"
+NUM=0
+for i in $(seq 1 $NUMFILES);
+do
+NUM=$((NUM+1))
+wait
+echo "Adding number $NUM file to the file RNA-sex_all_raw.txt"
+wait
+RNASEQFILE=$(sed "${NUM}q;d" /nobackup/data5/skeletonema_sex_project/test/temporary_files/ls-output_joinraw.txt | cut -d"." -f1)
+wait
+echo "Name: $RNASEQFILE "
+wait
+cat /nobackup/data5/skeletonema_sex_project/data/rna-sex-data/${RNASEQFILE}.txt >> /nobackup/data5/skeletonema_sex_project/data/rna-sex-data/RNA-sex_all_raw.txt
+wait
+echo "Done adding $RNASEQFILE to file RNA-sex_all_raw.txt"
+done
+wait
+rm /nobackup/data5/skeletonema_sex_project/test/temporary_files/ls-output_joinraw.txt
+echo "Done with script!"
 date
