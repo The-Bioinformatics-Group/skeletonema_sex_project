@@ -83,6 +83,22 @@ The same unfiltered/untrimmed raw read data was used in the assembly. Data that 
 
 ###Evaluation of assembly quality
 
+##mega-assembly
+Used script /code/Bash-scripts/Trinity-bash-scripts/trinity_run_megaassembly.sh
+
+100G allocated memory.
+
+Trinity --seqType fq --JM 20G --left ${LOC_PAIR}/1F_fastq-q-filt.txt,${LOC_PAIR}/2F_fastq-q-filt.txt,${LOC_SINGLE}/RNA-sex_all.fq --right ${LOC_PAIR}/1R_fastq-q-filt.txt,${LOC_PAIR}/2R_fastq-q-filt.txt --CPU 8 --
+bflyCalculateCPU --output /nobackup/data5/skeletonema_sex_project/test/assembly-test/mega-assembly
+
+This assembly is made of a combination of singleend and pairend RNA-seq reads. The data used is found in:  
+Single end reads:   
+/test/data-test/rna-sex/RNA-sex_all.fq   
+Paired end reads:   
+/test/data-test/skeletonema-pairend-data/fastq_quality_filter_results/X_fastq-q-filt.txt  
+All data has been trimmed and quality-filtered as described in:   
+/test/data-test/rna-sex/README.md  
+/test/data-test/skeletonema-pairend-data/README.md
 
 
 
