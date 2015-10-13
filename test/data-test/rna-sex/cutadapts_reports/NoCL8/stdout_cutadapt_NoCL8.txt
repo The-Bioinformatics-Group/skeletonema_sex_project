@@ -1,0 +1,422 @@
+cutadapt version 1.3
+Command line parameters: -b AATGATACGGCGACCACCGAGATCTACACTCTTTCCCTACACGACGCTCTTCCGATCT -b GATCGGAAGAGCACACGTCTGAACTCCAGTCACATCACGATCTCGTATGCCGTCTTCTGCTTG -b GATCGGAAGAGCACACGTCTGAACTCCAGTCACCGATGTATCTCGTATGCCGTCTTCTGCTTG -b GATCGGAAGAGCACACGTCTGAACTCCAGTCACTTAGGCATCTCGTATGCCGTCTTCTGCTTG -b GATCGGAAGAGCACACGTCTGAACTCCAGTCACTGACCAATCTCGTATGCCGTCTTCTGCTTG -b GATCGGAAGAGCACACGTCTGAACTCCAGTCACACAGTGATCTCGTATGCCGTCTTCTGCTTG -b GATCGGAAGAGCACACGTCTGAACTCCAGTCACGCCAATATCTCGTATGCCGTCTTCTGCTTG -b GATCGGAAGAGCACACGTCTGAACTCCAGTCACCAGATCATCTCGTATGCCGTCTTCTGCTTG -b GATCGGAAGAGCACACGTCTGAACTCCAGTCACACTTGAATCTCGTATGCCGTCTTCTGCTTG -b GATCGGAAGAGCACACGTCTGAACTCCAGTCACGATCAGATCTCGTATGCCGTCTTCTGCTTG -b GATCGGAAGAGCACACGTCTGAACTCCAGTCACTAGCTTATCTCGTATGCCGTCTTCTGCTTG -b GATCGGAAGAGCACACGTCTGAACTCCAGTCACGGCTACATCTCGTATGCCGTCTTCTGCTTG -b GATCGGAAGAGCACACGTCTGAACTCCAGTCACCTTGTAATCTCGTATGCCGTCTTCTGCTTG -b GATCGGAAGAGCACACGTCTGAACTCCAGTCACCGGTGTATCTCGTATGCCGTCTT -b GATCGGAAGAGCACACGTCTGAACTCCAGTCACAGCGATAGATCTCGTAT -q 15 -O 10 -e 0.1 -n 1 -m 50 -f fastq -o /nobackup/data5/skeletonema_sex_project/test/data-test/rna-sex/cutadapts_reports/NoCL8/NoCL8_adaptrim.txt --info-file=/nobackup/data5/skeletonema_sex_project/test/data-test/rna-sex/cutadapts_reports/NoCL8/NoCL8_report.txt /nobackup/data5/skeletonema_sex_project/data/rna-sex-data/NoCL8.txt
+Maximum error rate: 10.00%
+   No. of adapters: 15
+   Processed reads:     10681304
+   Processed bases:    544746504 bp (544.7 Mbp)
+     Trimmed reads:        18191 (0.2%)
+   Quality-trimmed:       856117 bp (0.9 Mbp) (0.16% of total)
+     Trimmed bases:       444070 bp (0.4 Mbp) (0.08% of total)
+   Too short reads:        71898 (0.7% of processed reads)
+    Too long reads:            0 (0.0% of processed reads)
+        Total time:   4777.73 s
+     Time per read:      0.447 ms
+
+=== Adapter 1 ===
+
+Adapter 'AATGATACGGCGACCACCGAGATCTACACTCTTTCCCTACACGACGCTCTTCCGATCT', length 58, was trimmed 3302 times.
+2491 times, it overlapped the 5' end of a read
+811 times, it overlapped the 3' end or was within the read
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4; 50-58 bp: 5
+
+Overview of removed sequences (5')
+length	count	expect	max.err	error counts
+9	1329	40.7	0	0 1329
+10	836	10.2	1	10 826
+11	268	2.5	1	0 268
+12	25	0.6	1	2 23
+13	8	0.2	1	2 6
+14	5	0.0	1	0 5
+15	14	0.0	1	14
+26	1	0.0	2	1
+39	1	0.0	3	0 0 1
+41	1	0.0	4	0 0 1
+43	1	0.0	4	1
+51	2	0.0	5	2
+
+
+Overview of removed sequences (3' or within)
+length	count	expect	max.err	error counts
+9	132	40.7	0	0 132
+10	397	10.2	1	3 394
+11	188	2.5	1	1 187
+12	43	0.6	1	6 37
+13	7	0.2	1	3 4
+15	4	0.0	1	4
+16	3	0.0	1	3
+17	4	0.0	1	3 1
+18	4	0.0	1	4
+19	6	0.0	1	4 2
+20	2	0.0	2	2
+21	3	0.0	2	2 0 1
+22	7	0.0	2	2 4 1
+23	1	0.0	2	0 0 1
+25	1	0.0	2	0 1
+30	2	0.0	3	1 1
+34	1	0.0	3	1
+36	1	0.0	3	1
+37	1	0.0	3	0 0 1
+39	1	0.0	3	0 1
+45	1	0.0	4	0 0 1
+47	2	0.0	4	1 0 1
+
+=== Adapter 2 ===
+
+Adapter 'GATCGGAAGAGCACACGTCTGAACTCCAGTCACATCACGATCTCGTATGCCGTCTTCTGCTTG', length 63, was trimmed 13973 times.
+9512 times, it overlapped the 5' end of a read
+4461 times, it overlapped the 3' end or was within the read
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4; 50-59 bp: 5; 60-63 bp: 6
+
+Overview of removed sequences (5')
+length	count	expect	max.err	error counts
+9	1900	40.7	0	0 1900
+10	1470	10.2	1	46 1424
+11	460	2.5	1	2 458
+12	123	0.6	1	0 123
+13	13	0.2	1	0 13
+14	15	0.0	1	0 15
+15	4	0.0	1	0 4
+16	1	0.0	1	0 1
+19	1	0.0	1	0 1
+20	45	0.0	2	45
+22	1	0.0	2	1
+23	1	0.0	2	1
+24	2	0.0	2	0 1 1
+27	1	0.0	2	0 0 1
+31	1	0.0	3	0 0 1
+41	2	0.0	4	2
+42	1	0.0	4	0 1
+43	2	0.0	4	2
+44	2	0.0	4	1 0 1
+45	2	0.0	4	1 0 0 1
+47	2	0.0	4	1 0 0 1
+48	3	0.0	4	3
+49	2	0.0	4	2
+50	40	0.0	5	26 7 4 3
+51	5418	0.0	5	4989 320 52 28 22 7
+
+
+Overview of removed sequences (3' or within)
+length	count	expect	max.err	error counts
+9	1466	40.7	0	0 1466
+10	733	10.2	1	65 668
+11	379	2.5	1	29 350
+12	127	0.6	1	32 95
+13	55	0.2	1	36 19
+14	54	0.0	1	51 3
+15	35	0.0	1	30 5
+16	48	0.0	1	46 2
+17	39	0.0	1	36 3
+18	33	0.0	1	30 3
+19	34	0.0	1	33 1
+20	42	0.0	2	38 2 2
+21	42	0.0	2	40 1 1
+22	37	0.0	2	34 3
+23	42	0.0	2	34 3 5
+24	55	0.0	2	53 2
+25	54	0.0	2	46 2 6
+26	52	0.0	2	46 6
+27	54	0.0	2	51 2 1
+28	52	0.0	2	47 3 1 1
+29	69	0.0	2	56 8 3 2
+30	49	0.0	3	43 5 1
+31	40	0.0	3	39 1
+32	47	0.0	3	41 1 2 3
+33	50	0.0	3	42 4 2 2
+34	75	0.0	3	68 4 1 2
+35	47	0.0	3	39 4 3 1
+36	65	0.0	3	60 3 2
+37	55	0.0	3	51 2 0 2
+38	47	0.0	3	37 2 1 6 1
+39	51	0.0	3	34 6 6 5
+40	52	0.0	4	44 4 2 2
+41	47	0.0	4	36 6 1 3 1
+42	37	0.0	4	29 3 2 1 2
+43	41	0.0	4	22 3 9 3 4
+44	30	0.0	4	15 6 5 2 2
+45	60	0.0	4	37 11 3 5 4
+46	19	0.0	4	12 1 2 2 2
+47	87	0.0	4	66 6 5 5 5
+48	24	0.0	4	11 4 5 2 1 1
+49	16	0.0	4	2 3 5 3 3
+50	20	0.0	5	7 3 6 3 1
+
+=== Adapter 3 ===
+
+Adapter 'GATCGGAAGAGCACACGTCTGAACTCCAGTCACCGATGTATCTCGTATGCCGTCTTCTGCTTG', length 63, was trimmed 1 times.
+1 times, it overlapped the 5' end of a read
+0 times, it overlapped the 3' end or was within the read
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4; 50-59 bp: 5; 60-63 bp: 6
+
+Overview of removed sequences (5')
+length	count	expect	max.err	error counts
+51	1	0.0	5	1
+
+
+Overview of removed sequences (3' or within)
+length	count	expect	max.err	error counts
+
+=== Adapter 4 ===
+
+Adapter 'GATCGGAAGAGCACACGTCTGAACTCCAGTCACTTAGGCATCTCGTATGCCGTCTTCTGCTTG', length 63, was trimmed 7 times.
+7 times, it overlapped the 5' end of a read
+0 times, it overlapped the 3' end or was within the read
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4; 50-59 bp: 5; 60-63 bp: 6
+
+Overview of removed sequences (5')
+length	count	expect	max.err	error counts
+24	1	0.0	2	0 0 1
+29	1	0.0	2	0 1
+33	1	0.0	3	0 0 0 1
+35	1	0.0	3	0 1
+37	1	0.0	3	0 0 0 1
+44	1	0.0	4	0 0 1
+45	1	0.0	4	0 0 1
+
+
+Overview of removed sequences (3' or within)
+length	count	expect	max.err	error counts
+
+=== Adapter 5 ===
+
+Adapter 'GATCGGAAGAGCACACGTCTGAACTCCAGTCACTGACCAATCTCGTATGCCGTCTTCTGCTTG', length 63, was trimmed 10 times.
+10 times, it overlapped the 5' end of a read
+0 times, it overlapped the 3' end or was within the read
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4; 50-59 bp: 5; 60-63 bp: 6
+
+Overview of removed sequences (5')
+length	count	expect	max.err	error counts
+27	1	0.0	2	0 0 1
+32	1	0.0	3	0 0 0 1
+38	3	0.0	3	1 2
+40	1	0.0	4	0 1
+43	1	0.0	4	1
+45	1	0.0	4	0 0 1
+51	2	0.0	5	1 1
+
+
+Overview of removed sequences (3' or within)
+length	count	expect	max.err	error counts
+
+=== Adapter 6 ===
+
+Adapter 'GATCGGAAGAGCACACGTCTGAACTCCAGTCACACAGTGATCTCGTATGCCGTCTTCTGCTTG', length 63, was trimmed 9 times.
+9 times, it overlapped the 5' end of a read
+0 times, it overlapped the 3' end or was within the read
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4; 50-59 bp: 5; 60-63 bp: 6
+
+Overview of removed sequences (5')
+length	count	expect	max.err	error counts
+30	1	0.0	3	0 0 0 1
+39	2	0.0	3	0 1 0 1
+40	1	0.0	4	0 0 0 1
+43	1	0.0	4	0 0 1
+45	1	0.0	4	0 0 0 0 1
+51	3	0.0	5	0 1 1 0 1
+
+
+Overview of removed sequences (3' or within)
+length	count	expect	max.err	error counts
+
+=== Adapter 7 ===
+
+Adapter 'GATCGGAAGAGCACACGTCTGAACTCCAGTCACGCCAATATCTCGTATGCCGTCTTCTGCTTG', length 63, was trimmed 18 times.
+16 times, it overlapped the 5' end of a read
+2 times, it overlapped the 3' end or was within the read
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4; 50-59 bp: 5; 60-63 bp: 6
+
+Overview of removed sequences (5')
+length	count	expect	max.err	error counts
+28	1	0.0	2	0 0 1
+29	1	0.0	2	0 0 1
+31	1	0.0	3	1
+37	1	0.0	3	0 0 1
+38	1	0.0	3	0 0 1
+40	1	0.0	4	1
+41	1	0.0	4	0 0 1
+43	1	0.0	4	1
+44	1	0.0	4	0 0 0 1
+45	1	0.0	4	1
+46	1	0.0	4	0 0 1
+48	1	0.0	4	0 0 0 0 0 1
+49	1	0.0	4	0 0 0 0 1
+51	3	0.0	5	1 2
+
+
+Overview of removed sequences (3' or within)
+length	count	expect	max.err	error counts
+40	1	0.0	4	0 0 1
+41	1	0.0	4	1
+
+=== Adapter 8 ===
+
+Adapter 'GATCGGAAGAGCACACGTCTGAACTCCAGTCACCAGATCATCTCGTATGCCGTCTTCTGCTTG', length 63, was trimmed 6 times.
+6 times, it overlapped the 5' end of a read
+0 times, it overlapped the 3' end or was within the read
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4; 50-59 bp: 5; 60-63 bp: 6
+
+Overview of removed sequences (5')
+length	count	expect	max.err	error counts
+30	1	0.0	3	1
+32	1	0.0	3	0 1
+38	1	0.0	3	0 1
+41	1	0.0	4	0 0 0 1
+44	1	0.0	4	0 0 0 1
+51	1	0.0	5	0 0 0 0 1
+
+
+Overview of removed sequences (3' or within)
+length	count	expect	max.err	error counts
+
+=== Adapter 9 ===
+
+Adapter 'GATCGGAAGAGCACACGTCTGAACTCCAGTCACACTTGAATCTCGTATGCCGTCTTCTGCTTG', length 63, was trimmed 2 times.
+2 times, it overlapped the 5' end of a read
+0 times, it overlapped the 3' end or was within the read
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4; 50-59 bp: 5; 60-63 bp: 6
+
+Overview of removed sequences (5')
+length	count	expect	max.err	error counts
+40	1	0.0	4	1
+43	1	0.0	4	1
+
+
+Overview of removed sequences (3' or within)
+length	count	expect	max.err	error counts
+
+=== Adapter 10 ===
+
+Adapter 'GATCGGAAGAGCACACGTCTGAACTCCAGTCACGATCAGATCTCGTATGCCGTCTTCTGCTTG', length 63, was trimmed 2 times.
+2 times, it overlapped the 5' end of a read
+0 times, it overlapped the 3' end or was within the read
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4; 50-59 bp: 5; 60-63 bp: 6
+
+Overview of removed sequences (5')
+length	count	expect	max.err	error counts
+32	1	0.0	3	0 0 0 1
+51	1	0.0	5	0 1
+
+
+Overview of removed sequences (3' or within)
+length	count	expect	max.err	error counts
+
+=== Adapter 11 ===
+
+Adapter 'GATCGGAAGAGCACACGTCTGAACTCCAGTCACTAGCTTATCTCGTATGCCGTCTTCTGCTTG', length 63, was trimmed 4 times.
+4 times, it overlapped the 5' end of a read
+0 times, it overlapped the 3' end or was within the read
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4; 50-59 bp: 5; 60-63 bp: 6
+
+Overview of removed sequences (5')
+length	count	expect	max.err	error counts
+38	1	0.0	3	1
+43	1	0.0	4	1
+47	1	0.0	4	0 0 1
+51	1	0.0	5	1
+
+
+Overview of removed sequences (3' or within)
+length	count	expect	max.err	error counts
+
+=== Adapter 12 ===
+
+Adapter 'GATCGGAAGAGCACACGTCTGAACTCCAGTCACGGCTACATCTCGTATGCCGTCTTCTGCTTG', length 63, was trimmed 2 times.
+2 times, it overlapped the 5' end of a read
+0 times, it overlapped the 3' end or was within the read
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4; 50-59 bp: 5; 60-63 bp: 6
+
+Overview of removed sequences (5')
+length	count	expect	max.err	error counts
+38	1	0.0	3	0 0 1
+50	1	0.0	5	0 1
+
+
+Overview of removed sequences (3' or within)
+length	count	expect	max.err	error counts
+
+=== Adapter 13 ===
+
+Adapter 'GATCGGAAGAGCACACGTCTGAACTCCAGTCACCTTGTAATCTCGTATGCCGTCTTCTGCTTG', length 63, was trimmed 3 times.
+3 times, it overlapped the 5' end of a read
+0 times, it overlapped the 3' end or was within the read
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4; 50-59 bp: 5; 60-63 bp: 6
+
+Overview of removed sequences (5')
+length	count	expect	max.err	error counts
+30	1	0.0	3	0 0 1
+48	1	0.0	4	0 0 1
+51	1	0.0	5	0 1
+
+
+Overview of removed sequences (3' or within)
+length	count	expect	max.err	error counts
+
+=== Adapter 14 ===
+
+Adapter 'GATCGGAAGAGCACACGTCTGAACTCCAGTCACCGGTGTATCTCGTATGCCGTCTT', length 56, was trimmed 684 times.
+684 times, it overlapped the 5' end of a read
+0 times, it overlapped the 3' end or was within the read
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4; 50-56 bp: 5
+
+Overview of removed sequences (5')
+length	count	expect	max.err	error counts
+9	102	40.7	0	0 102
+10	457	10.2	1	2 455
+11	65	2.5	1	0 65
+12	19	0.6	1	0 19
+13	38	0.2	1	12 26
+14	3	0.0	1	0 3
+
+
+Overview of removed sequences (3' or within)
+length	count	expect	max.err	error counts
+
+=== Adapter 15 ===
+
+Adapter 'GATCGGAAGAGCACACGTCTGAACTCCAGTCACAGCGATAGATCTCGTAT', length 50, was trimmed 168 times.
+168 times, it overlapped the 5' end of a read
+0 times, it overlapped the 3' end or was within the read
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4; 50 bp: 5
+
+Overview of removed sequences (5')
+length	count	expect	max.err	error counts
+9	46	40.7	0	0 46
+10	46	10.2	1	0 46
+11	53	2.5	1	0 53
+12	22	0.6	1	1 21
+14	1	0.0	1	0 1
+
+
+Overview of removed sequences (3' or within)
+length	count	expect	max.err	error counts
+
