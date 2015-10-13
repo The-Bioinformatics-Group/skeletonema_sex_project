@@ -17,4 +17,6 @@ The purpose of this script is to create a reference against which reads can late
 This script is run on the high_mem node.
 The purpose of this script is to run Trinity. The settings can be changed in the script to suit each individual assembly, including the allocated memory from the high_mem node.
 
+###trinity_run_megaassembly.sh
 
+This script runs trinity using both singleend and pairend RNA-seq reads. 
