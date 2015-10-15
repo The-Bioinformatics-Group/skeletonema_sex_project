@@ -1,8 +1,8 @@
 #!/bin/bash
 #$ -cwd
 #$ -q high_mem
-#$ -o /nobackup/data5/skeletonema_sex_project/test/assembly-test/paired_end-assembly/stdout_trinity.txt
-#$ -e /nobackup/data5/skeletonema_sex_project/test/assembly-test/paired_end-assembly/stderr_trinity.txt
+#$ -o /nobackup/data5/skeletonema_sex_project/test/assembly-test/paired_end_assembly/stdout_trinity.txt
+#$ -e /nobackup/data5/skeletonema_sex_project/test/assembly-test/paired_end_assembly/stderr_trinity.txt
 #$ -j y
 #$ -S /bin/bash
 #$ -l mem_free=100G
