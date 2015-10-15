@@ -1,6 +1,6 @@
 #!/bin/bash
 #$ -cwd
-#$ -q high_mem
+#$ -q sandbox
 #$ -o stdout_trin_prepref.txt
 #$ -e stderr_trin_prepref.txt
 #$ -j y
