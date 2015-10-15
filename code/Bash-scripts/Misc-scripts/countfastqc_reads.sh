@@ -1,8 +1,8 @@
 #!/bin/bash
 #$ -cwd
 #$ -q sandbox
-#$ -o 
-#$ -e 
+#$ -o /test/data-test/rna-sex/fastq_quality_filter_results/stdout_fastqc_readcount-postfilt
+#$ -e /test/data-test/rna-sex/fastq_quality_filter_results/stderr_fastqc_readcount-postfilt
 #$ -j y
 #$ -S /bin/bash
 
