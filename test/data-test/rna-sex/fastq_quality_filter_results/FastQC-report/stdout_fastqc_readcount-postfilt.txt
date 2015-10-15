@@ -1,0 +1,62 @@
+-catch_rsh /opt/gridengine/default/spool/compute-0-2/active_jobs/16401.1/pe_hostfile
+compute-0-2
+compute-0-2
+This script will count total reads from fastqc_data.txt before and after trimming + quality-filtering
+Reads lost from of CL10 :
+648872
+Percentage reads lost from CL10 :
+.04526939206352639293
+Reads lost from of CL11 :
+588454
+Percentage reads lost from CL11 :
+.04512559123171513426
+Reads lost from of CL17 :
+547520
+Percentage reads lost from CL17 :
+.04217716179716060622
+Reads lost from of CL18 :
+447344
+Percentage reads lost from CL18 :
+.04308925234545069255
+Reads lost from of CS12 :
+643237
+Percentage reads lost from CS12 :
+.04349155722732389231
+Reads lost from of CS13 :
+561061
+Percentage reads lost from CS13 :
+.04502147515562215762
+Reads lost from of CS14 :
+557915
+Percentage reads lost from CS14 :
+.04469064714546666867
+Reads lost from of CS19 :
+499584
+Percentage reads lost from CS19 :
+.04285954744153079028
+Reads lost from of CS20 :
+413069
+Percentage reads lost from CS20 :
+.04425176182045120472
+Reads lost from of CS21 :
+609365
+Percentage reads lost from CS21 :
+.04368398278577302867
+Reads lost from of NoCL15 :
+459313
+Percentage reads lost from NoCL15 :
+.04368916339665118200
+Reads lost from of NoCL16 :
+598893
+Percentage reads lost from NoCL16 :
+.04356896008864921113
+Reads lost from of NoCL8 :
+469048
+Percentage reads lost from NoCL8 :
+.04391299039892507506
+Reads lost from of NoCL9 :
+525969
+Percentage reads lost from NoCL9 :
+.04040802836534206566
+Done with script
+Thu Oct 15 14:17:20 CEST 2015
