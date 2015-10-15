@@ -83,6 +83,8 @@ The same unfiltered/untrimmed raw read data was used in the assembly. Data that 
 
 ###Evaluation of assembly quality
 
+Need to install a newer version of Ruby to try Transrate
+
 ##mega-assembly
 Used script /code/Bash-scripts/Trinity-bash-scripts/trinity_run_megaassembly.sh
 
@@ -100,6 +102,32 @@ All data has been trimmed and quality-filtered as described in:
 /test/data-test/rna-sex/README.md  
 /test/data-test/skeletonema-pairend-data/README.md
 
+##single-end assembly
+Used script /code/Bash-scripts/Trinity-bash-scripts/trinity_run.sh
+
+100G allocated memory.
+
+Trinity --seqType fq --JM 20G --single /nobackup/data5/skeletonema_sex_project/test/data-test/rna-sex/RNA-sex_all.fq --CPU 8 --bflyCalculateCPU --output /nobackup/data5/skeletonema_sex_project/test/assembly-test/single_end-assembly
+
+This assembly is made of singleend RNA-seq reads. The data used is found in:  
+Single end reads:   
+/test/data-test/rna-sex/RNA-sex_all.fq   
+All data has been trimmed and quality-filtered as described in:   
+/test/data-test/rna-sex/README.md  
+
+
+##paired-end asembly
+Used script /code/Bash-scripts/Trinity-bash-scripts/trinity_run_pairedend.sh
+
+100G allocated memory.
+
+Trinity --seqType fq --JM 20G --SS_lib_type FR --left ${LOC_PAIR}/1F_fastq-q-filt.txt,${LOC_PAIR}/2F_fastq-q-filt.txt --right ${LOC_PAIR}/1R_fastq-q-filt.txt,${LOC_PAIR}/2R_fastq-q-filt.txt --CPU 8 --bflyCalculateCPU --output /nobackup/data5/skeletonema_sex_project/test/assembly-test/paired_end_assembly
+
+This assembly is made of paired end RNA-seq reads. The data used is found in:  
+Paired end reads:   
+/test/data-test/skeletonema-pairend-data/fastq_quality_filter_results/X_fastq-q-filt.txt  
+All data has been trimmed and quality-filtered as described in:   
+/test/data-test/skeletonema-pairend-data/README.md
 
 
 
