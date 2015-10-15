@@ -1,8 +1,8 @@
 #!/bin/bash
 #$ -cwd
 #$ -q sandbox
-#$ -o /test/data-test/rna-sex/fastq_quality_filter_results/stdout_fastqc_readcount-postfilt.txt
-#$ -e /test/data-test/rna-sex/fastq_quality_filter_results/stderr_fastqc_readcount-postfilt.txt
+#$ -o /nobackup/data5/skeletonema_sex_project/test/data-test/rna-sex/fastq_quality_filter_results/stdout_fastqc_readcount-postfilt.txt
+#$ -e /nobackup/data5/skeletonema_sex_project/test/data-test/rna-sex/fastq_quality_filter_results/stderr_fastqc_readcount-postfilt.txt
 #$ -j y
 #$ -S /bin/bash
 
@@ -20,22 +20,22 @@ NUM=$((NUM+1))
 wait
 FILE=$(sed "${NUM}q;d" /nobackup/data5/skeletonema_sex_project/test/temporary_files/fastqc_countreads.txt | cut -d"." -f1)
 wait
-LOCBEFORE=$(/nobackup/data5/skeletonema_sex_project/data/rna-sex-data/fastqc_results/$FILE/C6D2PACXX_${FILE}_*)
-LOCAFTER=$(/test/data-test/rna-sex/fastq_quality_filter_results/FastQC-report/$FILE/${FILE}_fastq-q-filt_fastqc)
-wait
-READSBEFORE=$(grep -e "Total Sequences" $LOCBEFORE/fastqc_data.txt | cut -f2)
-READSAFTER=$(grep -e "Total Sequences" $LOCAFTER/fastqc_data.txt | cut -f2)
+READSBEFORE=$(grep -e "Total Sequences" /nobackup/data5/skeletonema_sex_project/data/rna-sex-data/fastqc_results/$FILE/$FILE/fastqc_data.txt | cut -f2)
+READSAFTER=$(grep -e "Total Sequences" /nobackup/data5/skeletonema_sex_project/test/data-test/rna-sex/fastq_quality_filter_results/FastQC-report/$FILE/${FILE}_fastq-q-filt_fastqc/fastqc_data.txt | cut -f2)
 wait
 LOSTREADS=$((${READSBEFORE}-${READSAFTER}))
 wait
-PERREADS=$(${LOSTREADS}/${READSBEFORE} | bc -l)
+PERREADS=$((${LOSTREADS}/${READSBEFORE} | bc -l))
 wait
-echo "Reads lost from of $FILE : $LOSTREADS "
-echo "Percentage reads lost from $FILE : $PERREADS "
+echo "Reads lost from of $FILE :"
+echo $LOSTREADS
+wait
+echo "Percentage reads lost from $FILE :"
+echo $LOSTREADS/$READSBEFORE | bc -l
+wait
 done
 wait
 rm /nobackup/data5/skeletonema_sex_project/test/temporary_files/fastqc_countreads.txt
-wait
 echo "Done with script" 
 date
 
