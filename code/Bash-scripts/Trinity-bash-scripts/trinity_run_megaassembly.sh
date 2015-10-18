@@ -5,7 +5,7 @@
 #$ -e /nobackup/data5/skeletonema_sex_project/test/assembly-test/mega-assembly/stderr_trinity.txt
 #$ -j y
 #$ -S /bin/bash
-#$ -l free_mem=144G
+#$ -l mem_free=144G
 
 wait
 LOC_SINGLE=/nobackup/data5/skeletonema_sex_project/test/data-test/rna-sex
