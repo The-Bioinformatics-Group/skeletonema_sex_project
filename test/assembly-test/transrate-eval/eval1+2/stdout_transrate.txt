@@ -1,0 +1,76 @@
+-catch_rsh /opt/gridengine/default/spool/compute-0-1/active_jobs/16593.1/pe_hostfile
+compute-0-1
+compute-0-1
+compute-0-1
+compute-0-1
+compute-0-2
+compute-0-2
+compute-0-2
+compute-0-2
+[ INFO] 2015-10-19 12:15:37 : Loading assembly: /nobackup/data5/skeletonema_sex_project/test/assembly-test/assembly_test1/trinity_out_dir/Trinity.fasta
+[ INFO] 2015-10-19 12:15:46 : Analysing assembly: /nobackup/data5/skeletonema_sex_project/test/assembly-test/assembly_test1/trinity_out_dir/Trinity.fasta
+[ INFO] 2015-10-19 12:15:46 : Results will be saved in /nobackup/data5/skeletonema_sex_project/test/assembly-test/transrate-eval/eval1+2/assembly_test1_trinity_out_dir_Trinity
+[ INFO] 2015-10-19 12:15:46 : Calculating contig metrics...
+[ INFO] 2015-10-19 12:15:56 : Contig metrics:
+[ INFO] 2015-10-19 12:15:56 : -----------------------------------
+[ INFO] 2015-10-19 12:15:56 : n seqs                        25425
+[ INFO] 2015-10-19 12:15:56 : smallest                        201
+[ INFO] 2015-10-19 12:15:56 : largest                       12669
+[ INFO] 2015-10-19 12:15:56 : n bases                    33520113
+[ INFO] 2015-10-19 12:15:56 : mean len                    1318.39
+[ INFO] 2015-10-19 12:15:56 : n under 200                       0
+[ INFO] 2015-10-19 12:15:56 : n over 1k                     12063
+[ INFO] 2015-10-19 12:15:56 : n over 10k                       12
+[ INFO] 2015-10-19 12:15:56 : n with orf                    15576
+[ INFO] 2015-10-19 12:15:56 : mean orf percent              75.67
+[ INFO] 2015-10-19 12:15:56 : n90                             615
+[ INFO] 2015-10-19 12:15:56 : n70                            1413
+[ INFO] 2015-10-19 12:15:56 : n50                            2126
+[ INFO] 2015-10-19 12:15:56 : n30                            3043
+[ INFO] 2015-10-19 12:15:56 : n10                            4787
+[ INFO] 2015-10-19 12:15:56 : gc                             0.45
+[ INFO] 2015-10-19 12:15:56 : gc skew                        0.01
+[ INFO] 2015-10-19 12:15:56 : at skew                         0.0
+[ INFO] 2015-10-19 12:15:56 : cpg ratio                      1.81
+[ INFO] 2015-10-19 12:15:56 : bases n                           0
+[ INFO] 2015-10-19 12:15:56 : proportion n                    0.0
+[ INFO] 2015-10-19 12:15:56 : linguistic complexity          0.23
+[ INFO] 2015-10-19 12:15:56 : Contig metrics done in 10 seconds
+[ INFO] 2015-10-19 12:15:56 : No reads provided, skipping read diagnostics
+[ INFO] 2015-10-19 12:15:56 : No reference provided, skipping comparative diagnostics
+[ INFO] 2015-10-19 12:15:56 : Writing contig metrics for each contig to /nobackup/data5/skeletonema_sex_project/test/assembly-test/transrate-eval/eval1+2/assembly_test1_trinity_out_dir_Trinity/contigs.csv
+[ INFO] 2015-10-19 12:16:05 : Loading assembly: /nobackup/data5/skeletonema_sex_project/test/assembly-test/assembly_test2/trinity_out_dir/Trinity.fasta
+[ INFO] 2015-10-19 12:16:14 : Analysing assembly: /nobackup/data5/skeletonema_sex_project/test/assembly-test/assembly_test2/trinity_out_dir/Trinity.fasta
+[ INFO] 2015-10-19 12:16:14 : Results will be saved in /nobackup/data5/skeletonema_sex_project/test/assembly-test/transrate-eval/eval1+2/assembly_test2_trinity_out_dir_Trinity
+[ INFO] 2015-10-19 12:16:14 : Calculating contig metrics...
+[ INFO] 2015-10-19 12:16:25 : Contig metrics:
+[ INFO] 2015-10-19 12:16:25 : -----------------------------------
+[ INFO] 2015-10-19 12:16:25 : n seqs                        25440
+[ INFO] 2015-10-19 12:16:25 : smallest                        201
+[ INFO] 2015-10-19 12:16:25 : largest                       12669
+[ INFO] 2015-10-19 12:16:25 : n bases                    33539072
+[ INFO] 2015-10-19 12:16:25 : mean len                    1318.36
+[ INFO] 2015-10-19 12:16:25 : n under 200                       0
+[ INFO] 2015-10-19 12:16:25 : n over 1k                     12072
+[ INFO] 2015-10-19 12:16:25 : n over 10k                       13
+[ INFO] 2015-10-19 12:16:25 : n with orf                    15596
+[ INFO] 2015-10-19 12:16:25 : mean orf percent              75.68
+[ INFO] 2015-10-19 12:16:25 : n90                             615
+[ INFO] 2015-10-19 12:16:25 : n70                            1413
+[ INFO] 2015-10-19 12:16:25 : n50                            2126
+[ INFO] 2015-10-19 12:16:25 : n30                            3041
+[ INFO] 2015-10-19 12:16:25 : n10                            4802
+[ INFO] 2015-10-19 12:16:25 : gc                             0.45
+[ INFO] 2015-10-19 12:16:25 : gc skew                        0.01
+[ INFO] 2015-10-19 12:16:25 : at skew                         0.0
+[ INFO] 2015-10-19 12:16:25 : cpg ratio                      1.81
+[ INFO] 2015-10-19 12:16:25 : bases n                           0
+[ INFO] 2015-10-19 12:16:25 : proportion n                    0.0
+[ INFO] 2015-10-19 12:16:25 : linguistic complexity          0.23
+[ INFO] 2015-10-19 12:16:25 : Contig metrics done in 11 seconds
+[ INFO] 2015-10-19 12:16:25 : No reads provided, skipping read diagnostics
+[ INFO] 2015-10-19 12:16:25 : No reference provided, skipping comparative diagnostics
+[ INFO] 2015-10-19 12:16:25 : Writing contig metrics for each contig to /nobackup/data5/skeletonema_sex_project/test/assembly-test/transrate-eval/eval1+2/assembly_test2_trinity_out_dir_Trinity/contigs.csv
+[ INFO] 2015-10-19 12:16:34 : Writing analysis results to assemblies.csv
+Done with script
+Mon Oct 19 12:16:34 CEST 2015
