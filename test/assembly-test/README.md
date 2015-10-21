@@ -79,10 +79,20 @@ The same unfiltered/untrimmed raw read data was used in the assembly. Data that 
 ##mega-assembly
 Used script /code/Bash-scripts/Trinity-bash-scripts/trinity_run_megaassembly.sh
 
-100G allocated memory.
-
-Trinity --seqType fq --JM 20G --left ${LOC_PAIR}/1F_fastq-q-filt.txt,${LOC_PAIR}/2F_fastq-q-filt.txt,${LOC_SINGLE}/RNA-sex_all.fq --right ${LOC_PAIR}/1R_fastq-q-filt.txt,${LOC_PAIR}/2R_fastq-q-filt.txt --CPU 8 --
-bflyCalculateCPU --output /nobackup/data5/skeletonema_sex_project/test/assembly-test/mega-assembly
+!/bin/bash  
+$ -cwd  
+$ -q high_mem  
+$ -o /nobackup/data5/skeletonema_sex_project/test/assembly-test/mega-assembly/stdout_trinity.txt  
+$ -e /nobackup/data5/skeletonema_sex_project/test/assembly-test/mega-assembly/stderr_trinity.txt  
+$ -j y  
+$ -S /bin/bash  
+$ -l mem_free=240G  
+ 
+wait  
+LOC_SINGLE=/nobackup/data5/skeletonema_sex_project/test/data-test/rna-sex  
+LOC_PAIR=/nobackup/data5/skeletonema_sex_project/test/data-test/skeletonema-pairend-data/fastq_quality_filter_results  
+wait   
+Trinity --bflyHeapSpaceInit 10G --bflyHeapSpaceMax 12G --seqType fq --JM 240G --left ${LOC_PAIR}/1F_fastq-q-filt.txt,${LOC_PAIR}/2F_fastq-q-filt.txt,${LOC_SINGLE}/RNA-sex_all.fq --right ${LOC_PAIR}/1R_fastq-q-filt.txt,${LOC_PAIR}/2R_fastq-q-filt.txt --CPU 24 --bflyCalculateCPU --output /nobackup/data5/skeletonema_sex_project/test/assembly-test/mega-assembly  
 
 This assembly is made of a combination of singleend and pairend RNA-seq reads. The data used is found in:  
 Single end reads:   
@@ -125,20 +135,19 @@ All data has been trimmed and quality-filtered as described in:
 Used script /code/Bash-scripts/Trinity-bash-scripts/trinity_run.sh  
 The only difference between this and the previous single-end assembly using filtered/trimmed data is that this also uses read normalization.
 
-!/bin/bash
-$ -cwd
-$ -q high_mem
-$ -o /nobackup/data5/skeletonema_sex_project/test/assembly-test/single_end-assembly_readnorm/stdout_trinity.txt
-$ -e /nobackup/data5/skeletonema_sex_project/test/assembly-test/single_end-assembly_readnorm/stderr_trinity.txt
-$ -j y
-$ -S /bin/bash
-$ -l mem_free=120G
-wait 
-Trinity --seqType fq --JM 120G --single /nobackup/data5/skeletonema_sex_project/test/data-test/rna-sex/RNA-sex_all.fq --bflyHeapSpaceInit 10G --bflyHeapSpaceMax 12G --CPU 12 --bflyCalculateCPU --output /nobackup/data5/skeletonema_sex_project/test/assembly-test/single_end-assembly_readnorm --normalize_max_read_cov 40
-wait
-echo "Done with script" 
-date
-
+!/bin/bash  
+$ -cwd  
+$ -q high_mem  
+$ -o /nobackup/data5/skeletonema_sex_project/test/assembly-test/single_end-assembly_readnorm/stdout_trinity.txt   
+$ -e /nobackup/data5/skeletonema_sex_project/test/assembly-test/single_end-assembly_readnorm/stderr_trinity.txt  
+$ -j y  
+$ -S /bin/bash  
+$ -l mem_free=120G  
+wait   
+Trinity --seqType fq --JM 120G --single /nobackup/data5/skeletonema_sex_project/test/data-test/rna-sex/RNA-sex_all.fq --bflyHeapSpaceInit 10G --bflyHeapSpaceMax 12G --CPU 12 --bflyCalculateCPU --output /nobackup/data5/skeletonema_sex_project/test/assembly-test/single_end-assembly_readnorm --normalize_max_read_cov 40  
+wait  
+echo "Done with script"   
+date  
 
 ###Evaluation of assembly quality
 
