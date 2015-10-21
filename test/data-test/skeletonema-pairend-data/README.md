@@ -9,7 +9,6 @@ Sample 2, forward reads = 2F
 Sample 2, reverse reads = 2R  
 
 
-
 ###Adapter-trimming
 
 The data was adapter-trimmed using a script located in:   
@@ -33,7 +32,7 @@ input-file.fastq
 
 
 All report-files, including a standard output file was saved in the directory cutadapts_reports.  
-All result-files was saved in a directory named cutadapts_results.  
+All result-files was saved in a directory named cutadapts_results. But they were removed after being used in the filtering step as they were not going to be necessary anymore. 
 
 
 ###Quality-filter
