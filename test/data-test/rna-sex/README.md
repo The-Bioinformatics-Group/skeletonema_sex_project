@@ -27,6 +27,8 @@ n:1
 m:50  
 f: fastq   
 
+After filtering using the result of this trimming step. The trimmed data was removed as it wasn't going to be used for anything. 
+
 ###Filtering the data using fastq_quality_filter  
 
 Secondly the trimmed data was quality-filtered using fastq_quality_filter.  
