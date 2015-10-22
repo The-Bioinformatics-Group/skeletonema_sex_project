@@ -1,0 +1,4 @@
+JHOME=/usr/java/jdk1.7.0_13/
+JAVA_HOME=${JHOME}/bin/java
+PATH=${JHOME}/bin:$PATH
+export JAVA_HOME PATH
