@@ -1,15 +1,16 @@
 #!/bin/bash
 #$ -cwd
-#$ -q sandbox
-#$ -o /nobackup/data5/skeletonema_sex_project/test/assembly-test/assembly_test1/stdout_trin_RSEM.txt
-#$ -e /nobackup/data5/skeletonema_sex_project/test/assembly-test/assembly_test1/stderr_trin_RSEM.txt
+#$ -q high_mem
+#$ -o /nobackup/data5/skeletonema_sex_project/test/assembly-test/paired_end_assembly/align_and_estimate_abundance/stdout_trin_RSEM.txt
+#$ -e /nobackup/data5/skeletonema_sex_project/test/assembly-test/paired_end_assembly/align_and_estimate_abundance/stderr_trin_RSEM.txt
 #$ -j y
 #$ -S /bin/bash
 
 
 wait 
 
-/usr/local/bin/trinityrnaseq_r20140717/util/align_and_estimate_abundance.pl --transcripts /nobackup/data5/skeletonema_sex_project/test/assembly-test/assembly_test1/trinity_out_dir/Trinity.fasta --seqType fq --single /nobackup/data5/skeletonema_sex_project/data/rna-sex-data/CL10.txt --est_method RSEM --coordsort_bam --aln_method bowtie --trinity_mode --output_dir /nobackup/data5/skeletonema_sex_project/test/assembly-test/assembly_test1/
+/usr/local/bin/trinityrnaseq_r20140717/util/align_and_estimate_abundance.pl --transcripts /nobackup/data5/skeletonema_sex_project/test/assembly-test/paired_end_assembly/Trinity.fasta --seqType fq --left /nobackup/data5/skeletonema_sex_project/test/data-test/skeletonema-pairend-data/fastq_quality_filter_results/1F_fastq-q-filt.txt --right /nobackup/data5/skeletonema_sex_project/test/data-test/skeletonema-pairend-data/fastq_quality_filter_results/1R_fastq-q-filt.txt --est_method RSEM --coordsort_bam --aln_method bowtie --trinity_mode --output_dir /nobackup/data5/skeletonema_sex_project/test/assembly-test/paired_end_assembly/align_and_estimate_abundance
+
 
 
 wait
