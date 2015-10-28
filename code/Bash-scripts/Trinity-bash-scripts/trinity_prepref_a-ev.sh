@@ -1,6 +1,6 @@
 #!/bin/bash
 #$ -cwd
-#$ -q sandbox
+#$ -q high_mem
 #$ -o /nobackup/data5/skeletonema_sex_project/test/assembly-test/paired_end_assembly/align_and_estimate_abundance/stdout_trin_prepref.txt
 #$ -e /nobackup/data5/skeletonema_sex_project/test/assembly-test/paired_end_assembly/align_and_estimate_abundance/stderr_trin_prepref.txt
 #$ -j y
