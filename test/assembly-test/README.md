@@ -77,7 +77,11 @@ The same unfiltered/untrimmed raw read data was used in the assembly. Data that 
 /data/rna-sex-data.
 
 ##mega-assembly
-Used script /code/Bash-scripts/Trinity-bash-scripts/trinity_run_megaassembly.sh
+Used script /code/Bash-scripts/Trinity-bash-scripts/trinity_run_megaassembly.sh   
+It was run using the latest version of Trinity: Version: 2.1.1.   
+And using Java version: java version "1.7.0_13"  
+
+Script code:   
 
 !/bin/bash  
 $ -cwd  
@@ -92,7 +96,7 @@ wait
 LOC_SINGLE=/nobackup/data5/skeletonema_sex_project/test/data-test/rna-sex  
 LOC_PAIR=/nobackup/data5/skeletonema_sex_project/test/data-test/skeletonema-pairend-data/fastq_quality_filter_results  
 wait   
-Trinity --bflyHeapSpaceInit 10G --bflyHeapSpaceMax 12G --seqType fq --JM 240G --left ${LOC_PAIR}/1F_fastq-q-filt.txt,${LOC_PAIR}/2F_fastq-q-filt.txt,${LOC_SINGLE}/RNA-sex_all.fq --right ${LOC_PAIR}/1R_fastq-q-filt.txt,${LOC_PAIR}/2R_fastq-q-filt.txt --CPU 24 --bflyCalculateCPU --output /nobackup/data5/skeletonema_sex_project/test/assembly-test/mega-assembly  
+Trinity --bflyHeapSpaceInit 10G --bflyHeapSpaceMax 12G --seqType fq --max_memory 240G --left ${LOC_PAIR}/1F_fastq-q-filt.txt,${LOC_PAIR}/2F_fastq-q-filt.txt,${LOC_SINGLE}/RNA-sex_all.fq --right ${LOC_PAIR}/1R_fastq-q-filt.txt,${LOC_PAIR}/2R_fastq-q-filt.txt --CPU 24 --bflyCalculateCPU --output /nobackup/data5/skeletonema_sex_project/test/assembly-test/mega-assembly  
 
 This assembly is made of a combination of singleend and pairend RNA-seq reads. The data used is found in:  
 Single end reads:   
@@ -149,6 +153,40 @@ wait
 echo "Done with script"   
 date  
 
+
+##paired-end_assembly_readnorm
+
+
+Used script /code/Bash-scripts/Trinity-bash-scripts/trinity_run_pairedend.sh     
+It was run using the latest version of Trinity: Version: 2.1.1.   
+And using Java version: java version "1.7.0_13"   
+
+Code:  
+
+!/bin/bash   
+$ -cwd   
+$ -q high_mem  
+$ -o /nobackup/data5/skeletonema_sex_project/test/assembly-test/paired_end_assembly+readnorm_trinity/stdout_trinity.txt   
+$ -e /nobackup/data5/skeletonema_sex_project/test/assembly-test/paired_end_assembly+readnorm_trinity/stderr_trinity.txt   
+$ -j y   
+$ -S /bin/bash  
+$ -l mem_free=240G  
+wait   
+LOC_PAIR=/nobackup/data5/skeletonema_sex_project/test/data-test/skeletonema-pairend-data/fastq_quality_filter_results   
+wait    
+Trinity --seqType fq --max_memory 240G --SS_lib_type FR --left ${LOC_PAIR}/1F_fastq-q-filt.txt,${LOC_PAIR}/2F_fastq-q-filt.txt --right ${LOC_PAIR}/1R_fastq-q-filt.txt,${LOC_PAIR}/2R_fastq-q-filt.txt --CPU 24 --bflyHeapSpaceInit 10G --bflyHeapSpaceMax 12G --bflyCalculateCPU --output /nobackup/data5/skeletonema_sex_project/test/assembly-test/paired_end_assembly+readnorm_trinity --normalize_max_read_cov 40   
+wait   
+echo "Done with script"    
+date   
+
+This assembly is made of paired end RNA-seq reads. The data used is found in:
+Paired end reads:
+/test/data-test/skeletonema-pairend-data/fastq_quality_filter_results/X_fastq-q-filt.txt
+All data has been trimmed and quality-filtered as described in:
+/test/data-test/skeletonema-pairend-data/README.md
+
+
+
 ###Evaluation of assembly quality
 
 Have found two different softwares for evaluating transcriptome	quality:  
@@ -157,16 +195,33 @@ Detonate
 
 ##Transrate
 
+#####Evaluating Singleend-assembly
+
 Planned to run Transrate to evaluate the single-end assemblies, but it appears that the most relevant metrics of Transrate can only be run on paired end data.
 Still I ran Transrate with only the first metric which only provides some statistics like N50 of the contigs.
 The results are saved on test/assembly-test/transrate-eval
+
+#####Evaluating Pairedend-assembly
+
+Error.
 
 ##Detonate
 
 Detonate uses the information from the assembly, the reads used to construct the assembly and the average length of transcripts from the species or a closely related species to calculate a likelihood score.
 I was unable to find an average transcript length from skeletonema, so I used the human values instead.
-The results are saved on /test/assembly-test/transrate-eval
+The results are saved on /test/assembly-test/detonate-eval
+
+#####Evaluating Singleend-assembly  
+
+The results of the detonate evaluation showed that of the 4 Single end assemblies. The assembly of filtered and trimmed data, with readnormalization 40. Had the best score.   
+testassembly1: -3.7E+9   
+testassembly2: -3.6E+9     
+singleendass: -3.5E+9   
+singleendass+readnorm: -3.4E+9  
+
+DELETED ALL SINGLE END ASSEMBLIES EXCEPT BEST SCORING ONE
 
 
+#####Evaluating Pairedend-assembly
 
-
+Need fragment length. Creating a script to find length. 
