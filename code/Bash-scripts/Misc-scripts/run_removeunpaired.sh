@@ -4,7 +4,7 @@
 #$ -e stderr_removeunpaired.txt
 #$ -j y
 #$ -S /bin/bash
-#$ -l mem_free 50G
+#$ -l mem_free=50G
 
 wait
 echo "Starting removing unpaired paired end reads perl script"
