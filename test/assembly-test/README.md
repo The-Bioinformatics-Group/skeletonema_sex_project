@@ -96,7 +96,7 @@ wait
 LOC_SINGLE=/nobackup/data5/skeletonema_sex_project/test/data-test/rna-sex  
 LOC_PAIR=/nobackup/data5/skeletonema_sex_project/test/data-test/skeletonema-pairend-data/fastq_quality_filter_results  
 wait   
-Trinity --bflyHeapSpaceInit 10G --bflyHeapSpaceMax 12G --seqType fq --max_memory 240G --left ${LOC_PAIR}/1F_fastq-q-filt.txt,${LOC_PAIR}/2F_fastq-q-filt.txt,${LOC_SINGLE}/RNA-sex_all.fq --right ${LOC_PAIR}/1R_fastq-q-filt.txt,${LOC_PAIR}/2R_fastq-q-filt.txt --CPU 24 --bflyCalculateCPU --output /nobackup/data5/skeletonema_sex_project/test/assembly-test/mega-assembly  
+Trinity --bflyHeapSpaceInit 10G --bflyHeapSpaceMax 12G --seqType fq --max_memory 130G --left ${LOC_PAIR}/1F_fastq-q-filt.txt,${LOC_PAIR}/2F_fastq-q-filt.txt,${LOC_SINGLE}/RNA-sex_all.fq --right ${LOC_PAIR}/1R_fastq-q-filt.txt,${LOC_PAIR}/2R_fastq-q-filt.txt --CPU 13 --bflyCalculateCPU --output /nobackup/data5/skeletonema_sex_project/test/assembly-test/mega-assembly_trinity --normalize_max_read_cov 40
 
 This assembly is made of a combination of singleend and pairend RNA-seq reads. The data used is found in:  
 Single end reads:   
@@ -104,8 +104,8 @@ Single end reads:
 Paired end reads:   
 /test/data-test/skeletonema-pairend-data/fastq_quality_filter_results/X_fastq-q-filt.txt  
 All data has been trimmed and quality-filtered as described in:   
-/test/data-test/rna-sex/README.md  
-/test/data-test/skeletonema-pairend-data/README.md
+/test/data-test/rna-sex/README.md   
+/test/data-test/skeletonema-pairend-data/README.md  
 
 ##single-end assembly
 Used script /code/Bash-scripts/Trinity-bash-scripts/trinity_run.sh
