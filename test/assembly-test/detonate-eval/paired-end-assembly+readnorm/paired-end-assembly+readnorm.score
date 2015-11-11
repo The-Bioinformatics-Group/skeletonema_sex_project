@@ -1,0 +1,13 @@
+Score	-12844110715.92
+BIC_penalty	-1000857.55
+Prior_score_on_contig_lengths_(f_function_canceled)	-222112.80
+Prior_score_on_contig_sequences	-124582341.32
+Data_likelihood_in_log_space_without_correction	-12718630471.15
+Correction_term_(f_function_canceled)	-325066.89
+Number_of_contigs	107731
+Expected_number_of_aligned_reads_given_the_data	94243911.98
+Number_of_contigs_smaller_than_expected_read/fragment_length	66044
+Number_of_contigs_with_no_read_aligned_to	33980
+Maximum_data_likelihood_in_log_space	-12671506989.47
+Number_of_alignable_reads	96761622
+Number_of_alignments_in_total	239221938
