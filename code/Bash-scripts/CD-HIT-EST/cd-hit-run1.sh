@@ -10,7 +10,7 @@ SOFTWARE=/nobackup/data5/skeletonema_sex_project/software/cdhit-master/cd-hit-es
 ASSEMBLY=/nobackup/data5/skeletonema_sex_project/test/assembly-test/singleend+pairedend-trinity.fasta
 OUTPUT=/nobackup/data5/skeletonema_sex_project/test/assembly-test/large-assemblies+eval/merged-assembly3
 wait
-$SOFTWARE -i $ASSEMBLY -o $OUTPUT/merged_settings3.fasta -c 0.90 -n 9 -s 0.80 -T 4 -M 20000 
+$SOFTWARE -i $ASSEMBLY -o $OUTPUT/merged_settings3.fasta -c 0.85 -n 8 -s 0.80 -T 4 -M 20000 
 wait
 echo "Done with script" 
 date
