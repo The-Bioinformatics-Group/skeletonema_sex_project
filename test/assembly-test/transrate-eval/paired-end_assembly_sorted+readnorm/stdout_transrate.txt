@@ -1,0 +1,72 @@
+-catch_rsh /opt/gridengine/default/spool/compute-0-8/active_jobs/17925.1/pe_hostfile
+compute-0-8
+compute-0-8
+compute-0-8
+compute-0-8
+compute-0-8
+compute-0-8
+compute-0-8
+compute-0-8
+compute-0-8
+compute-0-8
+[ INFO] 2015-11-13 13:07:37 : Loading assembly: /nobackup/data5/skeletonema_sex_project/test/assembly-test/paired_end_sorted+readnorm_trinity/Trinity.fasta
+[ INFO] 2015-11-13 13:08:15 : Analysing assembly: /nobackup/data5/skeletonema_sex_project/test/assembly-test/paired_end_sorted+readnorm_trinity/Trinity.fasta
+[ INFO] 2015-11-13 13:08:15 : Results will be saved in /nobackup/data5/skeletonema_sex_project/test/assembly-test/transrate-eval/paired-end_assembly_sorted+readnorm/Trinity
+[ INFO] 2015-11-13 13:08:15 : Calculating contig metrics...
+[ INFO] 2015-11-13 13:08:48 : Contig metrics:
+[ INFO] 2015-11-13 13:08:48 : -----------------------------------
+[ INFO] 2015-11-13 13:08:48 : n seqs                       107667
+[ INFO] 2015-11-13 13:08:48 : smallest                        201
+[ INFO] 2015-11-13 13:08:48 : largest                       23268
+[ INFO] 2015-11-13 13:08:48 : n bases                    89574254
+[ INFO] 2015-11-13 13:08:48 : mean len                     831.96
+[ INFO] 2015-11-13 13:08:48 : n under 200                       0
+[ INFO] 2015-11-13 13:08:48 : n over 1k                     26501
+[ INFO] 2015-11-13 13:08:48 : n over 10k                       50
+[ INFO] 2015-11-13 13:08:48 : n with orf                    41951
+[ INFO] 2015-11-13 13:08:48 : mean orf percent              76.13
+[ INFO] 2015-11-13 13:08:48 : n90                             316
+[ INFO] 2015-11-13 13:08:48 : n70                             757
+[ INFO] 2015-11-13 13:08:48 : n50                            1461
+[ INFO] 2015-11-13 13:08:48 : n30                            2372
+[ INFO] 2015-11-13 13:08:48 : n10                            4291
+[ INFO] 2015-11-13 13:08:48 : gc                             0.45
+[ INFO] 2015-11-13 13:08:48 : gc skew                       -0.02
+[ INFO] 2015-11-13 13:08:48 : at skew                       -0.04
+[ INFO] 2015-11-13 13:08:48 : cpg ratio                       1.8
+[ INFO] 2015-11-13 13:08:48 : bases n                           0
+[ INFO] 2015-11-13 13:08:48 : proportion n                    0.0
+[ INFO] 2015-11-13 13:08:48 : linguistic complexity          0.15
+[ INFO] 2015-11-13 13:08:48 : Contig metrics done in 34 seconds
+[ INFO] 2015-11-13 13:08:48 : Calculating read diagnostics...
+[ INFO] 2015-11-13 15:35:44 : Read mapping metrics:
+[ INFO] 2015-11-13 15:35:44 : -----------------------------------
+[ INFO] 2015-11-13 15:35:44 : fragments                 117330602
+[ INFO] 2015-11-13 15:35:44 : fragments mapped          106871509
+[ INFO] 2015-11-13 15:35:44 : p fragments mapped             0.91
+[ INFO] 2015-11-13 15:35:44 : good mappings              89409568
+[ INFO] 2015-11-13 15:35:44 : p good mapping                 0.76
+[ INFO] 2015-11-13 15:35:44 : bad mappings               17461941
+[ INFO] 2015-11-13 15:35:44 : potential bridges             59202
+[ INFO] 2015-11-13 15:35:44 : bases uncovered            11182131
+[ INFO] 2015-11-13 15:35:44 : p bases uncovered              0.12
+[ INFO] 2015-11-13 15:35:44 : contigs uncovbase             80231
+[ INFO] 2015-11-13 15:35:44 : p contigs uncovbase            0.75
+[ INFO] 2015-11-13 15:35:44 : contigs uncovered             25899
+[ INFO] 2015-11-13 15:35:44 : p contigs uncovered            0.24
+[ INFO] 2015-11-13 15:35:44 : contigs lowcovered            50693
+[ INFO] 2015-11-13 15:35:44 : p contigs lowcovered           0.47
+[ INFO] 2015-11-13 15:35:44 : contigs segmented             18509
+[ INFO] 2015-11-13 15:35:44 : p contigs segmented            0.17
+[ INFO] 2015-11-13 15:35:44 : Read metrics done in 8816 seconds
+[ INFO] 2015-11-13 15:35:44 : No reference provided, skipping comparative diagnostics
+[ INFO] 2015-11-13 15:35:44 : TRANSRATE ASSEMBLY SCORE     0.0669
+[ INFO] 2015-11-13 15:35:44 : -----------------------------------
+[ INFO] 2015-11-13 15:35:44 : TRANSRATE OPTIMAL SCORE      0.3771
+[ INFO] 2015-11-13 15:35:44 : TRANSRATE OPTIMAL CUTOFF     0.3307
+[ INFO] 2015-11-13 15:35:44 : good contigs                  42753
+[ INFO] 2015-11-13 15:35:44 : p good contigs                  0.4
+[ INFO] 2015-11-13 15:35:44 : Writing contig metrics for each contig to /nobackup/data5/skeletonema_sex_project/test/assembly-test/transrate-eval/paired-end_assembly_sorted+readnorm/Trinity/contigs.csv
+[ INFO] 2015-11-13 15:36:24 : Writing analysis results to assemblies.csv
+Done with script
+Fri Nov 13 15:36:24 CET 2015
