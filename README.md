@@ -295,7 +295,8 @@ Transrate can only be used for paired end assemblies but it doesn't require any 
 Problematic:   
 If unpaired reads exist in the data, the evaluation is stopped. My paired end reads has been sorted and orphan reads has been put into a separate file, and these orphan reads compose roughly 10% of the total reads used to construct the assembly, which means that 10% of reads used to produce the assembly is not used in the evaluation of it.   
 
-In the end I chose to trust the Transrate-score, removing the paired end assembly with readnormalization.   
+Transrate is the newer of the softwares, and according to the tests they did to compare the ability of the two softwares to measure assembly accuracy on simulated data, Transrate received a better score. 
+In the end I chose to trust the Transrate-score, removing the paired end assembly with readnormalization. I will also use Transrate for future evaluation of paired end reads.     
 
  
 ###Merging assemblies/Removing redundant contigs  
