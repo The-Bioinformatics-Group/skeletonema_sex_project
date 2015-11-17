@@ -279,10 +279,42 @@ These scores are not that great.
 But at this point the project has been standing still for too long and I want to make progress. If the assembly turns out to have poor quality later on, then this might need to be revisited, although I doubt it.
 Based on these scores, Assembly1 will be merged with the best-quality single-end assembly, and Assembly2 will be removed to conserve disk space.  
 Still, I will run Detonate with the discovered fragment length before I remove Assembly2.   
+Detonate scores strive towards coming as close to 0 as possible. Meaning larger negative values signify a poorer assembly.   
 Detonate score:    
+A1:-13205216495.69   
+A2:-12844110715.92   
+Unfortunately these scores do not agree.   
+The question is, what score should be trusted?  
 
-###Merging of Single and Paired end assemblies  
+Detonate requires three parameters to carry out its evaluation beyond the data, either single end or paired end.   
+The first parameter is, in the case of single end reads, average read length, and in paired end reads, average fragment length. The other two parameters are average transcript length and standard deviation of transcript length from the species or a closely related species.   
+Problematic:  
+Average transcript length and standard deviation of transcript length is unknown in S. Marinoi. Instead the human values for this has been used, and it is then questionable how reliable the evaluation is.    
 
+Transrate can only be used for paired end assemblies but it doesn't require any extra information beyond the data.   
+Problematic:   
+If unpaired reads exist in the data, the evaluation is stopped. My paired end reads has been sorted and orphan reads has been put into a separate file, and these orphan reads compose roughly 10% of the total reads used to construct the assembly, which means that 10% of reads used to produce the assembly is not used in the evaluation of it.   
+
+In the end I chose to trust the Transrate-score, removing the paired end assembly with readnormalization.   
+
+ 
+###Merging assemblies/Removing redundant contigs  
+
+Assembly of reads often result in falsely reported isoforms due to sequencing errors or small geneti variation between samples.
+These redundant contigs reduces the effectiveness of differential expression analysis by for instance allocating reads between many similar contigs when they in reality originate from one particular gene.    
+This will be especially relevant for the merging of the two assemblies, one consisting of the single-end reads and the other of paired end reads.      
+To merge the single and paired-end assemblies and remove redundant contigs from the mega-assembly, Corset will be used (tried CD-HIT-EST, but it seemed difficult to distinguish between isoforms+paralogs from false isoforms caused by sequencing errors etc using this program).
+
+Corset hierarchically clusters contigs based on the proportion of shared reads and expression patterns between samples. For this it requires separate bam-files containing alignments for each sample against the assembly, where all reads from the sample has been multi-mapped to the contigs.     
+The multi-mapped reads are used as a proxy for detecting sequence similarity between the contigs, as well as providing information about the expression level of the contigs. Contigs with a low number of mapped reads, less than 10 reads are filtered out. Corset clusters contigs based on shared reads, but seperates contigs when different expression patterns between samples are observed. The distance between any two contigs is defined in relation to the number of reads that are shared between contigs such that a lower proportion of shared reads results in a larger distance. Genes that share sequence, such as paralogues, are likely to have small distsances, as many reads are shared. Corset seperates them by comparing relative expression. If the relative expression between them is not constant, the distance between them is set to max.   
+The clusters that are generated from this Corset run will be evaluated, and depending on the results, either the clustered merged or the mega-assembly will be used in the differential expression.   
+
+####Aligning with Bowtie
+
+Aligned each individual sample, paired end and single end reads, separately to first the mega-assembly then the merged assembly.   
+
+
+####Merging with Corset
 
 ####Mega-assembly
 This assembly was made using all filtered and trimmed data, both single and paired end data in the same trinity run.  
