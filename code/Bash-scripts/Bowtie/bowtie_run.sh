@@ -11,7 +11,7 @@ OUTPUT=/nobackup/data5/skeletonema_sex_project/test/assembly-test/read-mapping_m
 wait
 DATA=/nobackup/data5/skeletonema_sex_project/test/data-test/skeletonema-pairend-data/fastq_quality_filter_results
 wait
-bowtie2 -a --end-to-end -x $ASSEMBLY/mega-assembly-bowtie2-ref -1 $DATA/1F_fastq-q-filt_sorted.fastq -2 $DATA/1R_fastq-q-filt_sorted.fastq -U $DATA/1F_fastq-q-filt_singletons.fastq,$DATA/1R_fastq-q-filt_singletons.fastq -S $OUTPUT/alignment.sam
+bowtie2 -a --end-to-end -p 10 -x $ASSEMBLY/mega-assembly-bowtie2-ref -1 $DATA/1F_fastq-q-filt_sorted.fastq -2 $DATA/1R_fastq-q-filt_sorted.fastq -U $DATA/1F_fastq-q-filt_singletons.fastq,$DATA/1R_fastq-q-filt_singletons.fastq -S $OUTPUT/alignment_fast.sam
 wait
 echo "Done with script" 
 date

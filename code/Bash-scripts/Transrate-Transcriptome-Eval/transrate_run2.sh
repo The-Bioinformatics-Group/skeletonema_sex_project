@@ -1,6 +1,6 @@
 #!/bin/bash
 #$ -cwd
-#$ -q node0
+#$ -q high_mem
 #$ -o /nobackup/data5/skeletonema_sex_project/test/assembly-test/transrate-eval/paired-end_assembly+readnorm/stdout_transrate.txt
 #$ -e /nobackup/data5/skeletonema_sex_project/test/assembly-test/transrate-eval/paired-end_assembly+readnorm/stderr_transrate.txt
 #$ -j y

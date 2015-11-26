@@ -1,6 +1,6 @@
 #!/bin/bash
 #$ -cwd
-#$ -q node0
+#$ -q high_mem
 #$ -o stdout_searchforpairs3.txt
 #$ -e stderr_searchforpairs3.txt
 #$ -j y
@@ -11,18 +11,24 @@ FWDFILE=/nobackup/data5/skeletonema_sex_project/test/data-test/skeletonema-paire
 REVFILE=/nobackup/data5/skeletonema_sex_project/test/data-test/skeletonema-pairend-data/fastq_quality_filter_results/1R_fastq-q-filt.fq
 SAM=/nobackup/data5/skeletonema_sex_project/test/assembly-test/paired_end_assembly/align_and_estimate_abundance/pairedend.sam
 ASSEMBLY=/nobackup/data5/skeletonema_sex_project/test/assembly-test/paired_end_assembly/Trinity.fasta
-wait
-grep -e"HISEQ" $SAM | cut -d$'\t' -f"9" | grep -e "341" >> $TEMPLOC/numtemplates341bp.txt
+NUM=150
 wait
 grep -e"HISEQ" $SAM | cut -d$'\t' -f"9" >> $TEMPLOC/numtemplatestotal.txt
 wait
 TEMPLATETOT=$(wc $TEMPLOC/numtemplatestotal.txt | cut -d" " -f2)
-TEMPLNUM=$(wc $TEMPLOC/numtemplates341bp.txt | cut -d" " -f2)
 wait
-echo "TOTAL TEMPLATE NUM: $TEMPLATETOT "
+echo "Total templates in SAM file: $TEMPLATETOT "
+for i in $(seq 1 1000);
+do
+NUM=$((NUM+1))
 wait
-echo "TOTAL 341bp TEMPLATE NUM: $TEMPLNUM " 
+grep -e "$NUM" $TEMPLOC/numtemplatestotal.txt > $TEMPLOC/numtemplatesXbp.txt
 wait
+TEMPLNUM=$(wc $TEMPLOC/numtemplatesXbp.txt | cut -d" " -f2)
+wait
+echo "Templates of $NUM in length: $TEMPLNUM " 
+wait
+done
 echo "Done with script" 
 date
 

@@ -29,7 +29,7 @@ OUTPUTSPEC=$DATA/$RNAFILE
 wait
 touch $OUTPUT/sample${NUM}/alignment.sam
 wait
-bowtie2 -a --end-to-end -x $ASSEMBLY/mega-assembly-bowtie2-ref -U $OUTPUTSPEC -S $OUTPUT/sample${NUM}/alignment.sam
+bowtie2 -a --end-to-end --threads 4 -x $ASSEMBLY/mega-assembly-bowtie2-ref -U $OUTPUTSPEC -S $OUTPUT/sample${NUM}/alignment.sam
 wait
 done
 wait

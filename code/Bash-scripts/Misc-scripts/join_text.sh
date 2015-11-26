@@ -1,38 +1,35 @@
 #!/bin/bash
 #$ -cwd
-#$ -q sandbox
-#$ -e /nobackup/data5/skeletonema_sex_project/data/rna-sex-data/stderr_joindata.txt
-#$ -o /nobackup/data5/skeletonema_sex_project/data/rna-sex-data/stdout_joindata.txt
+#$ -q high_mem
+#$ -e /nobackup/data5/skeletonema_sex_project/test/data-test/skeletonema-pairend-data/fastq_quality_filter_results/stderr_joindata.txt
+#$ -o /nobackup/data5/skeletonema_sex_project/test/data-test/skeletonema-pairend-data/fastq_quality_filter_results/stdout_joindata.txt
 #$ -j y
 #$ -S /bin/bash
-
-
-#This script will join together all seperate raw RNA-sex data
-
+wait
+DATALOC=/nobackup/data5/skeletonema_sex_project/test/data-test/skeletonema-pairend-data/fastq_quality_filter_results
 wait
 echo "Starting join-data script"
 wait
-ls /nobackup/data5/skeletonema_sex_project/data/rna-sex-data | grep -e "txt" > /nobackup/data5/skeletonema_sex_project/test/temporary_files/ls-output_joinraw.txt
+echo $DATALOC
+cat $DATALOC/1F_fastq-q-filt_sorted.fastq >> $DATALOC/1F_sorted+singletons.fq
 wait
-NUMFILES=$(wc /nobackup/data5/skeletonema_sex_project/test/temporary_files/ls-output_joinraw.txt | cut -d " " -f2)
+echo "2"
+cat $DATALOC/1F_fastq-q-filt_singletons.fastq >> $DATALOC/1F_sorted+singletons.fq
 wait
-echo "There are $NUMFILES files to be joined in the specified folder"
-NUM=0
-for i in $(seq 1 $NUMFILES);
-do
-NUM=$((NUM+1))
+echo "3"
+cat $DATALOC/2F_fastq-q-filt_sorted.fastq >> $DATALOC/2F_sorted+singletons.fq
 wait
-echo "Adding number $NUM file to the file RNA-sex_all_raw.txt"
+cat $DATALOC/2F_fastq-q-filt_singletons.fastq >> $DATALOC/2F_sorted+singletons.fq
 wait
-RNASEQFILE=$(sed "${NUM}q;d" /nobackup/data5/skeletonema_sex_project/test/temporary_files/ls-output_joinraw.txt | cut -d"." -f1)
+echo "5"
+cat $DATALOC/1R_fastq-q-filt_sorted.fastq >> $DATALOC/1R_sorted+singletons.fq
 wait
-echo "Name: $RNASEQFILE "
+cat $DATALOC/1R_fastq-q-filt_singletons.fastq >> $DATALOC/1R_sorted+singletons.fq
 wait
-cat /nobackup/data5/skeletonema_sex_project/data/rna-sex-data/${RNASEQFILE}.txt >> /nobackup/data5/skeletonema_sex_project/data/rna-sex-data/RNA-sex_all_raw.txt
+cat $DATALOC/2R_fastq-q-filt_sorted.fastq >> $DATALOC/2R_sorted+singletons.fq
 wait
-echo "Done adding $RNASEQFILE to file RNA-sex_all_raw.txt"
-done
+echo "last one"
+cat $DATALOC/2R_fastq-q-filt_singletons.fastq >> $DATALOC/2R_sorted+singletons.fq
 wait
-rm /nobackup/data5/skeletonema_sex_project/test/temporary_files/ls-output_joinraw.txt
 echo "Done with script!"
 date

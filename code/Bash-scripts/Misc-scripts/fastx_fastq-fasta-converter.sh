@@ -6,7 +6,7 @@
 #$ -j y
 #$ -S /bin/bash
 wait
-fastq_to_fasta -i /nobackup/data5/skeletonema_sex_project/test/assembly-test/large-assemblies+eval/mega-assembly/treated-assemblies/cd-hit-est-dedupe1/cd-hit-est1/merged_settings1.fasta -o /nobackup/data5/skeletonema_sex_project/test/assembly-test/large-assemblies+eval/mega-assembly/treated-assemblies/cd-hit-est-dedupe1/cd-hit-est1/mega-assembly-dedupe1cdhitest1.fasta
+fastq_to_fasta -i /nobackup/data5/skeletonema_sex_project/test/assembly-test/large-assemblies+eval/mega-assembly/treated-assemblies/cd-hit-est-dedupe1/cd-hit-est3/megaassembly_settings3.fasta -o /nobackup/data5/skeletonema_sex_project/test/assembly-test/large-assemblies+eval/mega-assembly/treated-assemblies/cd-hit-est-dedupe1/cd-hit-est3/mega-assembly2-dedupe1cdhitest3.fasta
 wait
 echo "Done with script!"
 date

@@ -12,7 +12,7 @@
 wait
 echo "Starting fastqc script"
 wait
-ls /nobackup/data5/skeletonema_sex_project/test/data-test/skeletonema-pairend-data/fastq_quality_filter_results | grep -e "txt" > /nobackup/data5/skeletonema_sex_project/test/temporary_files/ls-output_fastqc_pair.txt
+ls /nobackup/data5/skeletonema_sex_project/test/data-test/skeletonema-pairend-data/fastq_quality_filter_results | grep -e "txt" | grep -v "readcount" > /nobackup/data5/skeletonema_sex_project/test/temporary_files/ls-output_fastqc_pair.txt
 wait
 NUMFILES=$(wc /nobackup/data5/skeletonema_sex_project/test/temporary_files/ls-output_fastqc_pair.txt | cut -d " " -f2)
 wait

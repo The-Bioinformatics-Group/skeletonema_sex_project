@@ -7,14 +7,14 @@
 #$ -S /bin/bash
 wait
 TEMPLOC=/nobackup/data5/skeletonema_sex_project/test/temporary_files
-FWDFILE=/nobackup/data5/skeletonema_sex_project/test/data-test/skeletonema-pairend-data/fastq_quality_filter_results/1F_fastq-q-filt.fq
-REVFILE=/nobackup/data5/skeletonema_sex_project/test/data-test/skeletonema-pairend-data/fastq_quality_filter_results/1R_fastq-q-filt.fq
+FWDFILE=/nobackup/data5/skeletonema_sex_project/test/data-test/skeletonema-pairend-data/fastq_quality_filter_results/1F_fastq-q-filt_sorted.fastq
+REVFILE=/nobackup/data5/skeletonema_sex_project/test/data-test/skeletonema-pairend-data/fastq_quality_filter_results/1R_fastq-q-filt_sorted.fastq
 SAM=/nobackup/data5/skeletonema_sex_project/test/assembly-test/paired_end_assembly/align_and_estimate_abundance/pairedend.sam
 ASSEMBLY=/nobackup/data5/skeletonema_sex_project/test/assembly-test/paired_end_assembly/Trinity.fasta
 READNUM=0
 READMATCH=0
 wait
-more +7000 -1000 $FWDFILE |grep -e "@" -m 100 | cut -d " " -f1 | cut -d "@" -f2 > ${TEMPLOC}/100reads.txt
+more +9000 -1000 $FWDFILE |grep -e "@" -m 100 | cut -d " " -f1 | cut -d "@" -f2 > ${TEMPLOC}/100reads.txt
 for i in $(seq 1 100);
 do
 READNUM=$(($READNUM + 1))
