@@ -1,13 +1,13 @@
 #!/bin/bash
 #$ -cwd
-#$ -q node0
-#$ -o /nobackup/data5/skeletonema_sex_project/test/assembly-test/read-mapping_mega-assembly/stdout_bowtie_single.txt
-#$ -e /nobackup/data5/skeletonema_sex_project/test/assembly-test/read-mapping_mega-assembly/stderr_bowtie_single.txt
+#$ -q high_mem
+#$ -o /nobackup/data5/skeletonema_sex_project/test/assembly-test/large-assemblies+eval/merged-assembly_3inone/cd-hit-est/4/transrate/3merged_settings4/bowtie_aligned/stdout_bowtie_single.txt
+#$ -e /nobackup/data5/skeletonema_sex_project/test/assembly-test/large-assemblies+eval/merged-assembly_3inone/cd-hit-est/4/transrate/3merged_settings4/bowtie_aligned/stderr_bowtie_single.txt
 #$ -j y
 #$ -S /bin/bash
 wait
-ASSEMBLY=/nobackup/data5/skeletonema_sex_project/test/assembly-test/mega-assembly_trinity/bowtieindex
-OUTPUT=/nobackup/data5/skeletonema_sex_project/test/assembly-test/read-mapping_mega-assembly
+ASSEMBLY=/nobackup/data5/skeletonema_sex_project/test/assembly-test/large-assemblies+eval/merged-assembly_3inone/cd-hit-est/4/transrate/3merged_settings4/bowtie_aligned/transrate-good+rsem-good_index
+OUTPUT=/nobackup/data5/skeletonema_sex_project/test/assembly-test/large-assemblies+eval/merged-assembly_3inone/cd-hit-est/4/transrate/3merged_settings4/bowtie_aligned
 DATA=/nobackup/data5/skeletonema_sex_project/test/data-test/rna-sex/fastq_quality_filter_results
 TEMP=/nobackup/data5/skeletonema_sex_project/test/temporary_files/rnasex-bowtie.txt
 NUM=0
@@ -29,7 +29,7 @@ OUTPUTSPEC=$DATA/$RNAFILE
 wait
 touch $OUTPUT/sample${NUM}/alignment.sam
 wait
-bowtie2 -a --end-to-end --threads 4 -x $ASSEMBLY/mega-assembly-bowtie2-ref -U $OUTPUTSPEC -S $OUTPUT/sample${NUM}/alignment.sam
+bowtie2 -a --end-to-end --threads 20 -x $ASSEMBLY/3mergedcdhitest4transdetofiltered-index -U $OUTPUTSPEC -S $OUTPUT/sample${NUM}/alignment.sam
 wait
 done
 wait
