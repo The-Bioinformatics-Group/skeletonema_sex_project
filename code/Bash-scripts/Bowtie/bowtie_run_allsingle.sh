@@ -1,13 +1,13 @@
 #!/bin/bash
 #$ -cwd
 #$ -q high_mem
-#$ -o /nobackup/data5/skeletonema_sex_project/differential-expression-analysis/bowtie2-read-mapping/stdout_bowtie.txt
-#$ -e /nobackup/data5/skeletonema_sex_project/differential-expression-analysis/bowtie2-read-mapping/stderr_bowtie.txt
+#$ -o /nobackup/data5/skeletonema_sex_project/differential-expression-analysis/bowtie2-read-mapping/mapping2/stdout_bowtie.txt
+#$ -e /nobackup/data5/skeletonema_sex_project/differential-expression-analysis/bowtie2-read-mapping/mapping2/stderr_bowtie.txt
 #$ -j y
 #$ -S /bin/bash
 wait
 ASSEMBLY=/nobackup/data5/skeletonema_sex_project/differential-expression-analysis/bowtie2-read-mapping/transcriptome-bowtie2index
-OUTPUT=/nobackup/data5/skeletonema_sex_project/differential-expression-analysis/bowtie2-read-mapping
+OUTPUT=/nobackup/data5/skeletonema_sex_project/differential-expression-analysis/bowtie2-read-mapping/mapping2
 DATA=/nobackup/data5/skeletonema_sex_project/test/data-test/rna-sex/fastq_quality_filter_results
 TEMP=/nobackup/data5/skeletonema_sex_project/test/temporary_files/rnasex-bowtie.txt
 NUM=0
@@ -31,7 +31,7 @@ mkdir $OUTPUT/sample${NUM}
 wait
 touch $OUTPUT/sample${NUM}/alignment.sam
 wait
-bowtie2 -a --end-to-end --threads 20 -x $ASSEMBLY/s-marinoi_bowtie2_transcriptomeindex -U $OUTPUTSPEC -S $OUTPUT/sample${NUM}/alignment.sam
+bowtie2 --end-to-end --threads 20 -x $ASSEMBLY/s-marinoi_bowtie2_transcriptomeindex -U $OUTPUTSPEC -S $OUTPUT/sample${NUM}/alignment.sam
 wait
 done
 wait
