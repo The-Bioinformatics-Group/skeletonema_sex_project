@@ -1,0 +1,122 @@
+-catch_rsh /opt/gridengine/default/spool/compute-0-7/active_jobs/19247.1/pe_hostfile
+compute-0-7
+compute-0-7
+compute-0-7
+compute-0-7
+compute-0-7
+compute-0-7
+compute-0-7
+compute-0-7
+compute-0-7
+compute-0-7
+compute-0-7
+compute-0-7
+compute-0-7
+compute-0-7
+compute-0-7
+compute-0-7
+compute-0-7
+compute-0-7
+compute-0-7
+compute-0-7
+There are 14 files to be mapped in the specified directory
+Mapping reads from CL10_fastq-q-filt.fq to s-marinoi transcriptome
+13684698 reads; of these:
+  13684698 (100.00%) were unpaired; of these:
+    299424 (2.19%) aligned 0 times
+    8552662 (62.50%) aligned exactly 1 time
+    4832612 (35.31%) aligned >1 times
+97.81% overall alignment rate
+Mapping reads from CL11_fastq-q-filt.fq to s-marinoi transcriptome
+12451907 reads; of these:
+  12451907 (100.00%) were unpaired; of these:
+    272254 (2.19%) aligned 0 times
+    7714513 (61.95%) aligned exactly 1 time
+    4465140 (35.86%) aligned >1 times
+97.81% overall alignment rate
+Mapping reads from CL17_fastq-q-filt.fq to s-marinoi transcriptome
+12433913 reads; of these:
+  12433913 (100.00%) were unpaired; of these:
+    299152 (2.41%) aligned 0 times
+    8176186 (65.76%) aligned exactly 1 time
+    3958575 (31.84%) aligned >1 times
+97.59% overall alignment rate
+Mapping reads from CL18_fastq-q-filt.fq to s-marinoi transcriptome
+9934456 reads; of these:
+  9934456 (100.00%) were unpaired; of these:
+    264357 (2.66%) aligned 0 times
+    6205534 (62.46%) aligned exactly 1 time
+    3464565 (34.87%) aligned >1 times
+97.34% overall alignment rate
+Mapping reads from CS12_fastq-q-filt.fq to s-marinoi transcriptome
+14146691 reads; of these:
+  14146691 (100.00%) were unpaired; of these:
+    402615 (2.85%) aligned 0 times
+    8510962 (60.16%) aligned exactly 1 time
+    5233114 (36.99%) aligned >1 times
+97.15% overall alignment rate
+Mapping reads from CS13_fastq-q-filt.fq to s-marinoi transcriptome
+11901014 reads; of these:
+  11901014 (100.00%) were unpaired; of these:
+    302628 (2.54%) aligned 0 times
+    7184944 (60.37%) aligned exactly 1 time
+    4413442 (37.08%) aligned >1 times
+97.46% overall alignment rate
+Mapping reads from CS14_fastq-q-filt.fq to s-marinoi transcriptome
+11926017 reads; of these:
+  11926017 (100.00%) were unpaired; of these:
+    284293 (2.38%) aligned 0 times
+    7158940 (60.03%) aligned exactly 1 time
+    4482784 (37.59%) aligned >1 times
+97.62% overall alignment rate
+Mapping reads from CS19_fastq-q-filt.fq to s-marinoi transcriptome
+11156722 reads; of these:
+  11156722 (100.00%) were unpaired; of these:
+    351118 (3.15%) aligned 0 times
+    6674959 (59.83%) aligned exactly 1 time
+    4130645 (37.02%) aligned >1 times
+96.85% overall alignment rate
+Mapping reads from CS20_fastq-q-filt.fq to s-marinoi transcriptome
+8921452 reads; of these:
+  8921452 (100.00%) were unpaired; of these:
+    267998 (3.00%) aligned 0 times
+    5413293 (60.68%) aligned exactly 1 time
+    3240161 (36.32%) aligned >1 times
+97.00% overall alignment rate
+Mapping reads from CS21_fastq-q-filt.fq to s-marinoi transcriptome
+13340027 reads; of these:
+  13340027 (100.00%) were unpaired; of these:
+    377061 (2.83%) aligned 0 times
+    8132616 (60.96%) aligned exactly 1 time
+    4830350 (36.21%) aligned >1 times
+97.17% overall alignment rate
+Mapping reads from NoCL15_fastq-q-filt.fq to s-marinoi transcriptome
+10053889 reads; of these:
+  10053889 (100.00%) were unpaired; of these:
+    266545 (2.65%) aligned 0 times
+    6256958 (62.23%) aligned exactly 1 time
+    3530386 (35.11%) aligned >1 times
+97.35% overall alignment rate
+Mapping reads from NoCL16_fastq-q-filt.fq to s-marinoi transcriptome
+13146971 reads; of these:
+  13146971 (100.00%) were unpaired; of these:
+    349035 (2.65%) aligned 0 times
+    8190873 (62.30%) aligned exactly 1 time
+    4607063 (35.04%) aligned >1 times
+97.35% overall alignment rate
+Mapping reads from NoCL8_fastq-q-filt.fq to s-marinoi transcriptome
+10212256 reads; of these:
+  10212256 (100.00%) were unpaired; of these:
+    234794 (2.30%) aligned 0 times
+    6379984 (62.47%) aligned exactly 1 time
+    3597478 (35.23%) aligned >1 times
+97.70% overall alignment rate
+Mapping reads from NoCL9_fastq-q-filt.fq to s-marinoi transcriptome
+12490479 reads; of these:
+  12490479 (100.00%) were unpaired; of these:
+    332119 (2.66%) aligned 0 times
+    8039993 (64.37%) aligned exactly 1 time
+    4118367 (32.97%) aligned >1 times
+97.34% overall alignment rate
+Done with script
+Mon Dec 14 17:31:08 CET 2015
