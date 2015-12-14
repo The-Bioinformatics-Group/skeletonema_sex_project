@@ -1,18 +1,31 @@
 #!/bin/bash
 #$ -cwd
-#$ -q high_mem
-#$ -o /nobackup/data5/skeletonema_sex_project/test/assembly-test/paired_end_assembly/align_and_estimate_abundance/stdout_trin_RSEM.txt
-#$ -e /nobackup/data5/skeletonema_sex_project/test/assembly-test/paired_end_assembly/align_and_estimate_abundance/stderr_trin_RSEM.txt
+#$ -q node0
+#$ -o /nobackup/data5/skeletonema_sex_project/differential-expression-analysis/transcript-abundance-est/RSEM_1/stdout_trin_RSEM.txt
+#$ -e /nobackup/data5/skeletonema_sex_project/differential-expression-analysis/transcript-abundance-est/RSEM_1/stderr_trin_RSEM.txt
 #$ -j y
 #$ -S /bin/bash
-
-
 wait 
-
-/usr/local/bin/trinityrnaseq_r20140717/util/align_and_estimate_abundance.pl --transcripts /nobackup/data5/skeletonema_sex_project/test/assembly-test/paired_end_assembly/Trinity.fasta --seqType fq --left /nobackup/data5/skeletonema_sex_project/test/data-test/skeletonema-pairend-data/fastq_quality_filter_results/1F_fastq-q-filt_headerchange_sorted.fastq --right /nobackup/data5/skeletonema_sex_project/test/data-test/skeletonema-pairend-data/fastq_quality_filter_results/1R_fastq-q-filt_headerchange_sorted.fastq --est_method RSEM --coordsort_bam --aln_method bowtie --trinity_mode --output_dir /nobackup/data5/skeletonema_sex_project/test/assembly-test/paired_end_assembly/align_and_estimate_abundance
-
-
-
+SOFTWARE=/usr/local/bin/trinityrnaseq_r20140717/util/align_and_estimate_abundance.pl
+OUTPUT=/nobackup/data5/skeletonema_sex_project/differential-expression-analysis/transcript-abundance-est/RSEM_1
+ASSEMBLY=/nobackup/data5/skeletonema_sex_project/differential-expression-analysis/transcriptome/skeletonema-marinoi_transcriptome_unannotated.fasta
+DATA=/nobackup/data5/skeletonema_sex_project/test/data-test/rna-sex/fastq_quality_filter_results
+NUM=0
+TEMP=/nobackup/data5/skeletonema_sex_project/test/temporary_files/listofrnaseqfiles.txt
+wait
+ls $DATA | grep -e "fq" > $TEMP
+wait
+for i in $(seq 1 14);
+do
+NUM=$((NUM+1))
+wait
+RNAFILE=$(sed "${NUM}q;d" ${TEMP})
+wait
+$SOFTWARE --single $DATA/$RNAFILE --seqType fq --transcripts $ASSEMBLY --est_method RSEM --aln_method bowtie2 --output_dir $OUTPUT --thread_count 20 --fragment_length 51 --include_rsem_bam --prep_reference
+wait
+done
+wait
+rm $TEMP
 wait
 echo "Done with script" 
 date
