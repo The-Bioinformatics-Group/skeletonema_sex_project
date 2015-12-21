@@ -1,16 +1,16 @@
 #!/bin/bash
 #$ -cwd
-#$ -q sandbox
-#$ -o /nobackup/data5/skeletonema_sex_project/test/assembly-test/large-assemblies+eval/mega-assembly/treated-assemblies/cd-hit-est-dedupe1/cd-hit-est3/stdout_CD-HIT-EST3.txt
-#$ -e /nobackup/data5/skeletonema_sex_project/test/assembly-test/large-assemblies+eval/mega-assembly/treated-assemblies/cd-hit-est-dedupe1/cd-hit-est3/stderr-CDHITEST3.txt
+#$ -q node0
+#$ -o /nobackup/data5/skeletonema_sex_project/differential-expression-analysis/transcriptome/cd-hit-est-Reversetest/stdout_CD-HIT-EST.txt
+#$ -e /nobackup/data5/skeletonema_sex_project/differential-expression-analysis/transcriptome/cd-hit-est-Reversetest/stderr-CDHITEST.txt
 #$ -j y
 #$ -S /bin/bash
 wait
 SOFTWARE=/nobackup/data5/skeletonema_sex_project/software/cdhit-master/cd-hit-est
-ASSEMBLY=/nobackup/data5/skeletonema_sex_project/test/assembly-test/large-assemblies+eval/mega-assembly/treated-assemblies/cd-hit-est-dedupe1/mega-assembly-dedupe1.fq
-OUTPUT=/nobackup/data5/skeletonema_sex_project/test/assembly-test/large-assemblies+eval/mega-assembly/treated-assemblies/cd-hit-est-dedupe1/cd-hit-est3
+ASSEMBLY=/nobackup/data5/skeletonema_sex_project/differential-expression-analysis/transcriptome/skeletonema-marinoi_transcriptome_unannotated.fasta
+OUTPUT=/nobackup/data5/skeletonema_sex_project/differential-expression-analysis/transcriptome/cd-hit-est-Reversetest
 wait
-$SOFTWARE -i $ASSEMBLY -o $OUTPUT/megaassembly_settings3.fasta -T 4 -M 4000 -c 0.99 -G 0 -aL 0.90 -AL 100 -aS 0.99 -AS 30 
+$SOFTWARE -i $ASSEMBLY -o $OUTPUT/transcriptome-cdhitestreversetest.fasta -T 4 -M 20000 -n 10 -c 0.94 -r 1 
 wait
 echo "Done with script" 
 date
