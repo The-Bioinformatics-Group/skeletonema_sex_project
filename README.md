@@ -128,7 +128,7 @@ And is named:
 1_131004_AH72EEADXX_P705_101F_dual93_1.fastq
 1_131004_AH72EEADXX_P705_101F_dual93_2.fastq
 2_131004_AH72EEADXX_P705_101F_dual93_1.fastq
-2_131004_AH72EEADXX_P705_101F_dual93_2.fastq
+2_131004_AH72EEADXX_P705_101F_dual93_2.fastq        
 This data is strand specific and the only relevance to be found in their names for this project is simply:   
 Sample1 Forward reads  
 Sample1 Reverse reads    
@@ -246,7 +246,9 @@ A3: -3.5E+9
 A4: -3.4E+9   
 
 Based on this score. A4 was chosen as the best single end assembly, and the rest were removed to conserve disk space.   
-Details of the scores can be found in /test/assembly-test/detonate-eval/
+Details of the scores can be found in /test/assembly-test/detonate-eval/    
+This assembly can be found:    
+/nobackup/data5/skeletonema_sex_project/test/assembly-test/single_end-assembly_readnorm_trinity
 
 ####Paired end assemblies
 
@@ -278,12 +280,18 @@ A2: 0.0751
 These scores are not that great, but it could be noted that 10% of the data was not used in this evaluation due to them being orphan-reads.   
 
 Based on these scores, Assembly1 will be merged with the other two assemblies, and Assembly2 will be removed to conserve disk space.  
+This assembly can be found:    
+/nobackup/data5/skeletonema_sex_project/test/assembly-test/paired_end_assembly
  
+
 ###Creating assembly with all data (mega-assembly)   
 
 This assembly was made using all filtered and trimmed data, both single and paired end data in the same Trinity-run.   
 Used Trinity version: 2.1.1. With Java version: 1.7.   
 Used normalize max read coverage: 40.   
+This assembly can be found:    
+/nobackup/data5/skeletonema_sex_project/test/assembly-test/mega-assembly    
+
 
 ###Merging assemblies/Removing redundant contigs using CD-HIT-EST
 
@@ -291,6 +299,12 @@ Assembly of reads often result in falsely reported isoforms due to sequencing er
 These redundant contigs reduces the effectiveness of differential expression analysis by for instance allocating reads between many similar contigs when they in reality originate from one particular gene.    
 This will be especially relevant for the merging of the three assemblies, one consisting of the single-end reads, another of paired end reads, and the third with all data together at once.          
 
+Because these assemblies were built separately, many contigs had the same name. To avoid problems in future steps the contig-names within each assembly were changed by addition of a letter before the contignames of each assembly.    
+S for singleend   
+P for pairedend    
+M for megaassembly   
+
+These header-changed fasta-files were merged together into one, and different settings in CD-HIT-EST were used to remove redundancy and different alleles while conserving paralogs.   
 
 
 
