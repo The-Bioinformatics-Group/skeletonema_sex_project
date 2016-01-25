@@ -394,6 +394,12 @@ This script utilizes the trinity perl script: /usr/local/bin/trinityrnaseq_r2014
 The output from this script is the count matrix, with all contigs and how many reads are mapped to each one from each sample. This can be be found here:   
 /nobackup/data5/skeletonema_sex_project/differential-expression-analysis/transcript-abundance-est/RSEM_1/count_matrix_corrected/matrix.counts.matrix      
 
+An R script was created to conduct the Differential Expression analysis using the package EdgeR.    
+This script can be located at:   
+/nobackup/data5/skeletonema_sex_project/differential-expression-analysis/differential-expression/DEanalysisSexproject.R    
+This script loads the matrix.count.matrix file, and starts the DE analysis in parallel, for comparison between small+cue vs large+cue for time1 and time2, respectively. It starts out by filtering out poorly expressed contigs (keeping contigs that have at least above 1 CPM in at least 2 samples). It then normalizes the counts according to sample library size. To investigate the similarity between the samples and see how well the replicate correlate MDS-plots are created. The dispersion of expression across replicates is estimated and the tagwise, common and trend estimation is plotted in BCV plots. Then the data is fitted to the estimation model. The contrasts are made between experimental groups, small+cue vs large+cue. Finally the names of significantly DE contigs with less than 5%FDR is outputted in a table: DE_Contignames_2(or 3).ods, and a table of 10000 contigs with DE values, sorted on P-value is outputted into a separate table.    
+The bash script located in the same directory: grep_for_DEtranscripts.sh, extracts the significantly DE contigs from the list of 10000 and puts them in a separate table.    
+ 
 
 
 
