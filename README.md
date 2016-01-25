@@ -304,15 +304,95 @@ S for singleend
 P for pairedend    
 M for megaassembly   
 
-These header-changed fasta-files were merged together into one, and different settings in CD-HIT-EST were used to remove redundancy and different alleles while conserving paralogs.   
+These header-changed fasta-files were merged together into one, and different settings in CD-HIT-EST were used to remove redundancy and different alleles while conserving paralogs.
+Location of merged assembly with and without header:    
+/nobackup/data5/skeletonema_sex_project/test/assembly-test/large-assemblies+eval/merged-assembly_3inone/    
 
+Scripts used to run CD-HIT-EST are located:   
+/nobackup/data5/skeletonema_sex_project/code/Bash-scripts/CD-HIT-EST   
 
+Ran CD-HIT-EST several times using different settings and investigated the cluster-sizes and number of contigs.   
+						Contigs:         
+Paired						72727    
+Single						33004    
+Mega						55670    
+Original Merged					161401    
+CD-HIT-EST, run:        Settings:         
+1			-c 1 -n 10		140248    
+2			-c 0.99 -n 10		103719    
+8			-c 0.98 -n 10		83251    
+9			-c 0.97 -n 10		68155     
+3			-c 0.96 -n 10		58690    
+4			-c 0.94 -n 10		48799    
+5			-c 0.91 -n 10		41472     
+6			-c 0.91 -n 9		41474     
+7			-c 0.90 -n 8		39815    
 
+Plotted the cluster-sizes ( how many clusters contained 1 contig, 2 contigs, etc...) in a histogram using script located at:    
+/nobackup/data5/skeletonema_sex_project/code/Bash-scripts/CD-HIT-EST/clstr_stats.sh
 
+In the merged, un-filtered assembly one would expect there to first of all be redundant contigs of the same allele, assembled separately in the 3 different runs from the same data. We would also expect different alleles, different isoforms, and lastly paralogs.         
+This setting of CD-HIT-EST compares identity not across the entirety of both sequences, but across the length of the shorter of the two compared sequences. For example, -c 94 means that if contig1 is aligned to a shorter contig2 of 500nt, then as long as 470 of contig2 is identical to the representative, contig1, the contig2 will be clustered to contig1. Any smaller number of aligned nts and contig2 would not be clustered to contig1.   
+CD-HIT-EST 4 was selected as the best setting for filtering.    
+This and the other CD-HIT-EST results can be found in:   
+/nobackup/data5/skeletonema_sex_project/test/assembly-test/large-assemblies+eval/merged-assembly_3inone/cd-hit-est    
 
+###Transrate with Thalassiosira proteome-ref
 
+To filter out faulty assembled transcripts like chimeric transcripts, Transrate was used which utilizes the information in paired end data and the thalassiosira proteome-reference to evaluate the support for the contigs in the assembly, providing a likelihood score for each and removing all contigs with a poor score.   
+Since the single end data is not used in this evaluation, this means that unique contigs to the single end data would likely be removed, but these will be retrieved separately later using RSEM-eval which performs a similar evaluation but unlike transrate, can also handle single end data.  
+The evaluation was carried out using the script located in:    
+/nobackup/data5/skeletonema_sex_project/code/Bash-scripts/Transrate-Transcriptome-Eval/transrate_run_mergedas.sh
 
+This evaluation used the filtered and trimmed paired end data located in:   
+/nobackup/data5/skeletonema_sex_project/test/data-test/skeletonema-pairend-data/fastq_quality_filter_results   
+Together with the Thalassiosira proteome reference located in:    
+/nobackup/data5/skeletonema_sex_project/test/assembly-test/large-assemblies+eval/merged-assembly_3inone/cd-hit-est/thalassiosira_proteome-reference/FilteredModels_proteins_Thaps3_geneModels_FilteredModels2_aa_fixed.fasta    
+Against the assembly located in:    
+/nobackup/data5/skeletonema_sex_project/test/assembly-test/large-assemblies+eval/merged-assembly_3inone/cd-hit-est/4/3merged_settings4.fasta
+
+The results of this evaluation were can be found here and in child-directories:    
+/nobackup/data5/skeletonema_sex_project/test/assembly-test/large-assemblies+eval/merged-assembly_3inone/cd-hit-est/4/transrate    
+					Contigs:          
+good.3merged_settings4.fasta		26300    
+bad.3merged_settings4.fasta		22514    
  
+###Picking out unique transcripts from sex-project data
+
+The transrate evaluation step potentially removed transcripts that are unique to the sex-project data, and which might be very relevant to this project. These transcripts will be in the list of "bad" contigs.    
+To return these contigs to the transcriptome all the single end RNA-seq data will be mapped to the list of "good" contigs, and all reads that did not map to the existing contigs will later be used to extract contigs from the list of "bad" contigs based on the support of the reads using RSEM-eval.    
+To map the single end reads and pick out the unmapped reads, the script mapping_filtering.sh was used. Located here:    
+/nobackup/data5/skeletonema_sex_project/code/Bash-scripts/Misc-scripts/mapping_filtering.sh    
+The output from this are two fastq files with the mapped reads and the unmapped reads respectively. These can be found here:   
+/nobackup/data5/skeletonema_sex_project/test/assembly-test/large-assemblies+eval/merged-assembly_3inone/cd-hit-est/4/transrate/3merged_settings4/search-uniquetranscripts_2015_12_08    
+
+The unmapped reads were next mapped against the "bad contigs" sorted out during the transrate step due to having poor support from the thalassiosira proteome and the paired end reads. This was done using RSEM-eval which uses bowtie to map the reads. This was done using the script located here:    
+/nobackup/data5/skeletonema_sex_project/code/Bash-scripts/Detonate-Transcriptome-Eval/detonate_rsem_runlarge2.sh    
+RSEM-eval also requires information regarding the average transcript length and standard deviation of transcript length of the organism in question, or a closely related species. For this thalassiosira was used. Calculated to:   
+Mean transcript length: 1556.003     
+Transcript length SD: 1289.489    
+
+The result of this analysis is saved at:    
+/nobackup/data5/skeletonema_sex_project/test/assembly-test/large-assemblies+eval/merged-assembly_3inone/cd-hit-est/4/transrate/3merged_settings4/search-uniquetranscripts_2015_12_08/RSEM-eval-results    
+The file, badcontigs_searchunique.score.isoforms.results, holds the score and stats of all contigs.     
+From this file, all contigs with a positive "contig impact score" was extracted and merged with the file containing the "good contigs" from the transrate filtering step.    
+This is the final transcriptome and can be located:   
+/nobackup/data5/skeletonema_sex_project/differential-expression-analysis/transcriptome/skeletonema-marinoi_transcriptome_unannotated.fasta
+
+##Differential expression analysis
+
+First need to map the reads to the transcriptome to produce a countmatrix where each read is only mapped once.   
+The reads were multi-mapped to the transcriptome using the script located in:
+/nobackup/data5/skeletonema_sex_project/code/Bash-scripts/Transcript-abundance-estimation/trinity_RSEM_a-evl.sh    
+This script utilzies the trinit perl script: /usr/local/bin/trinityrnaseq_r20140717/util/align_and_estimate_abundance.pl     
+It script uses bowtie2 for mapping the single end reads one sample at a time to the transcriptome. The resulting bam files are located here:
+/nobackup/data5/skeletonema_sex_project/differential-expression-analysis/transcript-abundance-est/RSEM_1/sampleX    
+The mapping settings in this script is fairly strict, which reduces the number of ambigiously mapped reads.   
+The multimapped reads were resolved using the script located in:   
+/nobackup/data5/skeletonema_sex_project/code/Bash-scripts/Transcript-abundance-estimation/trinity_countmatrix.sh    
+This script utilizes the trinity perl script: /usr/local/bin/trinityrnaseq_r20140717/util/abundance_estimates_to_matrix.pl     
+The output from this script is the count matrix, with all contigs and how many reads are mapped to each one from each sample. This can be be found here:   
+/nobackup/data5/skeletonema_sex_project/differential-expression-analysis/transcript-abundance-est/RSEM_1/count_matrix_corrected/matrix.counts.matrix      
 
 
 
