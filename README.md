@@ -340,12 +340,12 @@ This and the other CD-HIT-EST results can be found in:
 ###Transrate with Thalassiosira proteome-ref
 
 To filter out faulty assembled transcripts like chimeric transcripts, Transrate was used which utilizes the information in paired end data and the thalassiosira proteome-reference to evaluate the support for the contigs in the assembly, providing a likelihood score for each and removing all contigs with a poor score.   
-Since the single end data is not used in this evaluation, this means that unique contigs to the single end data would likely be removed, but these will be retrieved separately later using RSEM-eval which performs a similar evaluation but unlike transrate, can also handle single end data.  
+Since the single end data is not used in this evaluation, this means that unique contigs to the single end data would likely be removed, but these will be retrieved separately later using RSEM-eval which performs a similar evaluation but unlike transrate, can also handle single end data. Another issue is that the pairedend data lost some read pairs in the data-filteringstep which means that some reads are orphaned (roughly 8%). Transrate can only perform its evaluation with complete readpairs, which means that only this data was used in the evaluation.   
 The evaluation was carried out using the script located in:    
 /nobackup/data5/skeletonema_sex_project/code/Bash-scripts/Transrate-Transcriptome-Eval/transrate_run_mergedas.sh
 
-This evaluation used the filtered and trimmed paired end data located in:   
-/nobackup/data5/skeletonema_sex_project/test/data-test/skeletonema-pairend-data/fastq_quality_filter_results   
+This evaluation used the filtered and trimmed paired end data with complete readpairs located in:   
+/nobackup/data5/skeletonema_sex_project/test/data-test/skeletonema-pairend-data/fastq_quality_filter_results/*_sorted.fastq    
 Together with the Thalassiosira proteome reference located in:    
 /nobackup/data5/skeletonema_sex_project/test/assembly-test/large-assemblies+eval/merged-assembly_3inone/cd-hit-est/thalassiosira_proteome-reference/FilteredModels_proteins_Thaps3_geneModels_FilteredModels2_aa_fixed.fasta    
 Against the assembly located in:    
