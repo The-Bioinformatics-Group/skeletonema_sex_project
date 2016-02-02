@@ -17,7 +17,7 @@ ____________________________________________________
 Originally 21 RNA samples were intended to be sequenced from 7 different cultures during 3 different time points after exposure to the increased salinity resulting in sexual behaviour. However, something happened to the samples from the 1st timepoint and as such only 14 samples remains.  
 
 The raw sequence data can be found at the location:   
-/nobackup/data5/skeletonema_sex_project/data
+/nobackup/data5/skeletonema_sex_project/data/raw-data
 
 The data started off in a compressed .gz format. It has subsequently been extracted and renamed according to the sample name:  
 
@@ -123,7 +123,7 @@ Time: 2
 
 This data was used in a previous project carried out by someone else, and the idea here is to use it simply to get a more complete trancriptome reference assembly to map the single end reads against.   
 The raw data can be found in:   
-/nobackup/data5/skeletonema_sex_project/data/pairedend-data   
+/nobackup/data5/skeletonema_sex_project/data/raw-data/pairedend-data   
 And is named:   
 1_131004_AH72EEADXX_P705_101F_dual93_1.fastq
 1_131004_AH72EEADXX_P705_101F_dual93_2.fastq
@@ -161,7 +161,7 @@ Red flags were shown in three measurements, Per base sequence content and Per ba
 One warning was shown in Kmer Content, with several overrepresented hexamers which is likely due to the hexamer-priming step during the generation of the cDNA from the RNA-fragments. Some hexamers are more efficient primers than others which leads to a more cDNA from certain parts of the transcripts, and consequently an overrepresentation of these kmers. This is also what is responsible for the previously mentioned red flags in Per base sequence content and GC content, though it is surprising that the pattern extends over the hexamer up to 13 bases, but this has been attempted to be explained by a sequence specificity of the polymerase. Either way, this means that there is no point in trimming these 13 bases as they are not errors.   
 The sequence duplication level is also not a problem but is to be expected in RNA-seq data given that some transcripts may be highly expressed and be present in multiple copies.   
 There was no warning about overrepresented sequences meaning that it is unlikely to contain many adapter sequences.   
-The details of the fastqc analysis can be found in data/rna-sex-data/fastqc-results   
+The details of the fastqc analysis can be found in data/raw-data/rna-sex-data/fastqc-results   
 
 
 #####FastQC results - paired end data
@@ -169,15 +169,15 @@ The details of the fastqc analysis can be found in data/rna-sex-data/fastqc-resu
 Read size: 151nts.  
 Similar to the single end data there are overrepresented kmers which likely results from the same hexamer-priming step in the library preperation. This as a result is probably also responsible for the bias in per base sequence content and per base GC content in the first 13 nts similar to the single end data.  
 The difference between the single end data and this is that the forward reads in this data has overrepresented sequences in the form of illumina truseq adaptors, and that the reverse data has pretty poor quality towards the end of the reads in the last 35% of the reads. But the mean quality of all samples are pretty good.     
-The details of the fastqc analysis can be found in data/pairedend-data/fastqcresults-pairedend-data   
+The details of the fastqc analysis can be found in data/raw-data/pairedend-data/fastqcresults-pairedend-data   
 
 ####Filtering and Trimming data
 
 Treated both single end and paired end data the same.      
 Software used: cutadapt, fastq-quality-filter.   
-The specific settings and the trimmed and filtered data can be found in the /test/data-test directory   
+The specific settings and the trimmed and filtered data can be found in the data/treated-data/ directory   
 First cutadapt was used to remove adapters and trim low quality ends, then fastq-quality-filter was used to remove reads with poor quality.   
-The results of the cutadapt can be found in each respective data-folder in /test/data-test/X/cutadapt-reports   
+The results of the cutadapt can be found in each respective data-folder in data/treated-data/X/cutadapt-reports   
 
 
 ####FastQC results - single end data
@@ -195,6 +195,8 @@ Overrepresented sequences, meaning the adapter sequences were removed during the
 
 Due to requirements in subsequent analysis' the orphan reads produced from the filtering and trimming of the paired end reads needed to be sorted out to realign the read pairs.
 This was done using the script located in: /code/Perl-scripts/removeunpairedreads.pl
+These sorted pair-data can be found together with the other paired-end data containing orphaned reads and only the singlets sorted out, here:   
+data/treated-data/skeletonema-pairend-data/fastq_quality_filter_results/*sorted.fastq    
 
 ##Creating a reference transcriptome
 
@@ -345,7 +347,7 @@ The evaluation was carried out using the script located in:
 /nobackup/data5/skeletonema_sex_project/code/Bash-scripts/Transrate-Transcriptome-Eval/transrate_run_mergedas.sh
 
 This evaluation used the filtered and trimmed paired end data with complete readpairs located in:   
-/nobackup/data5/skeletonema_sex_project/test/data-test/skeletonema-pairend-data/fastq_quality_filter_results/*_sorted.fastq    
+/nobackup/data5/skeletonema_sex_project/data/treated-data/skeletonema-pairend-data/fastq_quality_filter_results/*_sorted.fastq    
 Together with the Thalassiosira proteome reference located in:    
 /nobackup/data5/skeletonema_sex_project/test/assembly-test/large-assemblies+eval/merged-assembly_3inone/cd-hit-est/thalassiosira_proteome-reference/FilteredModels_proteins_Thaps3_geneModels_FilteredModels2_aa_fixed.fasta    
 Against the assembly located in:    
@@ -376,8 +378,8 @@ The result of this analysis is saved at:
 /nobackup/data5/skeletonema_sex_project/test/assembly-test/large-assemblies+eval/merged-assembly_3inone/cd-hit-est/4/transrate/3merged_settings4/search-uniquetranscripts_2015_12_08/RSEM-eval-results    
 The file, badcontigs_searchunique.score.isoforms.results, holds the score and stats of all contigs.     
 From this file, all contigs with a positive "contig impact score" was extracted and merged with the file containing the "good contigs" from the transrate filtering step.    
-This is the final transcriptome and can be located:   
-/nobackup/data5/skeletonema_sex_project/differential-expression-analysis/transcriptome/skeletonema-marinoi_transcriptome_unannotated.fasta
+This is the final transcriptome and can, along with other transcriptome-versions be located:   
+/nobackup/data5/skeletonema_sex_project/transcriptome/skeletonema-marinoi_transcriptome_unannotated.fasta      
 
 ##Differential expression analysis
 
