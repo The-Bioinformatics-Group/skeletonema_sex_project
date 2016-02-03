@@ -109,6 +109,8 @@ Transcript length SD: 1289.489
 The result of this analysis is saved at:    
 /nobackup/data5/skeletonema_sex_project/test/assembly-test/large-assemblies+eval/merged-assembly_3inone/cd-hit-est/4/transrate/3merged_settings4/search-uniquetranscripts_2015_12_08/RSEM-eval-results    
 The file, badcontigs_searchunique.score.isoforms.results, holds the score and stats of all contigs.     
-From this file, all contigs with a positive "contig impact score" was extracted and merged with the file containing the "good contigs" from the transrate filtering step.  
+From this file, all contigs with a positive "contig impact score" was extracted and merged with the file containing the "good contigs" from the transrate filtering step.
+Positive scoring contigs: 13360             
 The final results of this is the file:       
 skeletonema-marinoi_transcriptome_unannotated.fasta          
+Contigs: 39660          
