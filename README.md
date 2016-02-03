@@ -386,8 +386,8 @@ This is the final transcriptome and can, along with other transcriptome-versions
 First need to map the reads to the transcriptome to produce a countmatrix where each read is only mapped once.   
 The reads were multi-mapped to the transcriptome using the script located in:
 /nobackup/data5/skeletonema_sex_project/code/Bash-scripts/Transcript-abundance-estimation/trinity_RSEM_a-evl.sh    
-This script utilzies the trinit perl script: /usr/local/bin/trinityrnaseq_r20140717/util/align_and_estimate_abundance.pl     
-It script uses bowtie2 for mapping the single end reads one sample at a time to the transcriptome. The resulting bam files are located here:
+This script utilizes the trinity perl-script: /usr/local/bin/trinityrnaseq_r20140717/util/align_and_estimate_abundance.pl     
+This script uses bowtie2 for mapping the single end reads one sample at a time to the transcriptome. The resulting bam files are located here:
 /nobackup/data5/skeletonema_sex_project/differential-expression-analysis/transcript-abundance-est/RSEM_1/sampleX    
 The mapping settings in this script is fairly strict, which reduces the number of ambigiously mapped reads.   
 The multimapped reads were resolved using the script located in:   
@@ -396,17 +396,29 @@ This script utilizes the trinity perl script: /usr/local/bin/trinityrnaseq_r2014
 The output from this script is the count matrix, with all contigs and how many reads are mapped to each one from each sample. This can be be found here:   
 /nobackup/data5/skeletonema_sex_project/differential-expression-analysis/transcript-abundance-est/RSEM_1/count_matrix_corrected/matrix.counts.matrix      
 
-An R script was created to conduct the Differential Expression analysis using the package EdgeR.    
-This script can be located at:   
-/nobackup/data5/skeletonema_sex_project/differential-expression-analysis/differential-expression/DEanalysisSexproject.R    
+Two R-scripts were created to conduct the Differential Expression analysis, one which uses all samples to perform the filtering of lowly expressed contigs, and dispersion estimation, and one script which only uses the samples of the experimental groups that are compared to eachother.    
+Both R-scripts were created to conduct the Differential Expression analysis using the package EdgeR. (R-version 3.0.2).   
+
+The script that only carries out dispersion estimation using the samples that are compared, can be located at:   
+/nobackup/data5/skeletonema_sex_project/differential-expression-analysis/differential-expression/DifferentialExpression_limitedestimation/DEanalysisSexproject_limitedestimation.R    
 This script loads the matrix.count.matrix file, and starts the DE analysis in parallel, for comparison between small+cue vs large+cue for time1 and time2, respectively. It starts out by filtering out poorly expressed contigs (keeping contigs that have at least above 1 CPM in at least 2 samples). It then normalizes the counts according to sample library size. To investigate the similarity between the samples and see how well the replicate correlate MDS-plots are created. The dispersion of expression across replicates is estimated and the tagwise, common and trend estimation is plotted in BCV plots. Then the data is fitted to the estimation model. The contrasts are made between experimental groups, small+cue vs large+cue. Finally the names of significantly DE contigs with less than 5%FDR is outputted in a table: DE_Contignames_2(or 3).ods, and a table of 10000 contigs with DE values, sorted on P-value is outputted into a separate table.    
-The bash script located in the same directory: grep_for_DEtranscripts.sh, extracts the significantly DE contigs from the list of 10000 and puts them in a separate table.    
+The bash script located in the same directory: grep_for_DEtranscripts.sh, extracts the significantly DE contigs from the list of 10000 and puts them in a separate table.
+Significantly DE contigs can be found in files:       
+DE2_limitedestimation.ods        
+DE3_limitedestimation.ods         
  
+The script that uses all samples for the dispersion estimation and filtering of poorly expressed transcripts can be located:      
+/nobackup/data5/skeletonema_sex_project/differential-expression-analysis/differential-expression/DifferentialExpression_allsamples/DEanalysisSexproject_allsamples.R       
+The difference between this and the previous script is that this creates a DGE-object and design-matrix containing samples from all experimental groups, and the subsequent filtering of poorly expressed transcripts, and the dispersion estimation uses data from all samples. Another difference is that this script also compares the different timepoints to eachother. Comparing which genes relevant to cellsize and sex has changed expression from timepoint 2 and 3.               
+Like the previous script this produces an output of two different tables. One consisting of all the names of those contigs considered significantly differentially expressed, *contignames.txt, and the other containing the DE-stats of 10000 contigs sorted on P-value.        
+A bash-script: grep-for_DEtranscripts.sh is used to pick out the significant DE-contigs of the name-table from the table containing the 10000contigs.      
+Significantly DE contigs can be found in files:        
+DE2_allsamples.ods       
+DE3_allsamples.ods        
+DE2V3_allsamples.ods           
+DE3V2_allsamples.ods        
 
-
-
-
-
+##Blasting for sex-genes
 
 
 
