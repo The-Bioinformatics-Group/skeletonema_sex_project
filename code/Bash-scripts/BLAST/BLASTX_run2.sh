@@ -1,21 +1,17 @@
 #!/bin/bash
 #$ -cwd
-#$ -q high_mem
-#$ -o /nobackup/data5/skeletonema_sex_project/differential-expression-analysis/blast_searches/stdout_BLASTX_againstuniprot.txt
-#$ -e /nobackup/data5/skeletonema_sex_project/differential-expression-analysis/blast_searches/stderr_BLASTX_againstuniprot.txt
+#$ -q node0
+#$ -o /state/partition6/mathias_temp/stdout_BLASTx_annotation_0ph.txt
+#$ -e /state/partition6/mathias_temp/stderr_BLASTx_annotation_0ph.txt
 #$ -j y
 #$ -S /bin/bash
 wait
-ANALYSISLOC1=/nobackup/data5/skeletonema_sex_project/differential-expression-analysis/blast_searches/58athal+scere-meiosisgenes
-ANALYSISLOC2=/nobackup/data5/skeletonema_sex_project/differential-expression-analysis/blast_searches/flagellagenes
+DBLOC1=/state/partition6/mathias_temp/references/thal_database/thalassiosira_pseudonana_proteinannota$
+DBLOC2=/state/partition6/mathias_temp/references/phaeda_database/phaeodactylum_tricornutum_proteinann$
+TRANSCRIPTOME=/state/partition6/mathias_temp/skeletonema-marinoi_transcriptome_unannotated.fasta
+OUTPUT=/state/partition6/mathias_temp/blastx_output
 wait
-blastx -db swissprot -query ${ANALYSISLOC1}/58meiosisgenes_contighits.fasta -evalue 0.01 -max_target_seqs 5 -word_size 6 -gapopen 11 -gapextend 1 -outfmt 7 -show_gis -remote -matrix BLOSUM62 -out $ANALYSISLOC1/uniprot_results_outfmt7_meiosisgenes.txt
-wait
-blastx -db swissprot -query ${ANALYSISLOC1}/58meiosisgenes_contighits.fasta -evalue 0.01 -num_alignments 5 -word_size 6 -gapopen 11 -gapextend 1 -outfmt 0 -show_gis -remote -matrix BLOSUM62 -out $ANALYSISLOC1/uniprot_results_outfmt0_meiosisgenes.txt
-wait
-blastx -db swissprot -query ${ANALYSISLOC2}/flagellagenes_contighits.fasta -evalue 0.01 -max_target_seqs 5 -word_size 6 -gapopen 11 -gapextend 1 -outfmt 7 -show_gis -remote -matrix BLOSUM62 -out $ANALYSISLOC2/uniprot_results_outfmt7_flagellagenes.txt
-wait
-blastx -db swissprot -query ${ANALYSISLOC2}/flagellagenes_contighits.fasta -evalue 0.01 -num_alignments 5 -word_size 6 -gapopen 11 -gapextend 1 -outfmt 0 -show_gis -remote -matrix BLOSUM62 -out $ANALYSISLOC2/uniprot_results_outfmt0_flagellagenes.txt
+blastx -query $TRANSCRIPTOME -db $DBLOC2 -outfmt 0 -num_alignments 10 -matrix BLOSUM62 -evalue 0.01 -gapopen 11 -gapextend 1 -word_size 6 -out $OUTPUT/blastresults_outfmt0_transcriptomevsphaeoda.txt -num_threads 10
 wait
 echo "Done with script" 
 date
