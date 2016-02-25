@@ -6,8 +6,8 @@
 #$ -j y
 #$ -S /bin/bash
 wait
-DBLOC1=/state/partition6/mathias_temp/references/thal_database/thalassiosira_pseudonana_proteinannota$
-DBLOC2=/state/partition6/mathias_temp/references/phaeda_database/phaeodactylum_tricornutum_proteinann$
+DBLOC1=/state/partition6/mathias_temp/references/thal_database/thalassiosira_pseudonana_proteinannotation.fasta
+DBLOC2=/state/partition6/mathias_temp/references/phaeda_database/phaeodactylum_tricornutum_proteinannotation.fasta
 TRANSCRIPTOME=/state/partition6/mathias_temp/skeletonema-marinoi_transcriptome_unannotated.fasta
 OUTPUT=/state/partition6/mathias_temp/blastx_output
 wait
