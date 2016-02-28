@@ -1,0 +1,116 @@
+Dynein beta chain, ciliary OS=Heliocidaris crassispina PE=1 SV=1
+Dynein heavy chain 17, axonemal OS=Mus musculus GN=Dnah17 PE=1 SV=2
+Dynein beta chain, ciliary OS=Tripneustes gratilla PE=1 SV=1
+Dynein beta chain, flagellar outer arm OS=Chlamydomonas reinhardtii GN=ODA4 PE=3 SV=1
+Dynein heavy chain 9, axonemal OS=Homo sapiens GN=DNAH9 PE=1 SV=3
+Dynein intermediate chain 2, ciliary OS=Heliocidaris crassispina PE=2 SV=1
+Dynein intermediate chain 3, ciliary OS=Heliocidaris crassispina PE=2 SV=1
+Dynein, 70 kDa intermediate chain, flagellar outer arm OS=Chlamydomonas reinhardtii GN=ODA6 PE=1 SV=1
+Dynein light chain 1, axonemal OS=Chlamydomonas reinhardtii GN=LC1 PE=1 SV=1
+Tctex1 domain-containing protein 1-B (Fragment) OS=Xenopus laevis GN=tctex1d1-b PE=2 SV=1
+Dynein 14 kDa light chain, flagellar outer arm OS=Chlamydomonas reinhardtii PE=1 SV=1
+Dynein light chain roadblock-type 1 OS=Homo sapiens GN=DYNLRB1 PE=1 SV=3
+Dynein light chain 2, cytoplasmic OS=Rattus norvegicus GN=Dynll2 PE=1 SV=1
+Dynein light chain 4, axonemal OS=Mus musculus GN=Dnal4 PE=3 SV=2
+Calmodulin-like protein OS=Caenorhabditis elegans GN=cal-1 PE=3 SV=1
+Troponin C OS=Branchiostoma lanceolatum PE=1 SV=1
+Dynein-1-alpha heavy chain, flagellar inner arm I1 complex OS=Chlamydomonas reinhardtii GN=DHC1 PE=1 SV=1
+Dynein-1-beta heavy chain, flagellar inner arm I1 complex OS=Chlamydomonas reinhardtii GN=DHC10 PE=1 SV=1
+Dynein heavy chain 2, axonemal OS=Mus musculus GN=Dnah2 PE=1 SV=1
+Dynein-1-beta heavy chain, flagellar inner arm I1 complex OS=Chlamydomonas reinhardtii GN=DHC10 PE=1 SV=1
+Dynein heavy chain 6, axonemal OS=Homo sapiens GN=DNAH6 PE=2 SV=3
+Dynein heavy chain 1, axonemal OS=Rattus norvegicus GN=Dnah1 PE=2 SV=2
+Dynein heavy chain 3, axonemal OS=Mus musculus GN=Dnah3 PE=1 SV=2
+Uracil phosphoribosyltransferase OS=Roseiflexus sp. (strain RS-1) GN=upp PE=3 SV=1
+WD repeat-containing protein 63 OS=Homo sapiens GN=WDR63 PE=2 SV=1
+WD repeat-containing protein 78 OS=Rattus norvegicus GN=Wdr78 PE=2 SV=1
+33 kDa inner dynein arm light chain, axonemal OS=Strongylocentrotus purpuratus PE=1 SV=1
+Dynein light chain Tctex-type 1 OS=Mus musculus GN=Dynlt1 PE=1 SV=1
+Tctex1 domain-containing protein 2 OS=Mus musculus GN=Tctex1d2 PE=1 SV=1
+Radial spoke head 1 homolog OS=Mus musculus GN=Rsph1 PE=1 SV=2
+Radial spoke head protein 4 homolog A OS=Mus musculus GN=Rsph4a PE=1 SV=2
+Radial spoke head protein 9 homolog OS=Mus musculus GN=Rsph9 PE=1 SV=1
+Radial spoke head 1 homolog OS=Mus musculus GN=Rsph1 PE=1 SV=2
+DnaJ homolog subfamily B member 1 OS=Mus musculus GN=Dnajb1 PE=1 SV=3
+Nucleoside diphosphate kinase 7 OS=Rattus norvegicus GN=Nme7 PE=1 SV=1
+Sperm-associated antigen 6 OS=Homo sapiens GN=SPAG6 PE=2 SV=1
+Sperm-associated antigen 16 protein OS=Mus musculus GN=Spag16 PE=1 SV=1
+Cytoplasmic dynein 2 light intermediate chain 1 OS=Rattus norvegicus GN=Dync2li1 PE=1 SV=2
+Intraflagellar transport protein 20 homolog OS=Danio rerio GN=ift20 PE=2 SV=1
+Intraflagellar transport protein 57 homolog OS=Bos taurus GN=IFT57 PE=1 SV=1
+Intraflagellar transport protein 80 homolog OS=Rattus norvegicus GN=Ift80 PE=2 SV=1
+Intraflagellar transport protein 80 homolog OS=Homo sapiens GN=IFT80 PE=1 SV=3
+Intraflagellar transport protein 81 homolog OS=Mus musculus GN=Ift81 PE=1 SV=4
+WD repeat-containing protein 35 OS=Mus musculus GN=Wdr35 PE=1 SV=3
+Tetratricopeptide repeat protein 21B OS=Mus musculus GN=Ttc21b PE=1 SV=1
+Intraflagellar transport protein 140 homolog OS=Homo sapiens GN=IFT140 PE=1 SV=1
+Intraflagellar transport protein 172 homolog OS=Mus musculus GN=Ift172 PE=1 SV=1
+Growth arrest-specific protein 8 homolog OS=Chlamydomonas reinhardtii GN=GAS8 PE=1 SV=1
+Cilia- and flagella-associated protein 58 OS=Homo sapiens GN=CFAP58 PE=1 SV=1
+IQ and AAA domain-containing protein 1-like OS=Homo sapiens GN=IQCA1L PE=3 SV=2
+EF-hand domain-containing protein 1 OS=Mus musculus GN=Efhc1 PE=1 SV=1
+DNA double-strand break repair Rad50 ATPase OS=Halobacterium salinarum (strain ATCC 700922 / JCM 11081 / NRC-1) GN=rad50 PE=3 SV=1
+Kinesin light chain OS=Caenorhabditis elegans GN=klc-2 PE=2 SV=2
+IQ domain-containing protein D OS=Homo sapiens GN=IQCD PE=2 SV=2
+Coiled-coil domain-containing protein 96 OS=Mus musculus GN=Ccdc96 PE=2 SV=1
+Coiled-coil domain-containing protein 65 OS=Bos taurus GN=CCDC65 PE=2 SV=1
+Intersectin-1 OS=Mus musculus GN=Itsn1 PE=1 SV=2
+IQ domain-containing protein G OS=Mus musculus GN=Iqcg PE=2 SV=1
+T-complex-associated testis-expressed protein 1 OS=Macaca fascicularis GN=TCTE1 PE=2 SV=1
+Uncharacterized protein C4orf22 homolog OS=Xenopus laevis PE=2 SV=1
+Bardet-Biedl syndrome 1 protein OS=Homo sapiens GN=BBS1 PE=1 SV=1
+Protein PTHB1 OS=Homo sapiens GN=BBS9 PE=1 SV=1
+Bardet-Biedl syndrome 5 protein homolog OS=Danio rerio GN=bbs5 PE=2 SV=1
+Bardet-Biedl syndrome 7 protein homolog OS=Mus musculus GN=Bbs7 PE=1 SV=1
+Bardet-Biedl syndrome 2 protein homolog OS=Mus musculus GN=Bbs2 PE=1 SV=1
+ADP-ribosylation factor-like protein 6 OS=Mus musculus GN=Arl6 PE=1 SV=1
+Tubulin alpha-2 chain OS=Pelvetia fastigiata GN=TUBA2 PE=2 SV=1
+Tubulin alpha-2 chain OS=Arabidopsis thaliana GN=TUBA2 PE=2 SV=2
+Tubulin alpha chain OS=Oxytricha granulifera PE=3 SV=1
+Tubulin alpha-1C chain OS=Bos taurus GN=TUBA1C PE=1 SV=1
+Tubulin beta chain OS=Tetrahymena thermophila GN=BTU1 PE=1 SV=1
+Tubulin beta chain OS=Trichuris trichiura PE=3 SV=1
+Tubulin beta chain OS=Stylonychia lemnae GN=TUBB1 PE=3 SV=1
+Tubulin beta-2 chain OS=Glycine max GN=TUBB2 PE=3 SV=1
+Actin-3 OS=Limulus polyphemus PE=1 SV=1
+Actin-1/2 OS=Podocoryna carnea GN=ACTIA PE=2 SV=1
+Actin, cytoplasmic 1 OS=Xenopus tropicalis GN=actb PE=2 SV=1
+Putative actin-22 OS=Dictyostelium discoideum GN=act22 PE=3 SV=1
+Actin-related protein 6 OS=Oryza sativa subsp. japonica GN=ARP6 PE=2 SV=1
+Actin-2 OS=Pisum sativum PE=2 SV=1
+Actin-related protein 6 OS=Oryza sativa subsp. japonica GN=ARP6 PE=2 SV=1
+Actin, non-muscle 6.2 OS=Hydra vulgaris PE=3 SV=1
+Caltractin OS=Scherffelia dubia PE=1 SV=1
+Caltractin (Fragment) OS=Tetraselmis striata PE=2 SV=1
+Calcium-binding mitochondrial carrier protein SCaMC-1 OS=Oryctolagus cuniculus GN=SLC25A24 PE=1 SV=1
+Kinesin-like protein KLP1 OS=Chlamydomonas reinhardtii GN=KLP1 PE=2 SV=1
+Serine/threonine-protein phosphatase PP1-beta catalytic subunit OS=Xenopus tropicalis GN=ppp1cb PE=2 SV=1
+Serine/threonine-protein phosphatase PP1 OS=Emericella nidulans (strain FGSC A4 / ATCC 38163 / CBS 112.46 / NRRL 194 / M139) GN=bimG PE=2 SV=1
+Cytoplasmic dynein 2 heavy chain 1 OS=Tripneustes gratilla GN=DYH1B PE=2 SV=2
+Kinesin-associated protein 3 OS=Strongylocentrotus purpuratus GN=KAP115 PE=1 SV=1
+Microtubule-associated protein RP/EB family member 1 OS=Xenopus tropicalis GN=mapre1 PE=2 SV=1
+Glycogen synthase kinase-3 alpha OS=Rattus norvegicus GN=Gsk3a PE=1 SV=1
+Shaggy-related protein kinase kappa OS=Arabidopsis thaliana GN=ASK10 PE=2 SV=2
+Calmodulin-related protein OS=Petunia hybrida GN=CAM53 PE=2 SV=2
+Calmodulin OS=Macrocystis pyrifera PE=2 SV=3
+Calmodulin OS=Xenopus laevis GN=calm1 PE=1 SV=2
+Putative calmodulin-like protein 6 OS=Oryza sativa subsp. japonica GN=CML6 PE=3 SV=1
+EF-hand calcium-binding domain-containing protein 2 OS=Mus musculus GN=Efcab2 PE=1 SV=1
+Calmodulin-like protein 5 OS=Homo sapiens GN=CALML5 PE=1 SV=2
+Calmodulin (Fragment) OS=Strongylocentrotus purpuratus PE=2 SV=1
+Sjoegren syndrome nuclear autoantigen 1 OS=Homo sapiens GN=SSNA1 PE=1 SV=2
+Heat shock 70 kDa protein 4L OS=Mus musculus GN=Hspa4l PE=1 SV=2
+Heat shock 70 kDa protein cognate 4 OS=Manduca sexta PE=2 SV=1
+Heat shock cognate 70 kDa protein 2 OS=Solanum lycopersicum GN=HSC-2 PE=2 SV=1
+Heat shock cognate 70 kDa protein 1 OS=Dictyostelium discoideum GN=hspB PE=1 SV=2
+Heat shock protein SSA1 OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) GN=SSA1 PE=1 SV=4
+Heat shock protein SSA2 OS=Candida albicans (strain SC5314 / ATCC MYA-2876) GN=SSA2 PE=1 SV=3
+Phototropin-2 OS=Arabidopsis thaliana GN=PHOT2 PE=1 SV=2
+Blue-light photoreceptor OS=Listeria innocua serovar 6a (strain CLIP 11262) GN=lin0792 PE=3 SV=1
+Phototropin-2 OS=Arabidopsis thaliana GN=PHOT2 PE=1 SV=2
+Ribosomal protein S6 kinase alpha-4 OS=Mus musculus GN=Rps6ka4 PE=1 SV=2
+Phototropin-1 OS=Arabidopsis thaliana GN=PHOT1 PE=1 SV=1
+Serine/threonine-protein phosphatase 2A 65 kDa regulatory subunit A gamma isoform OS=Arabidopsis thaliana GN=PP2AA3 PE=1 SV=2
+Serine/threonine-protein phosphatase 4 regulatory subunit 1 OS=Rattus norvegicus GN=Ppp4r1 PE=1 SV=1
+Protein PPLZ12 OS=Lupinus polyphyllus GN=PPLZ12 PE=2 SV=1
+ABC transporter ATP-binding protein ARB1 OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) GN=ARB1 PE=1 SV=1
