@@ -19,7 +19,7 @@ Originally 21 RNA samples were intended to be sequenced from 7 different culture
 The raw sequence data can be found at the location:   
 /nobackup/data5/skeletonema_sex_project/data/raw-data
 
-The data started off in a compressed .gz format. It has subsequently been extracted and renamed according to the sample name:  
+SAMPLE INFO:         
 
 CL10.txt  
 Strain: 17BI    
@@ -152,7 +152,6 @@ Removed orphan-reads from paired end assembly.
 Ran fastqc on all samples using 4 processor-cores using script:   
 /code/Bash-scripts/FastQC-bash-scripts/fastqc_run.sh   
 
-
 #####FastQC results - single end data
 
 Read size: 51nts.  
@@ -161,7 +160,8 @@ Red flags were shown in three measurements, Per base sequence content and Per ba
 One warning was shown in Kmer Content, with several overrepresented hexamers which is likely due to the hexamer-priming step during the generation of the cDNA from the RNA-fragments. Some hexamers are more efficient primers than others which leads to a more cDNA from certain parts of the transcripts, and consequently an overrepresentation of these kmers. This is also what is responsible for the previously mentioned red flags in Per base sequence content and GC content, though it is surprising that the pattern extends over the hexamer up to 13 bases, but this has been attempted to be explained by a sequence specificity of the polymerase. Either way, this means that there is no point in trimming these 13 bases as they are not errors.   
 The sequence duplication level is also not a problem but is to be expected in RNA-seq data given that some transcripts may be highly expressed and be present in multiple copies.   
 There was no warning about overrepresented sequences meaning that it is unlikely to contain many adapter sequences.   
-The details of the fastqc analysis can be found in data/raw-data/rna-sex-data/fastqc-results   
+The details of the fastqc analysis can be found in:        
+data/raw-data/rna-sex-data/fastqc-results    
 
 
 #####FastQC results - paired end data
@@ -169,7 +169,8 @@ The details of the fastqc analysis can be found in data/raw-data/rna-sex-data/fa
 Read size: 151nts.  
 Similar to the single end data there are overrepresented kmers which likely results from the same hexamer-priming step in the library preperation. This as a result is probably also responsible for the bias in per base sequence content and per base GC content in the first 13 nts similar to the single end data.  
 The difference between the single end data and this is that the forward reads in this data has overrepresented sequences in the form of illumina truseq adaptors, and that the reverse data has pretty poor quality towards the end of the reads in the last 35% of the reads. But the mean quality of all samples are pretty good.     
-The details of the fastqc analysis can be found in data/raw-data/pairedend-data/fastqcresults-pairedend-data   
+The details of the fastqc analysis can be found in:      
+data/raw-data/pairedend-data/fastqcresults-pairedend-data   
 
 ####Filtering and Trimming data
 
@@ -199,8 +200,7 @@ These sorted pair-data can be found together with the other paired-end data cont
 data/treated-data/skeletonema-pairend-data/fastq_quality_filter_results/*sorted.fastq    
 
 ##Creating a reference transcriptome
-
-The plan here has changed throughout the project. But eventually it was decided to settle on this approach:   
+   
 Create three different assemblies using Trinity, one consisting solely of single end data, another of only paired end data, and finally one assembly with all data used together, then merge all 3 together and remove redundancy.    
 The reason for doing it this way is because different approaches have different advantages with regards to assembly quality. Trinity can use both single and paired end data to at once, however, doing so loses strand-specific information and gives Trinity less information to work with to create the most accurate assembly. In contrast, assembling single and paired end data separately maintains the strand-specific information, but instead lowly expressed transcripts might be lost due to a lack of sufficient read-support from either data-set, but which when combined could be assembled.   
 
@@ -383,21 +383,27 @@ This is the final transcriptome and can, along with other transcriptome-versions
 
 ##Differential expression analysis
 
-First need to map the reads to the transcriptome to produce a countmatrix where each read is only mapped once.   
-The reads were multi-mapped to the transcriptome using the script located in:
+####Creating a count-matrix 
+
+First needed to map the reads to the transcriptome to produce a countmatrix where each read is only mapped once.   
+The reads were multi-mapped to the transcriptome using the bash-script located in:
 /nobackup/data5/skeletonema_sex_project/code/Bash-scripts/Transcript-abundance-estimation/trinity_RSEM_a-evl.sh    
 This script utilizes the trinity perl-script: /usr/local/bin/trinityrnaseq_r20140717/util/align_and_estimate_abundance.pl     
 This script uses bowtie2 for mapping the single end reads one sample at a time to the transcriptome. The resulting bam files are located here:
 /nobackup/data5/skeletonema_sex_project/differential-expression-analysis/transcript-abundance-est/RSEM_1/sampleX    
 The mapping settings in this script is fairly strict, which reduces the number of ambigiously mapped reads.   
-The multimapped reads were resolved using the script located in:   
+The script also runs RSEM which resolves the multimapped reads before the final output.
+
+Next a script was used to combine the different BAM-files from the different samples and create a countmatrix. The bash-script to run this script is here:          
 /nobackup/data5/skeletonema_sex_project/code/Bash-scripts/Transcript-abundance-estimation/trinity_countmatrix.sh    
 This script utilizes the trinity perl script: /usr/local/bin/trinityrnaseq_r20140717/util/abundance_estimates_to_matrix.pl     
 The output from this script is the count matrix, with all contigs and how many reads are mapped to each one from each sample. This can be be found here:   
 /nobackup/data5/skeletonema_sex_project/differential-expression-analysis/transcript-abundance-est/RSEM_1/count_matrix_corrected/matrix.counts.matrix      
 
+####Differential Expression using EdgeR 3.12
+
 Two R-scripts were created to conduct the Differential Expression analysis, one which uses all samples to perform the filtering of lowly expressed contigs, and dispersion estimation, and one script which only uses the samples of the experimental groups that are compared to eachother.    
-Both R-scripts were created to conduct the Differential Expression analysis using the package EdgeR. (R-version 3.0.2).   
+Both R-scripts were created to conduct the Differential Expression analysis using the package EdgeR 3.12. (R-version 3.0.2).   
 
 The script that only carries out dispersion estimation using the samples that are compared, can be located at:   
 /nobackup/data5/skeletonema_sex_project/differential-expression-analysis/differential-expression/DifferentialExpression_limitedestimation/DEanalysisSexproject_limitedestimation.R    
@@ -412,11 +418,27 @@ The script that uses all samples for the dispersion estimation and filtering of 
 The difference between this and the previous script is that this creates a DGE-object and design-matrix containing samples from all experimental groups, and the subsequent filtering of poorly expressed transcripts, and the dispersion estimation uses data from all samples. Another difference is that this script also compares the different timepoints to eachother. Comparing which genes relevant to cellsize and sex has changed expression from timepoint 2 and 3.               
 Like the previous script this produces an output of two different tables. One consisting of all the names of those contigs considered significantly differentially expressed, *contignames.txt, and the other containing the DE-stats of 10000 contigs sorted on P-value.        
 A bash-script: grep-for_DEtranscripts.sh is used to pick out the significant DE-contigs of the name-table from the table containing the 10000contigs.      
-Significantly DE contigs can be found in files:        
+This script does the following comparisons between experimental groups for DE:      
+Small+Cue vs Large+Cue (Time2) = Sex + Size time 2
+Small+Cue vs Large+Cue (Time3) = Sex + Size time 3
+Large+Cue vs Large+NoCue (Time2) = Salt time 2
+Large+Cue vs Large+NoCue (Time3) = Salt time 3
+(Small+Cue vs Large+Cue) (Time2) vs (Small+Cue vs Large+Cue) (Time3) = Sex + Size over time
+
+
+Significantly DE contigs can be found in /results and files:        
 DE2_allsamples.ods       
 DE3_allsamples.ods        
 DE2V3_allsamples.ods           
 DE3V2_allsamples.ods        
+DE2salt_allsamples.ods     
+DE3salt_allsamples.ods         
+
+Contigs with logF threshold 1 can be found in /results/sortedlogF        
+
+The two DE-analysis exists as alternatives as it is difficult to determine the best option.    
+In the end for this project, it was decided to use the second option, wherein all samples were used for dispersion estimation.      
+
 
 ##Blasting for sex-genes
 
@@ -427,7 +449,7 @@ von Dassow et al, 2009		Transcriptome analysis of functional differentiation bet
 The first one provided a list of 58 meiosis-related proteins with corresponding accession-numbers.           
 These aminoacid fasta-sequences came when available from Arabidopsis Thaliana, and otherwise from Sacchaomyces Cerevisiaewere, and were downloaded from NCBI. These can be found here:         
 /nobackup/data5/skeletonema_sex_project/blast_for_sex-genes/58athal+scere-meiosisgenes/meiosis_athal+scerv.fa
-The second one provided a list of 126 proteins with the majority connected to flagella function from a variety of species but mainly Clamydomonas reinhardtii, also with accession-numbers.               
+The second one provided a list of X proteins with the majority connected to flagella function from a variety of species but mainly Clamydomonas reinhardtii, also with accession-numbers.               
 These aminoacid fasta-sequences were downloaded from Uniprot.       
 Next they were used as query in a tBLASTn search against the transcriptome which had been converted into a blastable database, located here:     
 /nobackup/data5/skeletonema_sex_project/differential-expression-analysis/transcriptome/transcriptome-blast_db      
@@ -435,17 +457,17 @@ Using these settings:
 -matrix BLOSUM62 -evalue 0.01 -gapopen 11 -gapextend 1 - word_size 6      
 This was run two times for each list of genes, one with outformat0 and one with outformat7.      
 The results of this are saved here:    
-/nobackup/data5/skeletonema_sex_project/blast_for_sex-genes/58athal+scere-meiosisgenes/blastresults_outfmt*        
-/nobackup/data5/skeletonema_sex_project/blast_for_sex-genes/flagellagenes/blastresults_outfmt7_flagella.txt           
+/nobackup/data5/skeletonema_sex_project/blast_for_sex-genes/Sex-gene-list1/BLAST           
+
+
 Next the five best contig hits for each gene (if available) was taken out from outformat7 and placed in a separate text file. This was done using the bash-script:           
 /nobackup/data5/skeletonema_sex_project/blast_for_sex-genes/selectonly5best.sh            
-All duplicated contigs were removed from the output from this script, using a simple: cat file.txt | sort -u > newfile.txt      
-This list of contigs was next used in a blastx search against the uniprot database, with the following settings:      
--db swissprot -evalue 0.01 -max_target_seqs 5 (or -num_alignments 5 for outformat 0) -word_size 6 -gapopen 11 -gapextend 1 -remote -matrix BLOSUM 62     
-This was run for both sets, and once for each outformat 7 and 0.         
+All duplicated contigs were removed from the output from this script, using a simple: cat file.txt | uniq > newfile.txt      
+This list of contigs was next used in a blastx search against the swissprot database, with the following settings:      
+-db swissprot -evalue 0.01 -max_target_seqs 5 -word_size 6 -gapopen 11 -gapextend 1 -remote -matrix BLOSUM 62     
+This was run for both sets at once, combining all the contigs into one query-file beforehand.       
 The results of this are saved here:        
-/nobackup/data5/skeletonema_sex_project/blast_for_sex-genes/58athal+scere-meiosisgenes/uniprot_results       
-/nobackup/data5/skeletonema_sex_project/blast_for_sex-genes/flagellagenes/uniprot_results      
+/nobackup/data5/skeletonema_sex_project/blast_for_sex-genes/Sex-gene-list1/BLAST       
 
 Finally these results, included if the contig was differentially expressed in time2 and 3 were all summarized in a table using a bash-script, located here:      
 /nobackup/data5/skeletonema_sex_project/blast_for_sex-genes/createtablewithresults.sh         
@@ -460,7 +482,7 @@ And was used with the input files in the same folder:
 6: DE3.ods        
 These files contain the combined information from the two sets of sex-related genes.    
 The resulting table can be found in the same folder here:      
-table_with_sexgene-results_2conditionsatatime
+
 
 ##Transcriptome-annotation
 
