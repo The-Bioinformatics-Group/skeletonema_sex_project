@@ -1,0 +1,717 @@
+# TBLASTN 2.2.28+
+# Query: Mcm2_NP_001185154.1
+# Database: /nobackup/data5/skeletonema_sex_project/differential-expression-analysis/transcriptome/transcriptome-blast_db/skeletonema-marinoi_transcriptome_unannotated.fasta
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 12 hits found
+Mcm2_NP_001185154.1	Pc31350_g2_i1	49.61	770	339	7	203	925	2675	372	0.0	 746
+Mcm2_NP_001185154.1	MTRINITY_DN6323_c0_g1_i1	33.53	668	362	15	232	821	2610	619	8e-86	 299
+Mcm2_NP_001185154.1	STRINITY_DN12538_c0_g1_i1	33.53	668	362	15	232	821	4619	2628	6e-84	 298
+Mcm2_NP_001185154.1	MTRINITY_DN16417_c4_g1_i2	31.21	612	313	10	291	821	3868	2114	2e-81	 291
+Mcm2_NP_001185154.1	STRINITY_DN11968_c0_g1_i1	35.52	549	296	9	318	820	2823	1213	2e-80	 285
+Mcm2_NP_001185154.1	MTRINITY_DN18289_c0_g1_i1	39.20	426	222	6	318	708	2140	869	4e-75	 267
+Mcm2_NP_001185154.1	MTRINITY_DN16028_c0_g1_i1	30.65	620	337	17	295	824	2147	297	3e-66	 241
+Mcm2_NP_001185154.1	MTRINITY_DN14495_c0_g1_i2	43.81	331	161	4	500	826	1561	632	2e-63	 233
+Mcm2_NP_001185154.1	MTRINITY_DN14495_c0_g1_i2	22.12	226	144	5	245	440	2635	1964	9e-11	66.6
+Mcm2_NP_001185154.1	MTRINITY_DN14408_c1_g1_i1	39.26	298	161	5	533	822	3029	3886	2e-48	 188
+Mcm2_NP_001185154.1	MTRINITY_DN14408_c1_g1_i1	22.47	267	161	10	305	526	2027	2824	1e-04	47.0
+Mcm2_NP_001185154.1	MTRINITY_DN16417_c4_g1_i1	23.32	283	166	6	291	532	4122	3304	2e-19	94.7
+# TBLASTN 2.2.28+
+# Query: Mcm3_Q9FL33.1
+# Database: /nobackup/data5/skeletonema_sex_project/differential-expression-analysis/transcriptome/transcriptome-blast_db/skeletonema-marinoi_transcriptome_unannotated.fasta
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 12 hits found
+Mcm3_Q9FL33.1	MTRINITY_DN6323_c0_g1_i1	43.20	801	356	15	37	776	2547	259	0.0	 603
+Mcm3_Q9FL33.1	STRINITY_DN12538_c0_g1_i1	48.11	661	272	11	37	637	4556	2607	0.0	 588
+Mcm3_Q9FL33.1	MTRINITY_DN18289_c0_g1_i1	35.16	620	329	13	78	630	2212	371	6e-92	 312
+Mcm3_Q9FL33.1	Pc31350_g2_i1	32.36	649	387	11	5	630	2552	693	6e-88	 304
+Mcm3_Q9FL33.1	STRINITY_DN11968_c0_g1_i1	35.74	568	328	11	100	644	2835	1174	2e-87	 302
+Mcm3_Q9FL33.1	MTRINITY_DN16417_c4_g1_i2	31.09	608	295	9	105	633	3793	2105	4e-80	 284
+Mcm3_Q9FL33.1	MTRINITY_DN16028_c0_g1_i1	31.42	592	321	11	112	630	2045	306	5e-71	 253
+Mcm3_Q9FL33.1	MTRINITY_DN14495_c0_g1_i2	40.74	351	168	6	289	638	1558	623	1e-68	 246
+Mcm3_Q9FL33.1	MTRINITY_DN14495_c0_g1_i2	27.94	136	73	5	111	239	2290	1937	1e-06	52.8
+Mcm3_Q9FL33.1	MTRINITY_DN14408_c1_g1_i1	37.54	309	163	4	326	630	3044	3892	5e-50	 191
+Mcm3_Q9FL33.1	MTRINITY_DN14408_c1_g1_i1	24.23	260	150	12	112	329	2105	2869	1e-07	56.2
+Mcm3_Q9FL33.1	MTRINITY_DN16417_c4_g1_i1	24.52	261	151	5	105	326	4047	3286	2e-16	84.3
+# TBLASTN 2.2.28+
+# Query: Mcm4_NP_179236.3
+# Database: /nobackup/data5/skeletonema_sex_project/differential-expression-analysis/transcriptome/transcriptome-blast_db/skeletonema-marinoi_transcriptome_unannotated.fasta
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 12 hits found
+Mcm4_NP_179236.3	MTRINITY_DN16417_c4_g1_i2	45.56	755	309	11	175	837	4087	1853	0.0	 612
+Mcm4_NP_179236.3	STRINITY_DN11968_c0_g1_i1	37.37	570	301	12	233	760	2832	1165	2e-91	 316
+Mcm4_NP_179236.3	Pc31350_g2_i1	31.31	677	375	12	131	744	2642	693	1e-90	 313
+Mcm4_NP_179236.3	MTRINITY_DN6323_c0_g1_i1	36.47	510	240	10	303	753	2046	592	5e-81	 283
+Mcm4_NP_179236.3	STRINITY_DN12538_c0_g1_i1	37.00	500	231	10	313	753	4025	2601	2e-79	 283
+Mcm4_NP_179236.3	MTRINITY_DN14495_c0_g1_i2	44.62	325	176	4	434	757	1573	608	5e-72	 258
+Mcm4_NP_179236.3	MTRINITY_DN14495_c0_g1_i2	28.40	162	96	3	213	360	2431	1964	5e-11	67.4
+Mcm4_NP_179236.3	MTRINITY_DN18289_c0_g1_i1	41.33	375	187	7	288	649	1924	860	2e-70	 252
+Mcm4_NP_179236.3	MTRINITY_DN18289_c0_g1_i1	37.86	103	58	2	649	746	670	365	6e-13	73.6
+Mcm4_NP_179236.3	MTRINITY_DN16028_c0_g1_i1	29.85	650	355	17	226	786	2105	192	8e-68	 244
+Mcm4_NP_179236.3	MTRINITY_DN16417_c4_g1_i1	36.90	355	168	6	175	476	4341	3286	9e-62	 229
+Mcm4_NP_179236.3	MTRINITY_DN14408_c1_g1_i1	40.43	282	142	4	476	737	3044	3871	6e-50	 192
+# TBLASTN 2.2.28+
+# Query: Mcm5_NP_001189521.1
+# Database: /nobackup/data5/skeletonema_sex_project/differential-expression-analysis/transcriptome/transcriptome-blast_db/skeletonema-marinoi_transcriptome_unannotated.fasta
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 13 hits found
+Mcm5_NP_001189521.1	MTRINITY_DN18289_c0_g1_i1	52.70	444	171	10	121	533	2179	872	3e-131	 416
+Mcm5_NP_001189521.1	MTRINITY_DN18289_c0_g1_i1	41.94	186	94	3	552	723	634	77	8e-32	 133
+Mcm5_NP_001189521.1	MTRINITY_DN16417_c4_g1_i2	32.78	668	344	15	140	721	3772	1826	4e-91	 315
+Mcm5_NP_001189521.1	Pc31350_g2_i1	36.53	542	309	8	138	653	2243	645	4e-91	 312
+Mcm5_NP_001189521.1	MTRINITY_DN6323_c0_g1_i1	35.49	572	290	11	126	628	2328	643	5e-89	 303
+Mcm5_NP_001189521.1	STRINITY_DN12538_c0_g1_i1	35.49	572	290	11	126	628	4337	2652	2e-87	 303
+Mcm5_NP_001189521.1	STRINITY_DN11968_c0_g1_i1	34.88	562	303	10	140	652	2799	1156	9e-83	 287
+Mcm5_NP_001189521.1	MTRINITY_DN14495_c0_g1_i2	47.85	326	153	6	322	642	1573	632	4e-74	 261
+Mcm5_NP_001189521.1	MTRINITY_DN14495_c0_g1_i2	34.69	49	32	0	214	262	2110	1964	0.005	40.8
+Mcm5_NP_001189521.1	MTRINITY_DN14408_c1_g1_i1	41.26	286	139	6	364	630	3044	3871	6e-53	 200
+Mcm5_NP_001189521.1	MTRINITY_DN14408_c1_g1_i1	22.69	260	168	9	140	369	2105	2875	7e-07	53.5
+Mcm5_NP_001189521.1	MTRINITY_DN16028_c0_g1_i1	27.83	557	292	11	198	649	1895	240	4e-48	 184
+Mcm5_NP_001189521.1	MTRINITY_DN16417_c4_g1_i1	24.42	258	151	6	140	364	4026	3286	4e-16	84.0
+# TBLASTN 2.2.28+
+# Query: Mcm6_AED95141.1
+# Database: /nobackup/data5/skeletonema_sex_project/differential-expression-analysis/transcriptome/transcriptome-blast_db/skeletonema-marinoi_transcriptome_unannotated.fasta
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 12 hits found
+Mcm6_AED95141.1	MTRINITY_DN14495_c0_g1_i2	49.41	674	285	8	50	667	2620	599	0.0	 612
+Mcm6_AED95141.1	MTRINITY_DN16417_c4_g1_i2	35.37	622	309	9	107	665	3835	2060	2e-101	 347
+Mcm6_AED95141.1	STRINITY_DN11968_c0_g1_i1	35.04	585	302	10	120	662	2823	1177	6e-89	 308
+Mcm6_AED95141.1	Pc31350_g2_i1	31.31	674	366	15	28	659	2525	669	3e-86	 300
+Mcm6_AED95141.1	MTRINITY_DN6323_c0_g1_i1	30.36	685	325	17	53	640	2544	655	2e-80	 281
+Mcm6_AED95141.1	STRINITY_DN12538_c0_g1_i1	32.91	547	281	10	53	561	4553	3057	7e-79	 281
+Mcm6_AED95141.1	MTRINITY_DN16028_c0_g1_i1	32.11	626	342	16	111	664	2102	258	2e-76	 270
+Mcm6_AED95141.1	MTRINITY_DN18289_c0_g1_i1	36.44	461	230	9	120	555	2140	872	3e-73	 260
+Mcm6_AED95141.1	MTRINITY_DN18289_c0_g1_i1	37.17	113	60	4	547	652	694	368	2e-06	52.4
+Mcm6_AED95141.1	MTRINITY_DN14408_c1_g1_i1	43.68	261	122	5	393	632	3065	3835	1e-51	 197
+Mcm6_AED95141.1	MTRINITY_DN14408_c1_g1_i1	24.09	274	165	9	120	375	2081	2827	1e-10	65.9
+Mcm6_AED95141.1	MTRINITY_DN16417_c4_g1_i1	27.52	298	168	5	107	386	4089	3286	2e-26	 117
+# TBLASTN 2.2.28+
+# Query: Mcm7_P43299.2
+# Database: /nobackup/data5/skeletonema_sex_project/differential-expression-analysis/transcriptome/transcriptome-blast_db/skeletonema-marinoi_transcriptome_unannotated.fasta
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 17 hits found
+Mcm7_P43299.2	STRINITY_DN11968_c0_g1_i1	50.16	624	253	7	142	707	2826	955	6e-174	 535
+Mcm7_P43299.2	Pc31350_g2_i1	37.64	534	293	10	142	639	2264	675	6e-85	 293
+Mcm7_P43299.2	MTRINITY_DN18289_c0_g1_i1	41.22	427	220	7	140	536	2149	872	1e-78	 273
+Mcm7_P43299.2	MTRINITY_DN6323_c0_g1_i1	39.57	417	233	5	140	537	2313	1063	3e-78	 273
+Mcm7_P43299.2	STRINITY_DN12538_c0_g1_i1	39.57	417	233	5	140	537	4322	3072	1e-76	 271
+Mcm7_P43299.2	MTRINITY_DN16417_c4_g1_i2	39.49	433	211	8	320	707	3175	1895	6e-72	 258
+Mcm7_P43299.2	MTRINITY_DN16417_c4_g1_i2	32.84	134	79	5	141	271	3802	3425	4e-10	64.3
+Mcm7_P43299.2	MTRINITY_DN14495_c0_g1_i2	45.96	322	170	3	325	644	1573	614	8e-72	 254
+Mcm7_P43299.2	MTRINITY_DN14495_c0_g1_i2	29.05	179	110	6	122	288	2431	1910	3e-14	77.0
+Mcm7_P43299.2	MTRINITY_DN14408_c1_g1_i1	42.97	256	118	6	367	600	3044	3793	2e-46	 180
+Mcm7_P43299.2	MTRINITY_DN14408_c1_g1_i1	24.86	177	106	7	115	269	1964	2479	5e-05	47.4
+Mcm7_P43299.2	MTRINITY_DN16028_c0_g1_i1	36.50	274	157	4	327	584	1331	513	1e-44	 173
+Mcm7_P43299.2	MTRINITY_DN16028_c0_g1_i1	26.17	149	86	5	141	270	2081	1650	2e-05	48.9
+Mcm7_P43299.2	MTRINITY_DN16417_c4_g1_i1	32.84	134	79	5	141	271	4056	3679	4e-10	63.9
+Mcm7_P43299.2	MTRINITY_DN16417_c4_g1_i1	35.29	51	33	0	317	367	3438	3286	7e-04	43.5
+Mcm7_P43299.2	Pc24757_g1_i1	44.74	38	21	0	142	179	233	346	2e-05	45.4
+Mcm7_P43299.2	Pc17956_g1_i1	40.00	55	29	2	651	703	17	175	4e-05	44.3
+# TBLASTN 2.2.28+
+# Query: Mcm8_NP_187577.1
+# Database: /nobackup/data5/skeletonema_sex_project/differential-expression-analysis/transcriptome/transcriptome-blast_db/skeletonema-marinoi_transcriptome_unannotated.fasta
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 13 hits found
+Mcm8_NP_187577.1	MTRINITY_DN16028_c0_g1_i1	34.60	708	382	12	119	755	2165	72	1e-109	 361
+Mcm8_NP_187577.1	Pc31350_g2_i1	32.75	629	325	22	93	677	2405	681	8e-79	 277
+Mcm8_NP_187577.1	STRINITY_DN11968_c0_g1_i1	30.73	628	357	14	142	732	2832	1072	1e-65	 239
+Mcm8_NP_187577.1	MTRINITY_DN16417_c4_g1_i2	29.57	646	363	18	145	726	3796	1943	2e-64	 236
+Mcm8_NP_187577.1	MTRINITY_DN6323_c0_g1_i1	34.23	444	241	10	143	563	2310	1063	5e-62	 226
+Mcm8_NP_187577.1	STRINITY_DN12538_c0_g1_i1	34.23	444	241	10	143	563	4319	3072	5e-61	 226
+Mcm8_NP_187577.1	MTRINITY_DN14495_c0_g1_i2	41.99	312	156	7	349	655	1576	701	7e-59	 217
+Mcm8_NP_187577.1	MTRINITY_DN14495_c0_g1_i2	24.66	146	92	3	133	263	2410	1982	7e-07	53.5
+Mcm8_NP_187577.1	MTRINITY_DN18289_c0_g1_i1	28.18	621	325	15	145	674	2140	368	2e-56	 209
+Mcm8_NP_187577.1	MTRINITY_DN14408_c1_g1_i1	37.76	294	160	7	394	674	3044	3895	3e-52	 199
+Mcm8_NP_187577.1	MTRINITY_DN14408_c1_g1_i1	26.77	254	166	8	144	381	2078	2827	6e-11	67.0
+Mcm8_NP_187577.1	MTRINITY_DN16417_c4_g1_i1	25.00	256	159	8	145	380	4050	3322	2e-07	55.5
+Mcm8_NP_187577.1	Pc24757_g1_i1	41.03	39	23	0	142	180	227	343	0.005	38.1
+# TBLASTN 2.2.28+
+# Query: Mcm9_NP_179021.3
+# Database: /nobackup/data5/skeletonema_sex_project/differential-expression-analysis/transcriptome/transcriptome-blast_db/skeletonema-marinoi_transcriptome_unannotated.fasta
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 14 hits found
+Mcm9_NP_179021.3	MTRINITY_DN14408_c1_g1_i1	47.78	293	134	4	346	619	3035	3913	9e-66	 238
+Mcm9_NP_179021.3	MTRINITY_DN14408_c1_g1_i1	31.92	307	169	12	62	338	1937	2827	3e-26	 115
+Mcm9_NP_179021.3	Pc31350_g2_i1	30.64	656	381	18	22	635	2498	627	2e-63	 229
+Mcm9_NP_179021.3	MTRINITY_DN14495_c0_g1_i2	42.96	291	145	8	316	594	1546	701	1e-53	 200
+Mcm9_NP_179021.3	MTRINITY_DN14495_c0_g1_i2	23.77	223	148	6	43	250	2605	1958	1e-05	49.3
+Mcm9_NP_179021.3	MTRINITY_DN16028_c0_g1_i1	37.43	342	175	11	312	614	1322	297	1e-51	 193
+Mcm9_NP_179021.3	STRINITY_DN11968_c0_g1_i1	31.18	542	310	15	122	609	2817	1219	5e-47	 180
+Mcm9_NP_179021.3	MTRINITY_DN6323_c0_g1_i1	38.24	319	179	6	204	512	2007	1075	6e-45	 173
+Mcm9_NP_179021.3	MTRINITY_DN6323_c0_g1_i1	32.29	96	53	2	535	630	855	604	4e-06	50.8
+Mcm9_NP_179021.3	STRINITY_DN12538_c0_g1_i1	38.24	319	179	6	204	512	4016	3084	9e-45	 173
+Mcm9_NP_179021.3	STRINITY_DN12538_c0_g1_i1	32.29	96	53	2	535	630	2864	2613	4e-06	50.8
+Mcm9_NP_179021.3	MTRINITY_DN16417_c4_g1_i2	41.34	283	149	7	349	620	2920	2090	4e-44	 171
+Mcm9_NP_179021.3	MTRINITY_DN18289_c0_g1_i1	35.36	362	208	8	177	521	1915	857	5e-39	 154
+Mcm9_NP_179021.3	MTRINITY_DN18289_c0_g1_i1	29.55	88	52	2	532	609	643	380	4e-04	44.3
+# TBLASTN 2.2.28+
+# Query: Smc1_AEE79265.1
+# Database: /nobackup/data5/skeletonema_sex_project/differential-expression-analysis/transcriptome/transcriptome-blast_db/skeletonema-marinoi_transcriptome_unannotated.fasta
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 7 hits found
+Smc1_AEE79265.1	Pc27448_g3_i1	31.65	1324	767	15	11	1236	4059	208	4e-172	 552
+Smc1_AEE79265.1	MTRINITY_DN13431_c0_g1_i1	34.97	163	91	3	11	159	4107	3622	1e-18	93.2
+Smc1_AEE79265.1	MTRINITY_DN13431_c0_g1_i1	25.58	559	317	21	230	755	3327	1849	3e-12	72.4
+Smc1_AEE79265.1	Pc22708_g1_i1	31.06	161	93	5	11	158	3750	3283	2e-13	75.9
+Smc1_AEE79265.1	Pc22708_g1_i1	31.82	88	47	1	1127	1214	510	286	2e-05	49.7
+Smc1_AEE79265.1	MTRINITY_DN4029_c0_g2_i1	46.30	54	29	0	1127	1180	689	528	9e-09	60.8
+Smc1_AEE79265.1	MTRINITY_DN4029_c0_g2_i1	28.03	157	93	6	11	155	4022	3576	6e-07	54.7
+# TBLASTN 2.2.28+
+# Query: Smc2_NP_201047.1
+# Database: /nobackup/data5/skeletonema_sex_project/differential-expression-analysis/transcriptome/transcriptome-blast_db/skeletonema-marinoi_transcriptome_unannotated.fasta
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 9 hits found
+Smc2_NP_201047.1	Pc22708_g1_i1	45.65	1196	601	15	1	1170	3756	238	0.0	 877
+Smc2_NP_201047.1	MTRINITY_DN13431_c0_g1_i1	29.26	188	117	6	1	174	4113	3556	7e-15	80.5
+Smc2_NP_201047.1	MTRINITY_DN13431_c0_g1_i1	27.27	209	143	3	951	1154	957	343	2e-11	69.3
+Smc2_NP_201047.1	Pc27448_g3_i1	27.60	192	115	6	1	171	4065	3499	1e-12	73.6
+Smc2_NP_201047.1	Pc27448_g3_i1	38.96	77	47	0	1078	1154	504	274	2e-06	52.8
+Smc2_NP_201047.1	Pc27448_g3_i1	28.47	144	90	4	520	652	2442	2017	2e-06	52.8
+Smc2_NP_201047.1	MTRINITY_DN4029_c0_g2_i1	27.41	135	86	4	522	654	2435	2061	7e-08	57.8
+Smc2_NP_201047.1	MTRINITY_DN4029_c0_g2_i1	28.05	221	124	4	981	1166	1061	399	9e-08	57.4
+Smc2_NP_201047.1	MTRINITY_DN12683_c0_g1_i1	30.34	178	104	7	3	168	5504	4995	4e-06	52.0
+# TBLASTN 2.2.28+
+# Query: Smc3_NP_180285.4
+# Database: /nobackup/data5/skeletonema_sex_project/differential-expression-analysis/transcriptome/transcriptome-blast_db/skeletonema-marinoi_transcriptome_unannotated.fasta
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 8 hits found
+Smc3_NP_180285.4	MTRINITY_DN4029_c0_g2_i1	37.70	1236	716	16	1	1196	4028	363	0.0	 685
+Smc3_NP_180285.4	Pc22708_g1_i1	33.33	186	116	5	1	179	3756	3202	1e-23	 108
+Smc3_NP_180285.4	Pc22708_g1_i1	23.80	769	438	26	477	1185	2289	247	1e-22	 105
+Smc3_NP_180285.4	MTRINITY_DN13431_c0_g1_i1	23.05	729	466	22	1	671	4113	2038	5e-18	90.9
+Smc3_NP_180285.4	MTRINITY_DN13431_c0_g1_i1	38.10	84	50	1	1099	1182	558	313	4e-12	71.6
+Smc3_NP_180285.4	Pc27448_g3_i1	40.00	80	46	1	1096	1175	498	265	6e-11	67.8
+Smc3_NP_180285.4	Pc27448_g3_i1	25.79	190	115	3	1	165	4065	3499	6e-07	54.7
+Smc3_NP_180285.4	MTRINITY_DN3606_c0_g1_i1	72.00	25	7	0	59	83	294	368	0.001	40.8
+# TBLASTN 2.2.28+
+# Query: Smc4_AED95695.1
+# Database: /nobackup/data5/skeletonema_sex_project/differential-expression-analysis/transcriptome/transcriptome-blast_db/skeletonema-marinoi_transcriptome_unannotated.fasta
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 9 hits found
+Smc4_AED95695.1	MTRINITY_DN13431_c0_g1_i1	76.19	210	48	1	1030	1237	909	280	7e-99	 347
+Smc4_AED95695.1	Pc27448_g3_i1	32.45	265	159	5	992	1236	1002	208	2e-38	 157
+Smc4_AED95695.1	Pc27448_g3_i1	33.00	203	107	6	18	202	4074	3499	4e-22	 104
+Smc4_AED95695.1	Pc27448_g3_i1	25.93	243	156	9	464	689	2715	2008	1e-07	56.6
+Smc4_AED95695.1	Pc22708_g1_i1	30.45	243	140	8	24	260	3756	3097	6e-19	94.0
+Smc4_AED95695.1	Pc22708_g1_i1	34.07	135	85	4	1103	1235	624	226	2e-11	69.7
+Smc4_AED95695.1	MTRINITY_DN4029_c0_g2_i1	25.34	292	194	7	23	313	4031	3225	7e-18	90.5
+Smc4_AED95695.1	MTRINITY_DN4029_c0_g2_i1	32.95	88	49	1	1142	1219	689	426	5e-08	58.2
+Smc4_AED95695.1	MTRINITY_DN12683_c0_g1_i1	42.50	40	23	0	1141	1180	2498	2379	0.005	42.0
+# TBLASTN 2.2.28+
+# Query: Smc5_AED92224.1
+# Database: /nobackup/data5/skeletonema_sex_project/differential-expression-analysis/transcriptome/transcriptome-blast_db/skeletonema-marinoi_transcriptome_unannotated.fasta
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 6 hits found
+Smc5_AED92224.1	Pc30152_g1_i1	28.07	602	388	15	8	580	3475	1718	5e-54	 206
+Smc5_AED92224.1	Pc30152_g1_i1	38.40	250	129	6	810	1035	976	230	1e-42	 170
+Smc5_AED92224.1	MTRINITY_DN12683_c0_g1_i1	20.08	239	169	5	790	1020	2918	2244	1e-08	60.1
+Smc5_AED92224.1	MTRINITY_DN12683_c0_g1_i1	28.12	160	90	5	21	158	5510	5040	2e-07	56.2
+Smc5_AED92224.1	Pc22708_g1_i1	23.16	190	130	3	22	196	3753	3187	2e-06	52.8
+Smc5_AED92224.1	Pc27448_g3_i1	47.73	44	22	1	26	68	4050	3919	7e-04	44.3
+# TBLASTN 2.2.28+
+# Query: Smc6_NP_196383.1
+# Database: /nobackup/data5/skeletonema_sex_project/differential-expression-analysis/transcriptome/transcriptome-blast_db/skeletonema-marinoi_transcriptome_unannotated.fasta
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 5 hits found
+Smc6_NP_196383.1	MTRINITY_DN12683_c0_g1_i1	30.77	624	365	20	9	588	5567	3765	2e-55	 212
+Smc6_NP_196383.1	MTRINITY_DN12683_c0_g1_i1	38.58	127	77	1	931	1056	2615	2235	2e-20	98.6
+Smc6_NP_196383.1	Pc30152_g1_i1	25.19	520	325	19	15	509	3454	2012	9e-16	83.2
+Smc6_NP_196383.1	Pc30152_g1_i1	26.92	104	65	3	943	1036	640	332	7e-06	50.8
+Smc6_NP_196383.1	Pc22708_g1_i1	34.15	82	49	2	33	110	3714	3472	0.003	42.4
+# TBLASTN 2.2.28+
+# Query: Pds5_NP_177883.5
+# Database: /nobackup/data5/skeletonema_sex_project/differential-expression-analysis/transcriptome/transcriptome-blast_db/skeletonema-marinoi_transcriptome_unannotated.fasta
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Pds5_NP_177883.5	MTRINITY_DN17063_c0_g1_i3	19.33	802	501	27	23	693	196	2556	1e-05	50.8
+# TBLASTN 2.2.28+
+# Query: Scc3_AEC10920.1
+# Database: /nobackup/data5/skeletonema_sex_project/differential-expression-analysis/transcriptome/transcriptome-blast_db/skeletonema-marinoi_transcriptome_unannotated.fasta
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Scc3_AEC10920.1	MTRINITY_DN16741_c0_g1_i1	36.81	144	79	2	201	338	3680	3267	2e-16	85.5
+# TBLASTN 2.2.28+
+# Query: Rec8/Syn1_NP_196168.1
+# Database: /nobackup/data5/skeletonema_sex_project/differential-expression-analysis/transcriptome/transcriptome-blast_db/skeletonema-marinoi_transcriptome_unannotated.fasta
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 2 hits found
+Rec8/Syn1_NP_196168.1	STRINITY_DN10822_c0_g1_i1	46.15	91	48	1	1	90	4645	4373	5e-17	85.9
+Rec8/Syn1_NP_196168.1	STRINITY_DN10822_c0_g1_i1	43.48	46	26	0	569	614	2641	2504	0.001	43.1
+# TBLASTN 2.2.28+
+# Query: Rad21_NP_851110.1
+# Database: /nobackup/data5/skeletonema_sex_project/differential-expression-analysis/transcriptome/transcriptome-blast_db/skeletonema-marinoi_transcriptome_unannotated.fasta
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Rad21_NP_851110.1	STRINITY_DN10822_c0_g1_i1	45.54	101	52	3	1	100	4645	4349	2e-18	91.3
+# TBLASTN 2.2.28+
+# Query: Spo11-1_AEE75304.1
+# Database: /nobackup/data5/skeletonema_sex_project/differential-expression-analysis/transcriptome/transcriptome-blast_db/skeletonema-marinoi_transcriptome_unannotated.fasta
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 6 hits found
+Spo11-1_AEE75304.1	Pc22702_g1_i1	42.37	262	150	1	95	356	863	81	2e-59	 203
+Spo11-1_AEE75304.1	STRINITY_DN4896_c0_g2_i1	42.02	257	148	1	100	356	1	768	6e-58	 193
+Spo11-1_AEE75304.1	MTRINITY_DN15680_c0_g1_i1	27.90	276	162	7	94	333	956	132	6e-21	95.1
+Spo11-1_AEE75304.1	MTRINITY_DN15680_c0_g1_i3	44.62	65	36	0	189	253	261	67	4e-12	63.2
+Spo11-1_AEE75304.1	Pc30565_g1_i3	27.78	144	85	4	156	280	798	367	2e-05	47.4
+Spo11-1_AEE75304.1	MTRINITY_DN17253_c0_g1_i1	31.43	105	71	1	177	280	809	495	5e-05	45.4
+# TBLASTN 2.2.28+
+# Query: Spo11-2_AEE34178.1
+# Database: /nobackup/data5/skeletonema_sex_project/differential-expression-analysis/transcriptome/transcriptome-blast_db/skeletonema-marinoi_transcriptome_unannotated.fasta
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 8 hits found
+Spo11-2_AEE34178.1	Pc22702_g1_i1	34.00	300	184	8	90	383	941	66	3e-52	 184
+Spo11-2_AEE34178.1	STRINITY_DN4896_c0_g2_i1	36.72	256	152	7	134	383	28	783	4e-50	 173
+Spo11-2_AEE34178.1	MTRINITY_DN15680_c0_g1_i1	29.43	316	188	9	90	377	1031	105	1e-35	 139
+Spo11-2_AEE34178.1	MTRINITY_DN15680_c0_g1_i3	36.47	85	44	2	217	292	261	10	4e-13	66.6
+Spo11-2_AEE34178.1	MTRINITY_DN17253_c0_g1_i1	29.29	198	112	7	178	359	884	327	2e-11	66.2
+Spo11-2_AEE34178.1	Pc30565_g1_i3	35.24	105	65	2	208	310	672	361	3e-11	65.5
+Spo11-2_AEE34178.1	MTRINITY_DN17253_c0_g1_i3	38.46	52	32	0	208	259	865	710	6e-06	44.3
+Spo11-2_AEE34178.1	MTRINITY_DN17253_c0_g1_i3	34.15	41	25	1	268	306	623	501	6e-06	24.6
+# TBLASTN 2.2.28+
+# Query: Spo11-3/TopVIA_NP_195902.1
+# Database: /nobackup/data5/skeletonema_sex_project/differential-expression-analysis/transcriptome/transcriptome-blast_db/skeletonema-marinoi_transcriptome_unannotated.fasta
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 8 hits found
+Spo11-3/TopVIA_NP_195902.1	Pc22702_g1_i1	64.97	374	126	1	59	427	1187	66	0.0	 525
+Spo11-3/TopVIA_NP_195902.1	STRINITY_DN4896_c0_g2_i1	73.18	261	70	0	167	427	1	783	1e-145	 421
+Spo11-3/TopVIA_NP_195902.1	MTRINITY_DN15680_c0_g1_i1	30.70	316	187	6	127	414	1058	123	3e-38	 148
+Spo11-3/TopVIA_NP_195902.1	MTRINITY_DN15680_c0_g1_i3	51.39	72	35	0	256	327	261	46	1e-20	87.8
+Spo11-3/TopVIA_NP_195902.1	Pc30565_g1_i3	31.78	129	84	3	226	353	726	349	4e-12	68.6
+Spo11-3/TopVIA_NP_195902.1	MTRINITY_DN17253_c0_g1_i1	24.05	262	166	7	93	353	1166	477	2e-08	57.0
+Spo11-3/TopVIA_NP_195902.1	MTRINITY_DN17253_c0_g1_i3	29.63	54	37	1	305	357	626	465	8e-05	33.9
+Spo11-3/TopVIA_NP_195902.1	MTRINITY_DN17253_c0_g1_i3	29.58	71	47	2	226	296	919	716	8e-05	30.8
+# TBLASTN 2.2.28+
+# Query: Rad50_AEC08614.1
+# Database: /nobackup/data5/skeletonema_sex_project/differential-expression-analysis/transcriptome/transcriptome-blast_db/skeletonema-marinoi_transcriptome_unannotated.fasta
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 2 hits found
+Rad50_AEC08614.1	MTRINITY_DN15782_c0_g2_i2	30.26	661	413	12	677	1303	2124	184	4e-69	 256
+Rad50_AEC08614.1	MTRINITY_DN15782_c0_g2_i2	45.88	255	130	2	1	254	4320	3577	6e-69	 256
+# TBLASTN 2.2.28+
+# Query: Mre11_NP_200237.1
+# Database: /nobackup/data5/skeletonema_sex_project/differential-expression-analysis/transcriptome/transcriptome-blast_db/skeletonema-marinoi_transcriptome_unannotated.fasta
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Mre11_NP_200237.1	Pc25688_g1_i2	41.71	549	245	15	8	490	2520	901	1e-121	 390
+# TBLASTN 2.2.28+
+# Query: Xrs2/Nbs1_ABA54896.1
+# Database: /nobackup/data5/skeletonema_sex_project/differential-expression-analysis/transcriptome/transcriptome-blast_db/skeletonema-marinoi_transcriptome_unannotated.fasta
+# 0 hits found
+# TBLASTN 2.2.28+
+# Query: Mer3_AAX14498.1
+# Database: /nobackup/data5/skeletonema_sex_project/differential-expression-analysis/transcriptome/transcriptome-blast_db/skeletonema-marinoi_transcriptome_unannotated.fasta
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 28 hits found
+Mer3_AAX14498.1	Pc32427_g2_i3	36.03	433	229	13	22	424	4605	3361	6e-100	 258
+Mer3_AAX14498.1	Pc32427_g2_i3	32.32	297	186	9	424	716	3280	2423	6e-100	 127
+Mer3_AAX14498.1	Pc32427_g2_i4	36.03	433	229	13	22	424	4605	3361	9e-100	 258
+Mer3_AAX14498.1	Pc32427_g2_i4	32.32	297	186	9	424	716	3280	2423	9e-100	 127
+Mer3_AAX14498.1	MTRINITY_DN17050_c0_g1_i5	33.48	463	232	12	22	424	1890	3230	4e-94	 241
+Mer3_AAX14498.1	MTRINITY_DN17050_c0_g1_i5	31.99	297	187	9	424	716	3311	4168	4e-94	 125
+Mer3_AAX14498.1	MTRINITY_DN17362_c0_g1_i1	31.40	691	424	16	25	687	1244	3250	2e-84	 304
+Mer3_AAX14498.1	MTRINITY_DN17362_c0_g1_i1	30.14	564	344	14	22	552	3890	5530	1e-74	 273
+Mer3_AAX14498.1	MTRINITY_DN15576_c0_g1_i1	30.85	778	476	24	6	754	1833	4067	4e-83	 300
+Mer3_AAX14498.1	MTRINITY_DN15576_c0_g1_i1	26.55	580	388	15	20	589	4470	6125	2e-56	 216
+Mer3_AAX14498.1	MTRINITY_DN17050_c0_g1_i1	36.03	433	229	13	22	424	1890	3134	6e-70	 258
+Mer3_AAX14498.1	MTRINITY_DN17050_c0_g1_i1	30.82	292	187	9	429	716	3325	4167	4e-26	 117
+Mer3_AAX14498.1	MTRINITY_DN17050_c0_g1_i3	33.48	463	232	12	22	424	1890	3230	1e-64	 241
+Mer3_AAX14498.1	MTRINITY_DN17050_c0_g1_i3	30.82	292	187	9	429	716	3421	4263	3e-26	 118
+Mer3_AAX14498.1	MTRINITY_DN17050_c0_g1_i6	30.73	410	212	12	22	373	1890	3077	2e-47	 187
+Mer3_AAX14498.1	MTRINITY_DN17050_c0_g1_i6	30.82	292	187	9	429	716	3422	4264	4e-26	 117
+Mer3_AAX14498.1	MTRINITY_DN17050_c0_g1_i6	49.18	61	31	0	364	424	3049	3231	2e-11	69.3
+Mer3_AAX14498.1	STRINITY_DN6565_c0_g1_i1	30.82	292	187	9	429	716	35	877	2e-26	 118
+Mer3_AAX14498.1	STRINITY_DN13110_c0_g1_i1	41.76	91	51	1	335	425	2664	2398	2e-11	69.3
+Mer3_AAX14498.1	STRINITY_DN13110_c0_g1_i1	28.18	181	89	7	42	221	3594	3172	2e-06	52.8
+Mer3_AAX14498.1	MTRINITY_DN17292_c0_g1_i3	37.63	93	54	2	333	424	3480	3211	7e-10	64.3
+Mer3_AAX14498.1	MTRINITY_DN17292_c0_g1_i3	27.78	180	90	7	43	221	4434	4012	4e-07	55.1
+Mer3_AAX14498.1	Pc32457_g2_i1	37.63	93	54	2	333	424	2092	1823	8e-10	63.9
+Mer3_AAX14498.1	Pc32457_g2_i1	27.78	180	90	7	43	221	3046	2624	4e-07	55.1
+Mer3_AAX14498.1	STRINITY_DN13089_c0_g2_i1	36.96	92	56	1	333	424	3537	3268	8e-10	63.9
+Mer3_AAX14498.1	STRINITY_DN13089_c0_g2_i1	24.80	246	111	11	42	254	5013	4399	2e-06	53.1
+Mer3_AAX14498.1	MTRINITY_DN10834_c0_g1_i1	21.43	378	234	15	49	413	553	1536	0.001	43.9
+Mer3_AAX14498.1	STRINITY_DN4547_c0_g1_i1	24.87	189	97	6	44	221	2775	2311	0.003	42.4
+# TBLASTN 2.2.28+
+# Query: Hop1/Asy1_AEE34638.1
+# Database: /nobackup/data5/skeletonema_sex_project/differential-expression-analysis/transcriptome/transcriptome-blast_db/skeletonema-marinoi_transcriptome_unannotated.fasta
+# 0 hits found
+# TBLASTN 2.2.28+
+# Query: Red1/Asy3_AEC10782.1
+# Database: /nobackup/data5/skeletonema_sex_project/differential-expression-analysis/transcriptome/transcriptome-blast_db/skeletonema-marinoi_transcriptome_unannotated.fasta
+# 0 hits found
+# TBLASTN 2.2.28+
+# Query: Zip1/Zyp1_AEE30217.1
+# Database: /nobackup/data5/skeletonema_sex_project/differential-expression-analysis/transcriptome/transcriptome-blast_db/skeletonema-marinoi_transcriptome_unannotated.fasta
+# 0 hits found
+# TBLASTN 2.2.28+
+# Query: Zip2_NP_011265.1_SCerevisiae
+# Database: /nobackup/data5/skeletonema_sex_project/differential-expression-analysis/transcriptome/transcriptome-blast_db/skeletonema-marinoi_transcriptome_unannotated.fasta
+# 0 hits found
+# TBLASTN 2.2.28+
+# Query: Zip3/Hei10_NP_175754.2
+# Database: /nobackup/data5/skeletonema_sex_project/differential-expression-analysis/transcriptome/transcriptome-blast_db/skeletonema-marinoi_transcriptome_unannotated.fasta
+# 0 hits found
+# TBLASTN 2.2.28+
+# Query: Zip4_ABO71664.1
+# Database: /nobackup/data5/skeletonema_sex_project/differential-expression-analysis/transcriptome/transcriptome-blast_db/skeletonema-marinoi_transcriptome_unannotated.fasta
+# 0 hits found
+# TBLASTN 2.2.28+
+# Query: Dmc1_AAC49617.1
+# Database: /nobackup/data5/skeletonema_sex_project/differential-expression-analysis/transcriptome/transcriptome-blast_db/skeletonema-marinoi_transcriptome_unannotated.fasta
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 4 hits found
+Dmc1_AAC49617.1	STRINITY_DN8677_c0_g1_i2	52.68	317	150	0	28	344	1164	214	9e-117	 349
+Dmc1_AAC49617.1	Pc29686_g1_i1	27.36	307	141	9	107	339	2705	1809	2e-18	87.4
+Dmc1_AAC49617.1	MTRINITY_DN12845_c1_g1_i3	30.84	214	103	7	102	275	1078	452	2e-11	65.9
+Dmc1_AAC49617.1	MTRINITY_DN8954_c0_g1_i1	27.75	209	122	11	108	309	428	988	1e-07	53.5
+# TBLASTN 2.2.28+
+# Query: Hop2_CAF28783.1
+# Database: /nobackup/data5/skeletonema_sex_project/differential-expression-analysis/transcriptome/transcriptome-blast_db/skeletonema-marinoi_transcriptome_unannotated.fasta
+# 0 hits found
+# TBLASTN 2.2.28+
+# Query: Mnd1_NP_194646.2
+# Database: /nobackup/data5/skeletonema_sex_project/differential-expression-analysis/transcriptome/transcriptome-blast_db/skeletonema-marinoi_transcriptome_unannotated.fasta
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Mnd1_NP_194646.2	MTRINITY_DN15053_c0_g3_i1	26.64	229	126	4	2	205	2407	1772	2e-19	88.6
+# TBLASTN 2.2.28+
+# Query: Msh4_AAT70180.1
+# Database: /nobackup/data5/skeletonema_sex_project/differential-expression-analysis/transcriptome/transcriptome-blast_db/skeletonema-marinoi_transcriptome_unannotated.fasta
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 19 hits found
+Msh4_AAT70180.1	Pc32435_g1_i6	37.06	402	225	9	355	731	1343	147	7e-67	 231
+Msh4_AAT70180.1	Pc32728_g2_i1	36.36	319	170	8	433	719	13	966	2e-42	 167
+Msh4_AAT70180.1	MTRINITY_DN12172_c0_g1_i1	35.47	327	178	8	425	719	54	1031	6e-42	 166
+Msh4_AAT70180.1	Pc32435_g1_i4	35.47	327	178	8	425	719	1156	179	1e-41	 166
+Msh4_AAT70180.1	MTRINITY_DN17310_c0_g1_i2	36.72	256	137	7	499	732	3754	4512	2e-40	 162
+Msh4_AAT70180.1	MTRINITY_DN17310_c0_g1_i2	30.39	102	59	2	141	235	2623	2913	4e-04	44.7
+Msh4_AAT70180.1	STRINITY_DN7940_c0_g1_i1	32.06	340	213	11	410	735	1594	2601	2e-37	 152
+Msh4_AAT70180.1	STRINITY_DN10910_c0_g1_i1	41.36	162	79	4	499	646	481	2	2e-30	 129
+Msh4_AAT70180.1	STRINITY_DN10910_c0_g1_i1	30.39	102	59	2	141	235	1612	1322	4e-04	44.7
+Msh4_AAT70180.1	Pc31899_g1_i1	33.06	245	154	5	507	742	956	225	2e-28	 123
+Msh4_AAT70180.1	STRINITY_DN11475_c0_g1_i1	33.06	245	154	5	507	742	3138	2407	2e-28	 123
+Msh4_AAT70180.1	Pc32817_g1_i3	38.06	134	80	2	507	637	1342	1743	1e-20	98.2
+Msh4_AAT70180.1	MTRINITY_DN13389_c0_g1_i3	32.48	234	134	8	86	308	1492	830	5e-19	92.8
+Msh4_AAT70180.1	MTRINITY_DN13389_c0_g1_i3	29.63	108	74	2	335	442	490	173	2e-08	58.9
+Msh4_AAT70180.1	MTRINITY_DN16524_c0_g1_i1	27.62	210	138	5	529	733	3337	3939	1e-14	79.0
+Msh4_AAT70180.1	MTRINITY_DN12973_c0_g1_i1	26.75	228	149	7	510	728	1857	1201	3e-13	74.3
+Msh4_AAT70180.1	STRINITY_DN2093_c0_g1_i1	34.55	110	63	3	631	732	1	327	1e-08	59.3
+Msh4_AAT70180.1	MTRINITY_DN15015_c0_g1_i1	24.85	169	112	5	510	665	3334	2834	2e-07	55.5
+Msh4_AAT70180.1	STRINITY_DN6427_c0_g1_i1	24.85	169	112	5	510	665	942	1442	2e-07	55.5
+# TBLASTN 2.2.28+
+# Query: Msh5_NP_188683.3
+# Database: /nobackup/data5/skeletonema_sex_project/differential-expression-analysis/transcriptome/transcriptome-blast_db/skeletonema-marinoi_transcriptome_unannotated.fasta
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 19 hits found
+Msh5_NP_188683.3	Pc31899_g1_i1	29.52	708	435	20	128	794	2189	135	5e-72	 256
+Msh5_NP_188683.3	STRINITY_DN11475_c0_g1_i1	29.65	705	434	19	128	791	4377	2326	2e-71	 258
+Msh5_NP_188683.3	Pc32817_g1_i3	30.27	565	340	15	128	654	103	1749	4e-63	 223
+Msh5_NP_188683.3	Pc32817_g1_i3	27.59	145	93	5	652	791	1826	2239	4e-63	38.9
+Msh5_NP_188683.3	MTRINITY_DN17310_c0_g1_i2	32.28	285	168	8	499	764	3700	4536	6e-33	 138
+Msh5_NP_188683.3	STRINITY_DN7940_c0_g1_i1	29.69	320	199	11	456	760	1687	2613	6e-25	 112
+Msh5_NP_188683.3	STRINITY_DN7940_c0_g1_i1	29.70	101	60	2	174	268	775	1062	3e-05	48.1
+Msh5_NP_188683.3	STRINITY_DN10910_c0_g1_i1	34.27	178	102	4	499	661	535	2	4e-23	 106
+Msh5_NP_188683.3	Pc32435_g1_i6	28.32	226	149	6	536	752	821	156	6e-21	97.1
+Msh5_NP_188683.3	Pc32728_g2_i1	33.83	133	81	2	536	661	325	723	3e-16	84.0
+Msh5_NP_188683.3	MTRINITY_DN12172_c0_g1_i1	33.83	133	81	2	536	661	390	788	4e-16	84.0
+Msh5_NP_188683.3	Pc32435_g1_i4	33.83	133	81	2	536	661	820	422	5e-16	84.0
+Msh5_NP_188683.3	MTRINITY_DN16524_c0_g1_i1	25.55	227	156	6	552	775	3343	3993	1e-11	69.3
+Msh5_NP_188683.3	STRINITY_DN6427_c0_g1_i1	25.48	314	191	13	469	753	771	1670	3e-11	67.8
+Msh5_NP_188683.3	MTRINITY_DN15015_c0_g1_i1	25.16	314	192	13	469	753	3505	2606	3e-10	64.3
+Msh5_NP_188683.3	MTRINITY_DN12973_c0_g1_i1	22.93	266	181	7	500	757	1935	1186	1e-09	62.8
+Msh5_NP_188683.3	STRINITY_DN2093_c0_g1_i1	28.77	146	94	4	646	787	1	420	5e-07	53.9
+Msh5_NP_188683.3	MTRINITY_DN17103_c0_g4_i3	27.40	146	98	4	652	794	4522	4100	5e-05	40.8
+Msh5_NP_188683.3	MTRINITY_DN17103_c0_g4_i3	50.00	20	10	0	635	654	4652	4593	5e-05	25.8
+# TBLASTN 2.2.28+
+# Query: Rad51-A_BAE99388.1
+# Database: /nobackup/data5/skeletonema_sex_project/differential-expression-analysis/transcriptome/transcriptome-blast_db/skeletonema-marinoi_transcriptome_unannotated.fasta
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 4 hits found
+Rad51-A_BAE99388.1	STRINITY_DN8677_c0_g1_i2	56.81	345	145	3	1	342	1245	214	3e-133	 392
+Rad51-A_BAE99388.1	Pc29686_g1_i1	26.42	299	155	7	104	337	2705	1809	2e-16	80.9
+Rad51-A_BAE99388.1	MTRINITY_DN12845_c1_g1_i3	30.60	232	116	7	81	272	1132	452	4e-12	67.8
+Rad51-A_BAE99388.1	MTRINITY_DN8954_c0_g1_i1	26.32	228	118	10	97	307	404	988	4e-06	48.9
+# TBLASTN 2.2.28+
+# Query: Rad51-B_NP_180423.3
+# Database: /nobackup/data5/skeletonema_sex_project/differential-expression-analysis/transcriptome/transcriptome-blast_db/skeletonema-marinoi_transcriptome_unannotated.fasta
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 3 hits found
+Rad51-B_NP_180423.3	STRINITY_DN8677_c0_g1_i2	32.58	264	145	10	84	341	924	214	2e-19	89.7
+Rad51-B_NP_180423.3	Pc29686_g1_i1	28.40	250	142	7	91	306	2681	1941	1e-10	63.9
+Rad51-B_NP_180423.3	MTRINITY_DN12845_c1_g1_i3	25.40	311	172	7	79	340	1075	176	5e-10	61.2
+# TBLASTN 2.2.28+
+# Query: Rad51-C_CAC14091.1
+# Database: /nobackup/data5/skeletonema_sex_project/differential-expression-analysis/transcriptome/transcriptome-blast_db/skeletonema-marinoi_transcriptome_unannotated.fasta
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 3 hits found
+Rad51-C_CAC14091.1	Pc29686_g1_i1	30.69	303	152	8	104	351	2705	1806	3e-36	 142
+Rad51-C_CAC14091.1	STRINITY_DN8677_c0_g1_i2	32.84	268	152	5	90	350	969	229	2e-31	 124
+Rad51-C_CAC14091.1	MTRINITY_DN12845_c1_g1_i3	27.33	333	164	12	82	350	1144	188	6e-15	76.3
+# TBLASTN 2.2.28+
+# Query: Rad51-D_NP_001077479.1
+# Database: /nobackup/data5/skeletonema_sex_project/differential-expression-analysis/transcriptome/transcriptome-blast_db/skeletonema-marinoi_transcriptome_unannotated.fasta
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 4 hits found
+Rad51-D_NP_001077479.1	STRINITY_DN8677_c0_g1_i2	27.20	239	144	8	70	292	927	253	2e-12	68.2
+Rad51-D_NP_001077479.1	MTRINITY_DN12845_c1_g1_i3	27.89	251	129	7	71	270	1060	311	1e-10	62.4
+Rad51-D_NP_001077479.1	Pc29686_g1_i1	24.58	297	150	11	79	304	2678	1797	4e-04	42.7
+Rad51-D_NP_001077479.1	MTRINITY_DN8954_c0_g1_i1	27.48	131	73	5	71	200	428	757	0.002	40.0
+# TBLASTN 2.2.28+
+# Query: Xrcc2_NP_201257.2
+# Database: /nobackup/data5/skeletonema_sex_project/differential-expression-analysis/transcriptome/transcriptome-blast_db/skeletonema-marinoi_transcriptome_unannotated.fasta
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Xrcc2_NP_201257.2	Pc29686_g1_i1	26.74	172	103	5	45	205	2642	2163	3e-05	46.6
+# TBLASTN 2.2.28+
+# Query: Xrcc3_NP_200554.1
+# Database: /nobackup/data5/skeletonema_sex_project/differential-expression-analysis/transcriptome/transcriptome-blast_db/skeletonema-marinoi_transcriptome_unannotated.fasta
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 4 hits found
+Xrcc3_NP_200554.1	STRINITY_DN8677_c0_g1_i2	29.23	284	152	11	21	303	924	217	3e-17	82.0
+Xrcc3_NP_200554.1	MTRINITY_DN12845_c1_g1_i3	26.58	316	178	11	20	302	1063	179	9e-17	80.9
+Xrcc3_NP_200554.1	Pc31108_g1_i2	32.31	130	63	3	147	256	672	298	5e-13	70.1
+Xrcc3_NP_200554.1	Pc29686_g1_i1	23.53	323	190	7	15	299	2720	1809	3e-10	61.6
+# TBLASTN 2.2.28+
+# Query: Rad52_CAA86623.1_SCerevisiae
+# Database: /nobackup/data5/skeletonema_sex_project/differential-expression-analysis/transcriptome/transcriptome-blast_db/skeletonema-marinoi_transcriptome_unannotated.fasta
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 8 hits found
+Rad52_CAA86623.1_SCerevisiae	MTRINITY_DN12189_c1_g1_i1	44.44	117	63	2	69	184	871	524	2e-20	94.0
+Rad52_CAA86623.1_SCerevisiae	MTRINITY_DN13162_c0_g1_i1	41.80	122	68	3	67	186	558	196	5e-20	90.5
+Rad52_CAA86623.1_SCerevisiae	MTRINITY_DN13162_c0_g1_i2	42.62	122	67	3	67	186	552	190	1e-19	90.1
+Rad52_CAA86623.1_SCerevisiae	Pc25342_g1_i1	41.80	122	68	3	67	186	1274	912	4e-19	90.9
+Rad52_CAA86623.1_SCerevisiae	Pc28709_g2_i1	44.44	117	63	2	69	184	2285	1938	1e-18	90.1
+Rad52_CAA86623.1_SCerevisiae	Pc23291_g2_i2	47.96	98	48	3	91	186	454	744	2e-17	83.2
+Rad52_CAA86623.1_SCerevisiae	STRINITY_DN10591_c0_g1_i1	50.00	58	27	2	128	184	672	842	5e-05	46.6
+Rad52_CAA86623.1_SCerevisiae	STRINITY_DN10591_c0_g1_i2	50.00	58	27	2	128	184	939	1109	5e-05	46.6
+# TBLASTN 2.2.28+
+# Query: Rad1_Q9LKI5.2
+# Database: /nobackup/data5/skeletonema_sex_project/differential-expression-analysis/transcriptome/transcriptome-blast_db/skeletonema-marinoi_transcriptome_unannotated.fasta
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Rad1_Q9LKI5.2	MTRINITY_DN17002_c0_g1_i1	30.91	990	499	26	75	948	602	3364	8e-99	 342
+# TBLASTN 2.2.28+
+# Query: Msh2_AEE76112.1
+# Database: /nobackup/data5/skeletonema_sex_project/differential-expression-analysis/transcriptome/transcriptome-blast_db/skeletonema-marinoi_transcriptome_unannotated.fasta
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 16 hits found
+Msh2_AEE76112.1	STRINITY_DN7940_c0_g1_i1	41.92	489	248	11	440	911	1339	2748	8e-102	 349
+Msh2_AEE76112.1	STRINITY_DN7940_c0_g1_i1	30.83	120	71	3	264	372	706	1062	2e-07	55.5
+Msh2_AEE76112.1	MTRINITY_DN17310_c0_g1_i2	29.21	623	363	17	294	858	2716	4524	1e-50	 195
+Msh2_AEE76112.1	Pc32435_g1_i6	30.15	335	209	7	537	851	1142	153	4e-44	 167
+Msh2_AEE76112.1	MTRINITY_DN12172_c0_g1_i1	30.31	287	171	6	575	837	171	1016	6e-37	 151
+Msh2_AEE76112.1	Pc32728_g2_i1	31.27	291	163	8	575	837	106	951	9e-37	 150
+Msh2_AEE76112.1	Pc32435_g1_i4	30.31	287	171	6	575	837	1039	194	1e-36	 151
+Msh2_AEE76112.1	STRINITY_DN10910_c0_g1_i1	28.90	519	303	15	294	759	1519	2	3e-35	 145
+Msh2_AEE76112.1	Pc31899_g1_i1	28.54	410	257	11	464	859	1415	252	1e-33	 140
+Msh2_AEE76112.1	STRINITY_DN11475_c0_g1_i1	28.54	410	257	11	464	859	3597	2434	2e-33	 140
+Msh2_AEE76112.1	Pc32817_g1_i3	30.00	300	184	7	464	750	883	1743	7e-26	 115
+Msh2_AEE76112.1	MTRINITY_DN16524_c0_g1_i1	31.19	202	122	5	663	860	3376	3942	1e-17	89.4
+Msh2_AEE76112.1	MTRINITY_DN12973_c0_g1_i1	27.16	232	152	4	622	850	1854	1201	5e-16	83.6
+Msh2_AEE76112.1	STRINITY_DN2093_c0_g1_i1	37.39	115	70	1	744	858	1	339	1e-13	75.9
+Msh2_AEE76112.1	MTRINITY_DN15015_c0_g1_i1	23.76	282	179	12	596	857	3397	2600	2e-09	62.4
+Msh2_AEE76112.1	STRINITY_DN6427_c0_g1_i1	23.76	282	179	12	596	857	879	1676	2e-09	62.4
+# TBLASTN 2.2.28+
+# Query: Msh6_NP_001190656.1
+# Database: /nobackup/data5/skeletonema_sex_project/differential-expression-analysis/transcriptome/transcriptome-blast_db/skeletonema-marinoi_transcriptome_unannotated.fasta
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 26 hits found
+Msh6_NP_001190656.1	MTRINITY_DN17310_c0_g1_i2	33.49	1069	546	32	357	1277	1402	4557	5e-150	 502
+Msh6_NP_001190656.1	MTRINITY_DN17310_c0_g1_i2	42.86	63	30	2	124	180	499	687	2e-05	50.1
+Msh6_NP_001190656.1	STRINITY_DN10910_c0_g1_i1	32.15	961	491	29	357	1173	2833	2	3e-120	 408
+Msh6_NP_001190656.1	STRINITY_DN7940_c0_g1_i1	34.89	278	170	6	1005	1280	1837	2643	2e-43	 174
+Msh6_NP_001190656.1	STRINITY_DN7940_c0_g1_i1	36.36	77	38	2	692	758	799	1026	4e-04	45.8
+Msh6_NP_001190656.1	Pc32435_g1_i6	34.18	275	164	5	1000	1260	971	156	3e-30	 127
+Msh6_NP_001190656.1	STRINITY_DN2093_c0_g1_i1	50.00	124	58	3	1158	1277	1	372	5e-27	 120
+Msh6_NP_001190656.1	Pc31899_g1_i1	22.73	572	400	15	713	1260	1928	267	2e-24	 112
+Msh6_NP_001190656.1	Pc32728_g2_i1	32.84	268	157	7	1000	1247	157	951	1e-23	 108
+Msh6_NP_001190656.1	STRINITY_DN11475_c0_g1_i1	22.51	573	402	15	713	1260	4116	2449	5e-23	 107
+Msh6_NP_001190656.1	MTRINITY_DN12172_c0_g1_i1	32.84	268	157	7	1000	1247	222	1016	6e-23	 107
+Msh6_NP_001190656.1	MTRINITY_DN12973_c0_g1_i1	29.12	340	207	11	929	1260	2142	1201	8e-23	 106
+Msh6_NP_001190656.1	Pc32435_g1_i4	32.84	268	157	7	1000	1247	988	194	8e-23	 107
+Msh6_NP_001190656.1	Pc32817_g1_i3	23.08	481	320	14	713	1164	364	1743	3e-20	93.2
+Msh6_NP_001190656.1	Pc32817_g1_i3	23.71	97	72	2	1164	1259	1826	2113	3e-20	26.2
+Msh6_NP_001190656.1	MTRINITY_DN16524_c0_g1_i1	32.84	204	123	6	1061	1260	3343	3924	1e-17	90.1
+Msh6_NP_001190656.1	MTRINITY_DN16524_c0_g1_i1	24.17	211	139	7	392	585	1204	1824	0.003	42.4
+Msh6_NP_001190656.1	MTRINITY_DN15015_c0_g1_i1	25.00	244	160	7	966	1198	3511	2816	1e-10	66.6
+Msh6_NP_001190656.1	STRINITY_DN6427_c0_g1_i1	25.00	244	160	7	966	1198	765	1460	2e-10	66.2
+Msh6_NP_001190656.1	Pc38363_g1_i1	37.14	70	41	1	124	193	1673	1473	6e-07	54.7
+Msh6_NP_001190656.1	MTRINITY_DN14770_c0_g1_i2	35.59	59	38	0	117	175	3884	4060	6e-05	48.1
+Msh6_NP_001190656.1	STRINITY_DN8752_c0_g1_i1	35.59	59	38	0	117	175	465	641	7e-05	47.8
+Msh6_NP_001190656.1	Pc19029_g1_i1	43.75	48	27	0	124	171	1985	1842	2e-04	46.6
+Msh6_NP_001190656.1	MTRINITY_DN5988_c0_g1_i1	43.75	48	27	0	124	171	1169	1312	2e-04	46.6
+Msh6_NP_001190656.1	STRINITY_DN8496_c0_g2_i1	24.17	211	139	7	392	585	1648	1028	0.001	43.9
+Msh6_NP_001190656.1	MTRINITY_DN13389_c0_g1_i3	29.00	100	68	2	686	784	1294	1001	0.001	43.9
+# TBLASTN 2.2.28+
+# Query: Mlh1_NP_567345.2
+# Database: /nobackup/data5/skeletonema_sex_project/differential-expression-analysis/transcriptome/transcriptome-blast_db/skeletonema-marinoi_transcriptome_unannotated.fasta
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 4 hits found
+Mlh1_NP_567345.2	MTRINITY_DN12931_c0_g1_i1	39.48	233	98	4	27	216	154	852	4e-39	 156
+Mlh1_NP_567345.2	MTRINITY_DN12931_c0_g1_i1	44.55	110	59	1	264	371	1300	1629	4e-25	 112
+Mlh1_NP_567345.2	MTRINITY_DN12931_c0_g1_i1	29.79	292	152	7	469	737	2293	3078	6e-24	 108
+Mlh1_NP_567345.2	Pc31460_g3_i1	25.58	387	217	13	25	351	3400	2273	4e-21	99.4
+# TBLASTN 2.2.28+
+# Query: Mlh2_NP_013135.1_SCerevisiae
+# Database: /nobackup/data5/skeletonema_sex_project/differential-expression-analysis/transcriptome/transcriptome-blast_db/skeletonema-marinoi_transcriptome_unannotated.fasta
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 2 hits found
+Mlh2_NP_013135.1_SCerevisiae	Pc31460_g3_i1	32.84	204	128	4	3	202	3388	2792	6e-21	98.6
+Mlh2_NP_013135.1_SCerevisiae	MTRINITY_DN12931_c0_g1_i1	41.57	89	50	1	13	101	190	450	6e-14	76.3
+# TBLASTN 2.2.28+
+# Query: Mlh3_NP_195277.5
+# Database: /nobackup/data5/skeletonema_sex_project/differential-expression-analysis/transcriptome/transcriptome-blast_db/skeletonema-marinoi_transcriptome_unannotated.fasta
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 4 hits found
+Mlh3_NP_195277.5	MTRINITY_DN19555_c0_g1_i1	43.84	73	40	1	1040	1111	235	453	1e-08	57.0
+Mlh3_NP_195277.5	Pc31460_g3_i1	29.76	205	128	5	4	197	3388	2789	1e-08	59.7
+Mlh3_NP_195277.5	Pc31460_g3_i1	22.87	223	132	7	942	1138	1042	416	4e-04	45.4
+Mlh3_NP_195277.5	MTRINITY_DN12931_c0_g1_i1	35.04	117	74	2	4	119	160	507	1e-06	53.5
+# TBLASTN 2.2.28+
+# Query: Pms1_AAM00563.1
+# Database: /nobackup/data5/skeletonema_sex_project/differential-expression-analysis/transcriptome/transcriptome-blast_db/skeletonema-marinoi_transcriptome_unannotated.fasta
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 4 hits found
+Pms1_AAM00563.1	Pc31460_g3_i1	32.03	434	257	12	35	436	3388	2105	4e-49	 189
+Pms1_AAM00563.1	Pc31460_g3_i1	36.40	250	114	4	686	893	1177	437	2e-39	 159
+Pms1_AAM00563.1	MTRINITY_DN12931_c0_g1_i1	31.17	231	115	6	43	230	184	873	6e-23	 106
+Pms1_AAM00563.1	MTRINITY_DN12931_c0_g1_i1	37.50	88	50	4	289	373	1294	1551	1e-05	50.1
+# TBLASTN 2.2.28+
+# Query: Mms4/Eme1_AAF06816.1_SCerevisiae
+# Database: /nobackup/data5/skeletonema_sex_project/differential-expression-analysis/transcriptome/transcriptome-blast_db/skeletonema-marinoi_transcriptome_unannotated.fasta
+# 0 hits found
+# TBLASTN 2.2.28+
+# Query: Mus81_NP_194816.2
+# Database: /nobackup/data5/skeletonema_sex_project/differential-expression-analysis/transcriptome/transcriptome-blast_db/skeletonema-marinoi_transcriptome_unannotated.fasta
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 3 hits found
+Mus81_NP_194816.2	MTRINITY_DN16254_c1_g1_i2	23.69	287	161	13	319	581	2223	2981	3e-04	45.1
+Mus81_NP_194816.2	STRINITY_DN9806_c0_g1_i2	27.34	128	72	5	398	506	263	640	0.008	40.0
+Mus81_NP_194816.2	MTRINITY_DN6311_c0_g1_i1	27.34	128	72	5	398	506	4658	5035	0.009	40.0
+# TBLASTN 2.2.28+
+# Query: Fancm_NP_001185141.1
+# Database: /nobackup/data5/skeletonema_sex_project/differential-expression-analysis/transcriptome/transcriptome-blast_db/skeletonema-marinoi_transcriptome_unannotated.fasta
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 24 hits found
+Fancm_NP_001185141.1	Pc32112_g1_i2	40.61	527	272	13	107	606	2535	997	8e-109	 378
+Fancm_NP_001185141.1	Pc32112_g1_i1	40.61	527	272	13	107	606	3852	2314	2e-107	 377
+Fancm_NP_001185141.1	MTRINITY_DN16278_c0_g1_i1	44.30	79	38	1	498	570	2376	2140	3e-08	59.3
+Fancm_NP_001185141.1	MTRINITY_DN16278_c0_g2_i1	39.66	58	35	0	513	570	4362	4189	6e-06	51.6
+Fancm_NP_001185141.1	Pc32299_g2_i2	33.90	59	39	0	520	578	1635	1459	3e-05	48.9
+Fancm_NP_001185141.1	Pc32299_g2_i2	26.75	157	89	6	115	256	2985	2548	3e-04	45.8
+Fancm_NP_001185141.1	STRINITY_DN11677_c0_g1_i1	43.75	64	35	1	508	570	1571	1380	4e-05	48.9
+Fancm_NP_001185141.1	MTRINITY_DN18356_c0_g1_i1	30.69	101	60	2	470	570	1674	1946	7e-05	47.8
+Fancm_NP_001185141.1	STRINITY_DN13010_c0_g1_i1	25.44	169	107	4	436	598	1561	2028	2e-04	46.6
+Fancm_NP_001185141.1	STRINITY_DN9576_c0_g1_i2	25.17	151	95	4	444	593	619	218	5e-04	45.1
+Fancm_NP_001185141.1	MTRINITY_DN13962_c1_g1_i1	29.32	133	78	4	452	584	3293	2943	5e-04	45.1
+Fancm_NP_001185141.1	MTRINITY_DN15029_c0_g1_i1	33.33	84	54	1	511	592	1531	1280	6e-04	44.7
+Fancm_NP_001185141.1	STRINITY_DN10307_c0_g3_i1	34.78	69	44	1	510	577	547	753	8e-04	44.3
+Fancm_NP_001185141.1	Pc27997_g1_i3	38.10	63	39	0	511	573	934	1122	0.001	43.9
+Fancm_NP_001185141.1	STRINITY_DN949_c0_g1_i1	38.10	63	39	0	511	573	731	543	0.001	43.9
+Fancm_NP_001185141.1	MTRINITY_DN10472_c0_g1_i1	33.87	62	41	0	509	570	509	694	0.001	43.1
+Fancm_NP_001185141.1	Pc23678_g1_i1	34.48	58	38	0	513	570	401	228	0.001	43.5
+Fancm_NP_001185141.1	STRINITY_DN3934_c0_g1_i1	33.33	84	54	1	511	592	1245	1496	0.002	43.5
+Fancm_NP_001185141.1	Pc22118_g1_i1	33.87	62	41	0	509	570	1514	1329	0.002	43.1
+Fancm_NP_001185141.1	Pc31569_g4_i2	24.00	125	79	3	447	570	639	310	0.002	43.1
+Fancm_NP_001185141.1	MTRINITY_DN16737_c2_g1_i1	24.00	125	79	3	447	570	3236	2907	0.002	43.1
+Fancm_NP_001185141.1	Pc29690_g2_i2	40.23	87	37	5	495	570	480	232	0.005	42.0
+Fancm_NP_001185141.1	MTRINITY_DN16971_c1_g1_i7	40.23	87	37	5	495	570	2030	2278	0.005	42.0
+Fancm_NP_001185141.1	MTRINITY_DN4978_c0_g1_i1	28.12	128	76	3	448	573	2191	2532	0.005	42.0
+# TBLASTN 2.2.28+
+# Query: Fen1_AED93576.1
+# Database: /nobackup/data5/skeletonema_sex_project/differential-expression-analysis/transcriptome/transcriptome-blast_db/skeletonema-marinoi_transcriptome_unannotated.fasta
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 19 hits found
+Fen1_AED93576.1	MTRINITY_DN15340_c0_g1_i3	41.73	254	99	3	142	347	2197	1439	2e-82	 169
+Fen1_AED93576.1	MTRINITY_DN15340_c0_g1_i3	53.90	154	67	1	1	150	2633	2172	2e-82	 157
+Fen1_AED93576.1	Pc10978_g1_i1	27.14	280	181	5	1	264	251	1069	2e-20	94.0
+Fen1_AED93576.1	STRINITY_DN21073_c0_g1_i1	27.60	279	180	6	1	264	70	885	1e-18	87.0
+Fen1_AED93576.1	Pc31988_g2_i3	28.68	265	139	9	125	346	1311	538	1e-17	86.7
+Fen1_AED93576.1	Pc31988_g2_i3	34.74	95	52	4	1	94	3933	3676	0.008	39.3
+Fen1_AED93576.1	Pc31988_g2_i4	28.63	255	133	8	134	346	1281	538	2e-17	85.9
+Fen1_AED93576.1	Pc31988_g2_i4	34.74	95	52	4	1	94	3948	3691	0.009	39.3
+Fen1_AED93576.1	MTRINITY_DN3890_c0_g1_i1	33.33	102	20	1	222	275	310	5	3e-11	62.0
+Fen1_AED93576.1	MTRINITY_DN16757_c1_g2_i2	24.08	191	112	3	68	251	3862	3368	6e-10	62.4
+Fen1_AED93576.1	MTRINITY_DN16757_c1_g2_i1	24.08	191	112	3	68	251	3862	3368	6e-10	62.4
+Fen1_AED93576.1	Pc29854_g3_i1	41.43	70	38	2	280	347	432	226	1e-07	54.3
+Fen1_AED93576.1	Pc30234_g1_i1	27.93	179	119	5	20	188	2699	2163	9e-05	45.4
+Fen1_AED93576.1	MTRINITY_DN14575_c0_g1_i3	26.19	126	71	4	152	255	1001	1378	0.003	40.4
+Fen1_AED93576.1	Pc30147_g1_i2	26.19	126	71	4	152	255	1496	1119	0.003	40.4
+Fen1_AED93576.1	MTRINITY_DN13777_c1_g1_i1	26.32	171	109	8	194	356	2129	2614	0.004	40.4
+Fen1_AED93576.1	MTRINITY_DN14575_c0_g1_i2	26.19	126	71	4	152	255	877	1254	0.004	40.4
+Fen1_AED93576.1	MTRINITY_DN14575_c0_g1_i4	26.19	126	71	4	152	255	890	1267	0.004	40.4
+Fen1_AED93576.1	Pc30147_g1_i1	26.19	126	71	4	152	255	1496	1119	0.004	40.4
+# TBLASTN 2.2.28+
+# Query: Exo1_Q8L6Z7.2
+# Database: /nobackup/data5/skeletonema_sex_project/differential-expression-analysis/transcriptome/transcriptome-blast_db/skeletonema-marinoi_transcriptome_unannotated.fasta
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 14 hits found
+Exo1_Q8L6Z7.2	Pc10978_g1_i1	36.36	352	201	8	1	330	251	1303	4e-60	 213
+Exo1_Q8L6Z7.2	STRINITY_DN21073_c0_g1_i1	36.73	275	158	5	1	259	70	894	5e-52	 184
+Exo1_Q8L6Z7.2	MTRINITY_DN14575_c0_g1_i2	25.06	395	166	11	56	327	532	1695	2e-19	94.0
+Exo1_Q8L6Z7.2	Pc30147_g1_i1	25.19	389	171	13	56	327	1835	678	2e-19	94.0
+Exo1_Q8L6Z7.2	MTRINITY_DN14575_c0_g1_i3	25.06	395	166	13	56	327	656	1819	3e-19	93.6
+Exo1_Q8L6Z7.2	MTRINITY_DN14575_c0_g1_i4	25.06	395	166	13	56	327	545	1708	4e-19	92.8
+Exo1_Q8L6Z7.2	Pc30147_g1_i2	25.06	395	166	13	56	327	1841	678	5e-19	92.4
+Exo1_Q8L6Z7.2	Pc30234_g1_i1	29.18	233	120	7	1	188	2819	2121	3e-15	80.5
+Exo1_Q8L6Z7.2	Pc31988_g2_i3	27.20	125	81	3	125	246	1281	928	1e-06	52.4
+Exo1_Q8L6Z7.2	Pc31988_g2_i3	31.25	80	54	1	1	79	3933	3694	2e-05	49.3
+Exo1_Q8L6Z7.2	Pc31988_g2_i4	27.20	125	81	3	125	246	1281	928	1e-06	52.4
+Exo1_Q8L6Z7.2	Pc31988_g2_i4	31.25	80	54	1	1	79	3948	3709	1e-05	49.3
+Exo1_Q8L6Z7.2	MTRINITY_DN15340_c0_g1_i3	29.57	115	78	2	163	275	2107	1766	2e-06	52.0
+Exo1_Q8L6Z7.2	STRINITY_DN13682_c0_g1_i1	27.59	116	75	3	128	235	74	418	3e-04	42.4
+# TBLASTN 2.2.28+
+# Query: Dna2_NP_001184943.1
+# Database: /nobackup/data5/skeletonema_sex_project/differential-expression-analysis/transcriptome/transcriptome-blast_db/skeletonema-marinoi_transcriptome_unannotated.fasta
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 25 hits found
+Dna2_NP_001184943.1	MTRINITY_DN16883_c0_g1_i2	28.18	1157	618	37	339	1308	2381	5773	3e-101	 358
+Dna2_NP_001184943.1	Pc30850_g2_i1	31.82	418	234	13	905	1288	1782	580	7e-41	 166
+Dna2_NP_001184943.1	MTRINITY_DN13414_c0_g1_i1	31.69	445	249	12	907	1306	5823	4519	1e-37	 155
+Dna2_NP_001184943.1	MTRINITY_DN7353_c0_g1_i1	26.52	494	271	18	900	1304	3173	1701	3e-26	 118
+Dna2_NP_001184943.1	MTRINITY_DN16936_c0_g1_i1	27.65	463	251	15	908	1302	1508	168	6e-26	 116
+Dna2_NP_001184943.1	MTRINITY_DN17367_c1_g1_i1	28.21	312	198	9	1010	1308	4749	3853	3e-21	 102
+Dna2_NP_001184943.1	Pc28802_g1_i4	31.05	306	181	10	1019	1308	2160	1285	3e-21	 101
+Dna2_NP_001184943.1	MTRINITY_DN15016_c0_g1_i1	31.05	306	181	10	1019	1308	5245	6120	4e-21	 101
+Dna2_NP_001184943.1	Pc32833_g1_i1	25.99	454	246	16	902	1290	1625	339	9e-17	87.0
+Dna2_NP_001184943.1	MTRINITY_DN16232_c1_g1_i2	30.69	303	175	11	1026	1306	1266	397	3e-16	85.5
+Dna2_NP_001184943.1	STRINITY_DN12959_c0_g1_i1	30.22	268	160	7	1031	1286	2097	2855	3e-16	85.5
+Dna2_NP_001184943.1	Pc36417_g1_i1	39.05	105	46	4	1195	1286	459	160	2e-12	72.8
+Dna2_NP_001184943.1	Pc36417_g1_i1	33.72	86	44	3	1037	1109	1095	838	7e-04	44.7
+Dna2_NP_001184943.1	Pc36417_g1_i1	28.95	114	67	4	889	990	1854	1519	0.007	41.6
+Dna2_NP_001184943.1	Pc31720_g2_i2	39.78	93	52	2	1198	1286	61	339	3e-08	58.9
+Dna2_NP_001184943.1	MTRINITY_DN17110_c0_g1_i3	26.18	340	192	13	1012	1315	3346	4296	7e-08	58.2
+Dna2_NP_001184943.1	Pc31228_g4_i1	24.77	327	176	10	1010	1286	3008	2088	6e-07	54.7
+Dna2_NP_001184943.1	Pc31228_g4_i1	28.97	145	93	5	883	1020	3836	3411	0.001	44.3
+Dna2_NP_001184943.1	MTRINITY_DN15724_c0_g1_i1	24.77	327	176	10	1010	1286	5878	6798	6e-07	54.7
+Dna2_NP_001184943.1	MTRINITY_DN15724_c0_g1_i1	28.97	145	93	5	883	1020	5050	5475	0.001	44.3
+Dna2_NP_001184943.1	STRINITY_DN2833_c0_g1_i1	34.65	101	60	3	1196	1290	957	1259	4e-06	51.6
+Dna2_NP_001184943.1	STRINITY_DN2833_c0_g1_i1	29.79	188	100	8	932	1092	92	640	8e-04	44.3
+Dna2_NP_001184943.1	Pc10809_g1_i1	26.07	280	132	8	1059	1286	5895	5125	6e-06	51.6
+Dna2_NP_001184943.1	MTRINITY_DN17036_c0_g1_i1	30.69	101	63	2	1193	1286	2242	1940	7e-05	48.1
+Dna2_NP_001184943.1	MTRINITY_DN16232_c1_g1_i3	40.58	69	37	2	1222	1286	660	454	2e-04	45.4
+# TBLASTN 2.2.28+
+# Query: Brca1_AAO39850.1
+# Database: /nobackup/data5/skeletonema_sex_project/differential-expression-analysis/transcriptome/transcriptome-blast_db/skeletonema-marinoi_transcriptome_unannotated.fasta
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 14 hits found
+Brca1_AAO39850.1	MTRINITY_DN15891_c0_g1_i1	28.28	99	53	1	8	88	5047	4751	6e-07	54.3
+Brca1_AAO39850.1	Pc24889_g1_i1	43.64	55	23	2	7	53	1562	1398	1e-04	46.6
+Brca1_AAO39850.1	MTRINITY_DN11764_c0_g1_i3	43.64	55	23	2	7	53	1589	1425	1e-04	46.2
+Brca1_AAO39850.1	MTRINITY_DN8880_c0_g1_i1	35.29	51	33	0	6	56	51	203	2e-04	45.8
+Brca1_AAO39850.1	STRINITY_DN18491_c0_g1_i1	31.67	60	40	1	14	72	335	156	6e-04	42.0
+Brca1_AAO39850.1	Pc23981_g1_i3	29.41	51	36	0	6	56	241	89	0.002	39.7
+Brca1_AAO39850.1	STRINITY_DN8752_c0_g1_i1	39.53	43	23	2	15	55	681	806	0.002	42.4
+Brca1_AAO39850.1	MTRINITY_DN14770_c0_g1_i2	39.53	43	23	2	15	55	4100	4225	0.003	42.4
+Brca1_AAO39850.1	Pc15312_g1_i1	35.09	57	33	2	15	67	853	683	0.003	42.0
+Brca1_AAO39850.1	STRINITY_DN12669_c0_g1_i1	35.09	57	33	2	15	67	1379	1209	0.004	42.0
+Brca1_AAO39850.1	MTRINITY_DN11269_c0_g2_i1	26.47	68	47	1	6	73	938	744	0.004	41.2
+Brca1_AAO39850.1	MTRINITY_DN7865_c0_g1_i1	30.00	60	41	1	14	72	165	344	0.006	40.8
+Brca1_AAO39850.1	STRINITY_DN8113_c0_g1_i1	26.47	68	47	1	6	73	76	270	0.007	40.4
+Brca1_AAO39850.1	STRINITY_DN9110_c1_g1_i1	33.93	56	35	1	2	55	1893	1726	0.010	40.0
+# TBLASTN 2.2.28+
+# Query: Brca2_AEE81814.1
+# Database: /nobackup/data5/skeletonema_sex_project/differential-expression-analysis/transcriptome/transcriptome-blast_db/skeletonema-marinoi_transcriptome_unannotated.fasta
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 2 hits found
+Brca2_AEE81814.1	MTRINITY_DN15273_c1_g3_i3	26.54	456	310	12	575	1010	2440	1088	2e-30	 131
+Brca2_AEE81814.1	Pc31845_g1_i2	33.80	216	132	5	575	780	2531	1887	1e-25	 115
+# BLAST processed 58 queries
