@@ -206,6 +206,8 @@ The reason for doing it this way is because different approaches have different 
 
 First different assemblies need to be made, and evaluated to find which ones are the most suitable to be merged.    
 
+NOTE: A simpler overview of the whole assembly-process can be found in /transcriptome along with different versions of the assembly.          
+
 ###Creating different assemblies
 
 Different settings can be used to create assemblies, and some assemblies have a better quality than others. Being more complete, utilizing a larger portion of the data, producing less chimeric and redundant contigs, etc.
@@ -426,7 +428,8 @@ Large+Cue vs Large+NoCue (Time3) = Salt time 3
 (Small+Cue vs Large+Cue) (Time2) vs (Small+Cue vs Large+Cue) (Time3) = Sex + Size over time
 
 
-Significantly DE contigs can be found in /results and files:        
+Significantly DE contigs can be found in:        
+/nobackup/data5/skeletonema_sex_project/differential-expression-analysis/differential-expression/DifferentialExpression_allsamples/Results               
 DE2_allsamples.ods       
 DE3_allsamples.ods        
 DE2V3_allsamples.ods           
@@ -434,7 +437,8 @@ DE3V2_allsamples.ods
 DE2salt_allsamples.ods     
 DE3salt_allsamples.ods         
 
-Contigs with logF threshold 1 can be found in /results/sortedlogF        
+Contigs with logF threshold 1 can be found in:        
+/nobackup/data5/skeletonema_sex_project/differential-expression-analysis/differential-expression/DifferentialExpression_allsamples/Results/sortedlogF         
 
 The two DE-analysis exists as alternatives as it is difficult to determine the best option.    
 In the end for this project, it was decided to use the second option, wherein all samples were used for dispersion estimation.      
@@ -448,10 +452,13 @@ von Dassow et al, 2009		Transcriptome analysis of functional differentiation bet
 
 The first one provided a list of 58 meiosis-related proteins with corresponding accession-numbers.           
 These aminoacid fasta-sequences came when available from Arabidopsis Thaliana, and otherwise from Sacchaomyces Cerevisiaewere, and were downloaded from NCBI. These can be found here:         
-/nobackup/data5/skeletonema_sex_project/blast_for_sex-genes/58athal+scere-meiosisgenes/meiosis_athal+scerv.fa
-The second one provided a list of X proteins with the majority connected to flagella function from a variety of species but mainly Clamydomonas reinhardtii, also with accession-numbers.               
-These aminoacid fasta-sequences were downloaded from Uniprot.       
-Next they were used as query in a tBLASTn search against the transcriptome which had been converted into a blastable database, located here:     
+/nobackup/data5/skeletonema_sex_project/blast_for_sex-genes/Sex-gene-list1/meiosis-genes/meiosis_genes.fasta         
+
+The second one provided a list of 196 proteins with the majority connected to flagella function from a variety of species but mainly Clamydomonas reinhardtii, also with accession-numbers. Many of the genes in this list were despite having different accession-numbers unique to eachother, and many had poor annotation and were only predicted to be related to flagellar functions.                       
+These aminoacid fasta-sequences were downloaded from Uniprot, and are located in two separate directories:      
+/nobackup/data5/skeletonema_sex_project/blast_for_sex-genes/Sex-gene-list1/flagella_genespart1 (or 2)         
+       
+Next these "sex-proteins" were used as query in a tBLASTn search against the transcriptome which had been converted into a blastable database, located here:     
 /nobackup/data5/skeletonema_sex_project/differential-expression-analysis/transcriptome/transcriptome-blast_db      
 Using these settings:       
 -matrix BLOSUM62 -evalue 0.01 -gapopen 11 -gapextend 1 - word_size 6      
@@ -482,7 +489,7 @@ And was used with the input files in the same folder:
 6: DE3.ods        
 These files contain the combined information from the two sets of sex-related genes.    
 The resulting table can be found in the same folder here:      
-
+/blast_for_sex_genes/table_with_sexgene-results_final.xlsx      
 
 ##Transcriptome-annotation
 
