@@ -8,9 +8,12 @@ then
 	wait
 	echo "./script.sh file-with-genenames/accessionnumber file-with-annotation-of-genes blastresults-outfmt7-againstranscriptome blastresults-outfmt7-reciprocal resultsofDE1 resultsofDE2"
 else
+#COUNTS THE NUMBER OF GENES, MEANING ROWS IN THE TABLE
 	NUMGENES=$(wc -l $1 | cut -d" " -f1)
 	NUM=0
+#CREATES THE HEADER FOR THE TABLE
 	echo -e "GENEID\tANNOTATION\tCONTIG1\tEvalue\tBitscore\tUniprotHit\tAnnotation\tEvalue\tBitscore\tDE2logF\tDE2Pval\tDE3logF\tDE3Pval\tCONTIG2\tEvalue\tBitscore\tUniprotHit\tAnnotation\tEvalue\tBitscore\tDE2logF\tDE2Pval\tDE3logF\tDE3Pval\tCONTIG3\tEvalue\tBitscore\tUniprotHit\tAnnotation\tEvalue\tBitscore\tDE2logF\tDE2Pval\tDE3logF\tDE3Pval\tCONTIG4\tEvalue\tBitscore\tUniprotHit\tAnnotation\tEvalue\tBitscore\tDE2logF\tDE2Pval\tDE3logF\tDE3Pval\tCONTIG5\tEvalue\tBitscore\tUniprotHit\tAnnotation\tEvalue\tBitscore\tDE2logF\tDE2Pval\tDE3logF\tDE3Pval" > table_with_sexgene-results.txt
+#THIS IS A FOR LOOP THAT ASSIGNS GENE NAME AND ANNOTATION, AND CREATES TEMPORARY LIST OF CONTIG HITS
 	for i in $(seq 1 $NUMGENES);
 	do
 	wait
@@ -19,12 +22,9 @@ else
 	GENEID=$(sed "${NUM}q;d" $1)
 	ANNOTATION=$(sed "${NUM}q;d" $2 | sed 's/ /-/g')
 	wait
-	COUNTCHAR=$(echo "$GENEID" | sed 's/[^_]//g' | awk '{ print length }')
-	wait
-	ACCESSION=$(sed "${NUM}q;d" $1 | cut -d"_" -f-${COUNTCHAR})
-	wait
-	grep -e "$ACCESSION" $3 | grep -v "#" | cut -f2,11,12 > sexgene_contighits_TEMPORARY.txt
+	grep -e "$GENEID" $3 | grep -v "#" | cut -f2,11,12 > sexgene_contighits_TEMPORARY.txt
 	CONTIGNUM=0
+#THIS IS A FOR LOOP WHICH FOR EACH GENE, GATHERS INFORMATION ABOUT 5 BEST CONTIG HITS AND THEIR BEST SWISSPROT HITS
 	for k in $(seq 1 5);
 	do
 	CONTIGNUM=$(($CONTIGNUM+1))
