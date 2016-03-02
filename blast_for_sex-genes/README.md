@@ -1,3 +1,19 @@
+####Downloading the sequences        
+
+Two lists of sex-related genes were found in two separate articles:         
+Patil et al, 2015		Identification of the meiotic toolkit in diatoms and exploration of meiosis-specific SPO11 and RAD51 homologs in the sexual species Pseudonitzschia multistriata and Seminavis robusta        
+von Dassow et al, 2009		Transcriptome analysis of functional differentiation between haplid and diploid cells of Emiliania huxleyi, a globally significant photosynthetic calcifying cell    
+
+The first one provided a list of 58 meiosis-related proteins with corresponding accession-numbers.           
+These aminoacid fasta-sequences came when available from Arabidopsis Thaliana, and otherwise from Sacchaomyces Cerevisiaewere, and were downloaded from NCBI. These can be found here:         
+/nobackup/data5/skeletonema_sex_project/blast_for_sex-genes/Sex-gene-list1/meiosis-genes/meiosis_genes.fasta         
+
+The second one provided a list of 196 proteins with the majority connected to flagella function from a variety of species but mainly Clamydomonas reinhardtii. Many of the genes in this list were despite having different accession-numbers duplicates of eachother, and many had poor annotation and were only predicted to be related to flagellar functions.                       
+These aminoacid fasta-sequences were downloaded from Uniprot, and are located in two separate directories:      
+/nobackup/data5/skeletonema_sex_project/blast_for_sex-genes/Sex-gene-list1/flagella_genespart1 (or 2)         
+
+####Blasting against transcriptome
+
 Next these "sex-proteins" were used as query in a tBLASTn search against the transcriptome which had been converted into a blastable database, located here:     
 /nobackup/data5/skeletonema_sex_project/differential-expression-analysis/transcriptome/transcriptome-blast_db      
 Using these settings:       
