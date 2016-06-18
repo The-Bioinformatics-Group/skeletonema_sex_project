@@ -1,0 +1,9 @@
+#$ -S /bin/bash
+#$ -cwd
+#$ -q high_mem
+#$ -pe mpich 60
+
+QUERY=skeletonema-marinoi_transcriptome_unannotated.fasta
+DB=Thalassiosira_pseudonana_RefSeq.fst
+
+blastx -query $QUERY -db $DB -num_threads $NSLOTS -out skeletonema-marinoi_transcriptome_unannotated_2_Thalasiosira_pseudonana_refSeq.BLASTx.txt -outfmt "6 qseqid stitle pident bitscore score length"
