@@ -1,9 +1,0 @@
-#$ -S /bin/bash
-#$ -cwd
-#$ -q node0
-#$ -pe mpich 40
-
-QUERY=skeletonema-marinoi_transcriptome_unannotated.fasta
-DB=Phaeodactylum_tricornutum_RefSeq.fst
-
-blastx -query $QUERY -db $DB -num_threads $NSLOTS -out skeletonema-marinoi_transcriptome_unannotated_2_Phaeodactylum_tricornutum_refSeq.BLASTx.txt -outfmt "6 qseqid stitle pident bitscore score length"

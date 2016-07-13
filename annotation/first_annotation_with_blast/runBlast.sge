@@ -1,0 +1,13 @@
+#$ -S /bin/bash
+#$ -cwd
+#$ -q node0
+#$ -pe mpich 40
+
+QUERY=skeletonema-marinoi_transcriptome_unannotated.fasta
+DB=Thalassiosira_pseudonana_RefSeq.fst
+
+blastx -query $QUERY -db $DB -num_threads $NSLOTS -out skeletonema-marinoi_transcriptome_unannotated_2_Thalasiosira_pseudonana_refSeq.BLASTx.txt -outfmt "6 qseqid sseqid pident bitscore score length"
+
+DB=Phaeodactylum_tricornutum_RefSeq.fst
+blastx -query $QUERY -db $DB -num_threads $NSLOTS -out skeletonema-marinoi_transcriptome_unannotated_2_Phaeodactylum_tricornutum_refSeq.BLASTx.txt -out
+fmt "6 qseqid sseqid pident bitscore score length"
