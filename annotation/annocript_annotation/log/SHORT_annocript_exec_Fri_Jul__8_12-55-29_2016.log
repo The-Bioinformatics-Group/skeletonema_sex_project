@@ -1,0 +1,478 @@
+***********************************************************************
+This program comes with ABSOLUTELY NO WARRANTY; for details http://opensource.org/licenses/GPL-3.0.
+This is free software, and you are welcome to redistribute it
+under certain conditions; http://opensource.org/licenses/GPL-3.0 for details.
+***********************************************************************
+  /&&&&&&                                              /&&           /&&          
+ /&&__  &&                                            |__/          | &&          
+| &&  | &&/&&&&&&& /&&&&&&&   /&&&&&&  /&&&&&&& /&&&&&& /&& /&&&&&& /&&&&&&       
+| &&&&&&&| &&__  &| &&__  && /&&__  &&/&&_____//&&__  &| &&/&&__  &|_  &&_/       
+| &&__  &| &&  | &| &&  | &|  &&  | &| &&     | &&  |__| &| &&  | && | &&         
+| &&  | &| &&  | &| &&  | &|  &&  | &| &&     | &&     | &| &&  | && | && /&&     
+| &&  | &| &&  | &| &&  | &|   &&&&&&|  &&&&&&| &&     | &| &&&&&&&/ |  &&&&/    
+|__/  |__|__/  |__|__/  |__/ |______/ |_______|__/     |__| &&____/   |___/      
+                                                          | &&
+                                                          | &&
+                                                          |__/
+
+Annocript is a tool created by the Bioinformatic Lab of SZN of Naples. 
+Given a fasta file with a transcriptome, it will annotate your sequences and it will separate putative coding and long non-coding RNA sequences.
+ Reference: Musacchia F, Basu S, Petrosino G, Salvemini M, Sanges R. 
+ Annocript: a flexible pipeline for the annotation of transcriptomes which can also identify  putative long non-coding RNA. Bioinformatics (2015) doi:10.1093/bioinformatics/btv106
+***********************************************************************
+
+
+1. New session - 2. Use Previous - 3. Remove Session - 4. Do some utils - 5. Exit
+Your choice:  
+2
+Choose your folder: Skeletonema_sex
+Copying the given config file in /home/mtop/Annocript_annotation/jobs/Skeletonema_sex
+A config file config_user.txt is already present in the folder /home/mtop/Annocript_annotation/jobs/Skeletonema_sex. Do you want to overwrite it?(y or n) [Suggested: y] 
+y
+#####################################################
+# CHECKING THE INTEGRITY OF THE CONFIGURATION FILES #
+#####################################################
+
+They are good. Annocript can proceed!
+###################################
+# RUNNING ANNOCRIPT CONFIGURATION #
+###################################
+
+Temporary files will be stored
+The database will be built downloading data from UniProt website.
+Some programs will be run. In the following are listed
+A BLASTX against SwissProt will be executed.
+A BLASTX against TrEMBL/UniRef will be executed.
+A RPS BLAST of your sequences will be done.
+A BLASTN of your sequences will be done.
+A PORTRAIT of your sequences will be done.
+DNA2PEP on your sequences will be done.
+The final table will be built
+A web page and file with statistics will be created
+Do you agree with it?(y or n) 
+y
+Ok!.. let's go!
+Sequences found in your session folder. Checking it...
+Annocript detected that your sequences are transcripts
+Number of sequences: 39660
+
+>>> Database settings (it will need a while):
+Checking your privileges for MySQL...Checking the links for the databases to download...(it may take a while)...
+Everything is ok!
+You chose to create the database. Do you want to create with UniRef (u) or TrEMBL (t)? (u or t)
+[Suggestion: if you want to blast against specific organisms you should use TrEMBL]
+ 
+u
+
+dbVersion: 2016_07
+Folder for DB will be: /home/mtop/Annocript_annotation/data/2016_07 and database name: uniref_2016_07
+/home/mtop/Annocript_annotation/data/2016_07 doesn't exists. Creating folder /home/mtop/Annocript_annotation/data/2016_07...
+/home/mtop/Annocript_annotation/data/2016_07/tables doesn't exists. Creating folder /home/mtop/Annocript_annotation/data/2016_07/tables...
+Conserved domains database: Cdd
+Annocript will download several files for the database generation and BLAST execution.  Do you want to remove the file that Annocript will not use for the analysis? (y or n) [Suggested: n].
+ 
+n
+n
+You have enough memory to create more rapidly the db. Annocript will use a lot of memory now! :-D
+
+>>> Programs settings:
+
+>>> Setting final statistics and outputs
+..OK! WELL DONE!
+
+ WARNING: Some output files already exist! If you will run a program (BLAST, PORTRAIT, DNA2PEP) the corresponding output will be overwritten. Instead, output of BLASTx against UniRef will be different from that against TrEMBL. Continue?(y or n) 
+y
+Your configuration has been saved! A log file will be created in /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/log/annocript_exec_Fri_Jul__8_12-55-29_2016.log. 
+The overall computation usually depends from the number of sequences and the speed of the machine you are using. 
+You may want to check Annocript step-by-step with the following command: more /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/log/annocript_exec_Fri_Jul__8_12-55-29_2016.log.
+
+You will find all the results in the folder you chose here. Please take a look at
+ https://github.com/frankMusacchia/Annocript/blob/master/GUIDE/OUTPUT.md to understand the output from Annocript and the organization of folders.
+
+Please let us know if any problem occurs during the computation or you don't get from Annocript the expected result.
+You may want to use the forum at: https://groups.google.com/forum/#!forum/annocript.
+##########################################
+# STARTING ANNOCRIPT IN BACKGROUND! BYE! #
+##########################################
+
+
+
+ ####################### DB CREATION ########################
+
+Fri Jul  8 12:57:18 2016 
+Annocript is starting to create the database...
+
+(Fri Jul  8 12:57:18 2016) >>>>>>>>>>>>>CREATION OF DATABASE AND ITS TABLES<<<<<<<<<<<<<<
+Uploading DB_CREATION/uniref_db.sql into uniref_2016_07
+DB - proteinDB - and tables created!
+Finished Creating DB and tables in	0.589978933334351 seconds
+
+
+(Fri Jul  8 12:57:18 2016) >>>>>>>>>>>>>DOWNLOAD OF THE NECESSARY FILES<<<<<<<<<<<<<<
+Downloading: ftp://ftp.ncbi.nih.gov/pub/mmdb/cdd/little_endian/Cdd_LE.tar.gz.....completed!
+
+ Uncompressing /home/mtop/Annocript_annotation/data/2016_07/Cdd_LE.tar.gz...
+...completed!
+Downloading: http://geneontology.org/external2go/pfam2go.....completed!
+Downloading: ftp://ftp.ebi.ac.uk/pub/databases/Rfam/11.0/Rfam.fasta.gz.....completed!
+
+ Uncompressing /home/mtop/Annocript_annotation/data/2016_07/Rfam.fasta.gz...
+...completed!
+Downloading: ftp://ftp.arb-silva.de/current/README.txt.....completed!
+Downloading: ftp://ftp.arb-silva.de/current/Exports/SILVA_123.1_LSUParc_tax_silva.fasta.gz.....completed!
+
+ Uncompressing /home/mtop/Annocript_annotation/data/2016_07/SILVA_123.1_LSUParc_tax_silva.fasta.gz...
+...completed!
+Downloading: ftp://ftp.arb-silva.de/current/Exports/SILVA_123.1_SSUParc_tax_silva.fasta.gz.....completed!
+
+ Uncompressing /home/mtop/Annocript_annotation/data/2016_07/SILVA_123.1_SSUParc_tax_silva.fasta.gz...
+...completed!
+
+ Downloading File http://www.uniprot.org/docs/speclist.txt...Downloading: http://www.uniprot.org/docs/speclist.txt.....completed!
+
+(Fri Jul  8 13:07:57 2016) >>>>>>>>>>>>>DOWNLOADING OF THE UNIREF AND SWISS-PROT FILES<<<<<<<<<<<<<<
+Downloading: ftp://ftp.uniprot.org/pub/databases/uniprot/current_release/uniref/uniref90/uniref90.fasta.gz.....completed!
+
+ Uncompressing /home/mtop/Annocript_annotation/data/2016_07/uniref90.fasta.gz...
+...completed!
+Downloading: ftp://ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/complete/uniprot_sprot.fasta.gz.....completed!
+
+ Uncompressing /home/mtop/Annocript_annotation/data/2016_07/uniprot_sprot.fasta.gz...
+...completed!
+
+(Sat Jul  9 02:06:31 2016) >>>>>>>>>>>>>Download of all the stuffs needed for the mapping table<<<<<<<<<<<<<<
+There is no uniprotkbMappingsTable in uniref_2016_07...creating it...
+Downloading: http://www.geneontology.org/doc/GO.terms_alt_ids.....completed!
+Downloading: ftp://ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/idmapping/idmapping_selected.tab.gz.....completed!
+
+ Uncompressing /home/mtop/Annocript_annotation/data/2016_07/idmapping_selected.tab.gz...
+...completed!
+
+ Downloading File ftp://ftp.expasy.org/databases/enzyme/enzyme.dat...Downloading: ftp://ftp.expasy.org/databases/enzyme/enzyme.dat.....completed!
+Downloading: http://www.uniprot.org/docs/pathway.txt.....completed!
+...DONE!
+
+(Sat Jul  9 07:53:05 2016) >>>>>>>>>>>>>DOWNLOADING A TABLE FOR CONSERVED DOMAINS INFORMATIONS<<<<<<<<<<<<<<
+There is no cdTable in uniref_2016_07...creating it...
+Downloading: ftp://ftp.ncbi.nih.gov/pub/mmdb/cdd/cddid_all.tbl.gz.....completed!
+
+ Uncompressing /home/mtop/Annocript_annotation/data/2016_07/cddid_all.tbl.gz...
+...completed!
+
+(Sat Jul  9 07:53:11 2016) >>>>>>>>>>>>>CREATION OF NON CODING RNA CUSTOMIZED DATABASE<<<<<<<<<<<<<<
+Concatenating /home/mtop/Annocript_annotation/data/2016_07/SILVA_123.1_LSUParc_tax_silva.fasta and /home/mtop/Annocript_annotation/data/2016_07/SILVA_123.1_SSUParc_tax_silva.fasta in /home/mtop/Annocript_annotation/data/2016_07/tempSILVA... ..completed. 
+Concatenating /home/mtop/Annocript_annotation/data/2016_07/Rfam.fasta and /home/mtop/Annocript_annotation/data/2016_07/tempSILVA in /home/mtop/Annocript_annotation/data/2016_07/ncRNA.fa... ..completed. 
+/home/mtop/Annocript_annotation/data/2016_07/tempSILVA deleted successfully.
+Finished creation of the non-coding customized database in	68300.1789088249 seconds
+
+
+(Sat Jul  9 07:55:39 2016) >>>>>>>>>>>>>CREATION OF THE UNIREF AND SWISS-PROT TABLES<<<<<<<<<<<<<<
+Annocript will insert both SwissProt informations and UniRef ones.
+There is no uniprotkb in uniref_2016_07...creating it...
+Creating SwissProt tables...
+A log of the operation will be written in /home/mtop/Annocript_annotation/data/2016_07/uniprotkb_headParsNAValues.log
+Creating a file with all the headers from /home/mtop/Annocript_annotation/data/2016_07/uniprot_sprot.fasta (it makes the db construction faster but it will need a while)......DONE!
+Creating UNIPROT table......DONE! 
+ Writing the hashes on file-tables.... 
+..descriptions table: OK! 
+....organisms table: OK! 
+......GN table: OK!
+........PE table: OK!
+..........SV table OK!
+............db types table:OK!
+
+ Now uploading tables to database: uniref_2016_07...
+
+....DONE!
+Finished Creating Swissprot table in	16.5046908855438 seconds
+
+There is no uniref in uniref_2016_07...creating it...
+Creating UniRef tables...
+A log of the operation will be written in /home/mtop/Annocript_annotation/data/2016_07/uniref_headParsNAValues.log
+Creating a file with all the information about the sequences. (This file is needed to have a faster process)....PLEASE WAIT...
+...DONE!
+Creating UNIREF table.....please wait
+
+ uniref table completed! 
+ Writing the hashes on file-tables.... 
+....descriptions table..ok... ....taxType table..ok......hash completed!  
+ Uploading tables to database: uniref_2016_07...
+No errors in the parsing. /home/mtop/Annocript_annotation/data/2016_07/uniref_headParsNAValues.log will be erased.
+/home/mtop/Annocript_annotation/data/2016_07/uniref_headParsNAValues.log deleted successfully.
+..completed!
+
+....DONE!
+Finished Creating UniRef table in	973.487153053284 seconds
+
+
+(Sat Jul  9 08:12:09 2016) >>>>>>>>>>>>>CREATING A TABLE FOR CONSERVED DOMAINS INFORMATIONS<<<<<<<<<<<<<<
+There is no cdTable in uniref_2016_07...creating it...
+...creating a file with table.....DONE! 
+ Now uploading in db.......DONE!(CDTABLE Upload completed)
+ Finished the Conserved Domains table in	1.19551706314087 seconds
+
+
+(Sat Jul  9 08:12:10 2016) >>>>>>>>>>>>>MAPPING OF PROTEINS WITH GO-TERMS, ENZYME TERMS AND PATHWAYS<<<<<<<<<<<<<<
+A double mapping will start to fill two mappings tables (SwissProt and UniRef)...
+There is no uniprotkbMappingsTable in uniref_2016_07...creating it...
+
+**MAPPING FOR uniprotkb**
+Creating an hash with GO ids from uniprotkb...
+File /home/mtop/Annocript_annotation/data/2016_07/GO.terms_alt_ids already downloaded...
+Uploading goTable in db...
+Finished Creating GO table in	0.445390939712524 seconds
+
+There is no uniprotkbMappingsTable in uniref_2016_07...creating it...
+Extracting a reduced file from ftp://ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/idmapping/idmapping_selected.tab.gz with the GO mapping only..
+Reading the GO mapping file and storing terms for uniprotkb ids...
+Opening : /home/mtop/Annocript_annotation/data/2016_07/filtMappingFile.txt
+...DONE! ..in 399.853884935379 seconds
+Reading the ENZYME mapping file and storing terms for uniprotkb ids...
+File ftp://ftp.expasy.org/databases/enzyme/enzyme.dat already downloaded...
+Extracting informations about enzymes...
+...DONE! ..in 1.64342784881592 seconds
+
+Reading the PATHWAYS mapping file and storing terms for uniprotkb ids...
+...DONE! ..in 0.197310924530029 seconds
+
+Creating a table to be loaded in the db with all information stored...
+Loading in DB...
+WARNING! File /home/mtop/Annocript_annotation/data/2016_07/tables/uniprotkbMappingsTable is empty! It was not loaded in the database...
+Finished generating and loading uniprotkb mapping table in	0.611222982406616 seconds
+
+There is no cdMappingsTable in uniref_2016_07...creating it...
+Filling an hash with the mapping informaton for domains..
+WARNING: Some pfam ids where found in /home/mtop/Annocript_annotation/data/2016_07/pfam2go but not in the database:  pfam17136 pfam17144 pfam17175
+Maybe you are using an older version of the Conserved Domains Database.
+Creating a table to be loaded in the db using the hash...
+Added GO terms to 5029 domains...
+Loading in DB...
+Finished generating and loading /home/mtop/Annocript_annotation/data/2016_07/tables/cdMappingsTable mapping table in	6.23128294944763 seconds
+
+There is no unirefMappingsTable in uniref_2016_07...creating it...
+
+**MAPPING FOR uniref**
+Creating an hash with GO ids from uniref...
+File /home/mtop/Annocript_annotation/data/2016_07/GO.terms_alt_ids already downloaded...
+Finished Creating GO table in	0.0866808891296387 seconds
+
+There is no unirefMappingsTable in uniref_2016_07...creating it...
+Extracting a reduced file from ftp://ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/idmapping/idmapping_selected.tab.gz with the GO mapping only..
+Reading the GO mapping file and storing terms for uniref ids...
+Opening : /home/mtop/Annocript_annotation/data/2016_07/filtMappingFile.txt
+...DONE! ..in 1127.63740301132 seconds
+Creating a table to be loaded in the db with all information stored...
+Loading in DB...
+Finished generating and loading uniref mapping table in	285.497929096222 seconds
+
+Finished the mapping in	1822.24930787086 seconds
+
+
+(Sat Jul  9 08:42:32 2016) >>>>>>>>>>>>>INDEXING THE FASTA DATABASES<<<<<<<<<<<<<<
+The following databases are required to execute BLAST programs...
+SwissProt indexed database:
+/home/mtop/Annocript_annotation/data/2016_07/uniprot_sprot.fasta.psq missing or size is zero.
+/home/mtop/Annocript_annotation/data/2016_07/uniprot_sprot.fasta.pin missing or size is zero.
+/home/mtop/Annocript_annotation/data/2016_07/uniprot_sprot.fasta.phr missing or size is zero.
+There should be 3 support files for the indexed database.  and Annocript found only 0. uniprot_sprot.fasta must be indexed...
+Indexing /home/mtop/Annocript_annotation/data/2016_07/uniprot_sprot.fasta
+Checking if it is downloaded...
+File /home/mtop/Annocript_annotation/data/2016_07/uniprot_sprot.fasta already present...
+Running indexing... 
+/usr/local/packages/ncbi-blast-2.3.0+/bin/makeblastdb -in /home/mtop/Annocript_annotation/data/2016_07/uniprot_sprot.fasta -title uniprot_sprot.fasta -dbtype 'prot'
+
+
+Building a new DB, current time: 07/09/2016 08:42:33
+New DB name:   /home/mtop/Annocript_annotation/data/2016_07/uniprot_sprot.fasta
+New DB title:  uniprot_sprot.fasta
+Sequence type: Protein
+Keep Linkouts: T
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 551705 sequences in 16.4126 seconds.
+Found 3 indexing files and they should be: 3
+
+....DONE!
+SwissProt db indexed successfully!
+Finished the indexing in	20.7275240421295 seconds
+
+UniRef indexed database:
+/home/mtop/Annocript_annotation/data/2016_07/uniref90.fasta.psq missing or size is zero.
+/home/mtop/Annocript_annotation/data/2016_07/uniref90.fasta.pin missing or size is zero.
+/home/mtop/Annocript_annotation/data/2016_07/uniref90.fasta.phr missing or size is zero.
+There should be 3 support files for the indexed database.  and Annocript found only 0. uniref90.fasta must be indexed...
+Indexing /home/mtop/Annocript_annotation/data/2016_07/uniref90.fasta
+Checking if it is downloaded...
+File /home/mtop/Annocript_annotation/data/2016_07/uniref90.fasta already present...
+Running indexing... 
+/usr/local/packages/ncbi-blast-2.3.0+/bin/makeblastdb -in /home/mtop/Annocript_annotation/data/2016_07/uniref90.fasta -title uniref90.fasta -dbtype 'prot'
+
+
+Building a new DB, current time: 07/09/2016 08:42:53
+New DB name:   /home/mtop/Annocript_annotation/data/2016_07/uniref90.fasta
+New DB title:  uniref90.fasta
+Sequence type: Protein
+Keep Linkouts: T
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 43405259 sequences in 1437.22 seconds.
+Found 45 indexing files and they should be: 45
+
+....DONE!
+UniRef db indexed successfully!
+Finished the indexing in	1441.23112916946 seconds
+
+ncRNA indexed database:
+/home/mtop/Annocript_annotation/data/2016_07/ncRNA.fa.nsq missing or size is zero.
+/home/mtop/Annocript_annotation/data/2016_07/ncRNA.fa.nin missing or size is zero.
+/home/mtop/Annocript_annotation/data/2016_07/ncRNA.fa.nhr missing or size is zero.
+There should be 3 support files for the indexed database.  and Annocript found only 0. ncRNA.fa must be indexed...
+Indexing /home/mtop/Annocript_annotation/data/2016_07/ncRNA.fa
+Running indexing... 
+/usr/local/packages/ncbi-blast-2.3.0+/bin/makeblastdb -in /home/mtop/Annocript_annotation/data/2016_07/ncRNA.fa -title ncRNA.fa -dbtype 'nucl'
+
+
+Building a new DB, current time: 07/09/2016 09:06:54
+New DB name:   /home/mtop/Annocript_annotation/data/2016_07/ncRNA.fa
+New DB title:  ncRNA.fa
+Sequence type: Nucleotide
+Keep Linkouts: T
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 5931002 sequences in 227.835 seconds.
+Found 0 indexing files and they should be: 0
+
+....DONE!
+ncRNA db indexed successfully!
+Finished the indexing in	230.115350008011 seconds
+
+
+(Sat Jul  9 09:10:44 2016) Annocript has finished the protein database creation in 72806.2797958851
+
+ ####################### ############ ########################
+
+
+ ####################### PROGRAM EXECUTION ########################
+
+Sat Jul  9 09:10:44 2016 
+Annocript is starting the execution of programs...
+
+(Sat Jul  9 09:10:44 2016): Running BLASTX against SwissProt DB
+Running blastx...Out file: /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/output/blastx/blastxSPOut1
+The query is :/usr/local/packages/ncbi-blast-2.3.0+/bin/blastx -query /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/skeletonema-marinoi_transcriptome_unannotated.fasta -db /home/mtop/Annocript_annotation/data/2016_07/uniprot_sprot.fasta  -word_size 4 -evalue 1E-5 -num_threads 10 -num_descriptions 5 -num_alignments 5 -threshold 18 -out /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/output/blastx/blastxSPOut1
+
+...DONE!! Results printed on /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/output/blastx/blastxSPOut1
+Finished BLASTX against SwissProt in	2965.82233715057 seconds
+
+
+(Sat Jul  9 10:00:10 2016): Running BLASTX against UniRef DB
+Running blastx...Out file: /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/output/blastx/blastxUnirefOut1
+The query is :/usr/local/packages/ncbi-blast-2.3.0+/bin/blastx -query /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/skeletonema-marinoi_transcriptome_unannotated.fasta -db /home/mtop/Annocript_annotation/data/2016_07/uniref90.fasta  -word_size 4 -evalue 1E-5 -num_threads 10 -num_descriptions 5 -num_alignments 5 -threshold 18 -out /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/output/blastx/blastxUnirefOut1
+
+...DONE!! Results printed on /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/output/blastx/blastxUnirefOut1
+Finished BLASTX against UniRef in	175913.584961891 seconds
+
+
+(Mon Jul 11 10:52:03 2016) Running RPSTBLASTN against Cdd db
+
+Total bases in /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/skeletonema-marinoi_transcriptome_unannotated.fasta: 54536140
+The average number of bases in the 40 slices will be: 1363402
+
+/home/mtop/Annocript_annotation/jobs/Skeletonema_sex/skeletonema-marinoi_transcriptome_unannotated_slice doesn't exists. Creating folder...
+Fetching files from skeletonema-marinoi_transcriptome_unannotated_slice and executing:
+ /usr/local/packages/ncbi-blast-2.3.0+/bin/rpstblastn -db /home/mtop/Annocript_annotation/data/2016_07/Cdd  -evalue 0.00001 -num_descriptions 20 -num_alignments 20 
+-query skeletonema-marinoi_transcriptome_unannotated_slice_1.fasta -out /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/output/rpstblastn/rpstblastnOut1
+-query skeletonema-marinoi_transcriptome_unannotated_slice_10.fasta -out /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/output/rpstblastn/rpstblastnOut2
+-query skeletonema-marinoi_transcriptome_unannotated_slice_11.fasta -out /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/output/rpstblastn/rpstblastnOut3
+-query skeletonema-marinoi_transcriptome_unannotated_slice_12.fasta -out /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/output/rpstblastn/rpstblastnOut4
+-query skeletonema-marinoi_transcriptome_unannotated_slice_13.fasta -out /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/output/rpstblastn/rpstblastnOut5
+-query skeletonema-marinoi_transcriptome_unannotated_slice_14.fasta -out /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/output/rpstblastn/rpstblastnOut6
+-query skeletonema-marinoi_transcriptome_unannotated_slice_15.fasta -out /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/output/rpstblastn/rpstblastnOut7
+-query skeletonema-marinoi_transcriptome_unannotated_slice_16.fasta -out /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/output/rpstblastn/rpstblastnOut8
+-query skeletonema-marinoi_transcriptome_unannotated_slice_17.fasta -out /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/output/rpstblastn/rpstblastnOut9
+-query skeletonema-marinoi_transcriptome_unannotated_slice_18.fasta -out /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/output/rpstblastn/rpstblastnOut10
+-query skeletonema-marinoi_transcriptome_unannotated_slice_19.fasta -out /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/output/rpstblastn/rpstblastnOut11
+-query skeletonema-marinoi_transcriptome_unannotated_slice_2.fasta -out /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/output/rpstblastn/rpstblastnOut12
+-query skeletonema-marinoi_transcriptome_unannotated_slice_20.fasta -out /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/output/rpstblastn/rpstblastnOut13
+-query skeletonema-marinoi_transcriptome_unannotated_slice_21.fasta -out /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/output/rpstblastn/rpstblastnOut14
+-query skeletonema-marinoi_transcriptome_unannotated_slice_22.fasta -out /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/output/rpstblastn/rpstblastnOut15
+-query skeletonema-marinoi_transcriptome_unannotated_slice_23.fasta -out /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/output/rpstblastn/rpstblastnOut16
+-query skeletonema-marinoi_transcriptome_unannotated_slice_24.fasta -out /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/output/rpstblastn/rpstblastnOut17
+-query skeletonema-marinoi_transcriptome_unannotated_slice_25.fasta -out /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/output/rpstblastn/rpstblastnOut18
+-query skeletonema-marinoi_transcriptome_unannotated_slice_26.fasta -out /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/output/rpstblastn/rpstblastnOut19
+-query skeletonema-marinoi_transcriptome_unannotated_slice_27.fasta -out /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/output/rpstblastn/rpstblastnOut20
+-query skeletonema-marinoi_transcriptome_unannotated_slice_28.fasta -out /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/output/rpstblastn/rpstblastnOut21
+-query skeletonema-marinoi_transcriptome_unannotated_slice_29.fasta -out /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/output/rpstblastn/rpstblastnOut22
+-query skeletonema-marinoi_transcriptome_unannotated_slice_3.fasta -out /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/output/rpstblastn/rpstblastnOut23
+-query skeletonema-marinoi_transcriptome_unannotated_slice_30.fasta -out /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/output/rpstblastn/rpstblastnOut24
+-query skeletonema-marinoi_transcriptome_unannotated_slice_31.fasta -out /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/output/rpstblastn/rpstblastnOut25
+-query skeletonema-marinoi_transcriptome_unannotated_slice_32.fasta -out /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/output/rpstblastn/rpstblastnOut26
+-query skeletonema-marinoi_transcriptome_unannotated_slice_33.fasta -out /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/output/rpstblastn/rpstblastnOut27
+-query skeletonema-marinoi_transcriptome_unannotated_slice_34.fasta -out /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/output/rpstblastn/rpstblastnOut28
+-query skeletonema-marinoi_transcriptome_unannotated_slice_35.fasta -out /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/output/rpstblastn/rpstblastnOut29
+-query skeletonema-marinoi_transcriptome_unannotated_slice_36.fasta -out /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/output/rpstblastn/rpstblastnOut30
+-query skeletonema-marinoi_transcriptome_unannotated_slice_37.fasta -out /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/output/rpstblastn/rpstblastnOut31
+-query skeletonema-marinoi_transcriptome_unannotated_slice_38.fasta -out /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/output/rpstblastn/rpstblastnOut32
+-query skeletonema-marinoi_transcriptome_unannotated_slice_39.fasta -out /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/output/rpstblastn/rpstblastnOut33
+-query skeletonema-marinoi_transcriptome_unannotated_slice_4.fasta -out /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/output/rpstblastn/rpstblastnOut34
+-query skeletonema-marinoi_transcriptome_unannotated_slice_40.fasta -out /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/output/rpstblastn/rpstblastnOut35
+-query skeletonema-marinoi_transcriptome_unannotated_slice_5.fasta -out /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/output/rpstblastn/rpstblastnOut36
+-query skeletonema-marinoi_transcriptome_unannotated_slice_6.fasta -out /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/output/rpstblastn/rpstblastnOut37
+-query skeletonema-marinoi_transcriptome_unannotated_slice_7.fasta -out /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/output/rpstblastn/rpstblastnOut38
+-query skeletonema-marinoi_transcriptome_unannotated_slice_8.fasta -out /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/output/rpstblastn/rpstblastnOut39
+-query skeletonema-marinoi_transcriptome_unannotated_slice_9.fasta -out /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/output/rpstblastn/rpstblastnOut40
+Finished RPSTBLASTN against Cdd db in	14553.9543130398 seconds
+
+
+(Mon Jul 11 14:54:37 2016) Running BLASTN against the non-coding RNA db
+Running blastn...Out file: /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/output/blastn/blastnOut1
+The query is :/usr/local/packages/ncbi-blast-2.3.0+/bin/blastn -query /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/skeletonema-marinoi_transcriptome_unannotated.fasta -db /home/mtop/Annocript_annotation/data/2016_07/ncRNA.fa  -evalue 0.00001 -num_threads 4 -num_descriptions 1 -num_alignments 1 -out /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/output/blastn/blastnOut1
+
+...DONE!! Results printed on /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/output/blastn/blastnOut1
+Finished BLASTN against ncRNAs /home/mtop/Annocript_annotation/data/2016_07/ncRNA.fa in	569.533150911331 seconds
+
+
+Mon Jul 11 15:04:07 2016: Running PORTRAIT...
+print() on closed filehandle OUT at PROGRAMS_EXEC/execute_programs.pm line 1103, <IN> line 1.
+print() on closed filehandle OUT at PROGRAMS_EXEC/execute_programs.pm line 1105, <IN> line 2.
+print() on closed filehandle OUT at PROGRAMS_EXEC/execute_programs.pm line 1105, <IN> line 3.
+print() on closed filehandle OUT at PROGRAMS_EXEC/execute_programs.pm line 1105, <IN> line 4.
+print() on closed filehandle OUT at PROGRAMS_EXEC/execute_programs.pm line 1105, <IN> line 5.
+print() on closed filehandle OUT at PROGRAMS_EXEC/execute_programs.pm line 1105, <IN> line 6.
+print() on closed filehandle OUT at PROGRAMS_EXEC/execute_programs.pm line 1105, <IN> line 7.
+print() on closed filehandle OUT at PROGRAMS_EXEC/execute_programs.pm line 1105, <IN> line 8.
+print() on closed filehandle OUT at PROGRAMS_EXEC/execute_programs.pm line 1105, <IN> line 9.
+print() on closed filehandle OUT at PROGRAMS_EXEC/execute_programs.pm line 1105, <IN> line 10.
+print() on closed filehandle OUT at PROGRAMS_EXEC/execute_programs.pm line 1105, <IN> line 11.
+print() on closed filehandle OUT at PROGRAMS_EXEC/execute_programs.pm line 1105, <IN> line 12.
+print() on closed filehandle OUT at PROGRAMS_EXEC/execute_programs.pm line 1105, <IN> line 13.
+print() on closed filehandle OUT at PROGRAMS_EXEC/execute_programs.pm line 1105, <IN> line 14.
+print() on closed filehandle OUT at PROGRAMS_EXEC/execute_programs.pm line 1105, <IN> line 15.
+print() on closed filehandle OUT at PROGRAMS_EXEC/execute_programs.pm line 1105, <IN> line 16.
+print() on closed filehandle OUT at PROGRAMS_EXEC/execute_programs.pm line 1105, <IN> line 17.
+print() on closed filehandle OUT at PROGRAMS_EXEC/execute_programs.pm line 1105, <IN> line 18.
+print() on closed filehandle OUT at PROGRAMS_EXEC/execute_programs.pm line 1105, <IN> line 19.
+print() on closed filehandle OUT at PROGRAMS_EXEC/execute_programs.pm line 1105, <IN> line 20.
+print() on closed filehandle OUT at PROGRAMS_EXEC/execute_programs.pm line 1105, <IN> line 21.
+print() on closed filehandle OUT at PROGRAMS_EXEC/execute_programs.pm line 1105, <IN> line 22.
+print() on closed filehandle OUT at PROGRAMS_EXEC/execute_programs.pm line 1105, <IN> line 23.
+print() on closed filehandle OUT at PROGRAMS_EXEC/execute_programs.pm line 1103, <IN> line 24.
+
+# ~1m lines removed 
+
+print() on closed filehandle OUT at PROGRAMS_EXEC/execute_programs.pm line 1105, <IN> line 968010.
+print() on closed filehandle OUT at PROGRAMS_EXEC/execute_programs.pm line 1105, <IN> line 968011.
+print() on closed filehandle OUT at PROGRAMS_EXEC/execute_programs.pm line 1103, <IN> line 968012.
+print() on closed filehandle OUT at PROGRAMS_EXEC/execute_programs.pm line 1105, <IN> line 968013.
+print() on closed filehandle OUT at PROGRAMS_EXEC/execute_programs.pm line 1105, <IN> line 968014.
+print() on closed filehandle OUT at PROGRAMS_EXEC/execute_programs.pm line 1105, <IN> line 968015.
+print() on closed filehandle OUT at PROGRAMS_EXEC/execute_programs.pm line 1105, <IN> line 968016.
+print() on closed filehandle OUT at PROGRAMS_EXEC/execute_programs.pm line 1103, <IN> line 968017.
+print() on closed filehandle OUT at PROGRAMS_EXEC/execute_programs.pm line 1105, <IN> line 968018.
+print() on closed filehandle OUT at PROGRAMS_EXEC/execute_programs.pm line 1105, <IN> line 968019.
+print() on closed filehandle OUT at PROGRAMS_EXEC/execute_programs.pm line 1105, <IN> line 968020.
+print() on closed filehandle OUT at PROGRAMS_EXEC/execute_programs.pm line 1105, <IN> line 968021.
+PORTRAIT CLEAN: Cleaned the header of the input to be accepted by PORTRAIT!
+sh: special_char.txt: Permission denied
+fgrep: cleanh_skeletonema-marinoi_transcriptome_unannotated.fasta: No such file or directory
+ERROR [256]: an error occurred while extracting the special chars. (Using system commands: fgrep and sed: 256 at PROGRAMS_EXEC/execute_programs.pm line 1004.

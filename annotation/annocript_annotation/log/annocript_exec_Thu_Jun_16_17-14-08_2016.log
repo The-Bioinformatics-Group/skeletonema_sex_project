@@ -1,0 +1,225 @@
+***********************************************************************
+This program comes with ABSOLUTELY NO WARRANTY; for details http://opensource.org/licenses/GPL-3.0.
+This is free software, and you are welcome to redistribute it
+under certain conditions; http://opensource.org/licenses/GPL-3.0 for details.
+***********************************************************************
+  /&&&&&&                                              /&&           /&&          
+ /&&__  &&                                            |__/          | &&          
+| &&  | &&/&&&&&&& /&&&&&&&   /&&&&&&  /&&&&&&& /&&&&&& /&& /&&&&&& /&&&&&&       
+| &&&&&&&| &&__  &| &&__  && /&&__  &&/&&_____//&&__  &| &&/&&__  &|_  &&_/       
+| &&__  &| &&  | &| &&  | &|  &&  | &| &&     | &&  |__| &| &&  | && | &&         
+| &&  | &| &&  | &| &&  | &|  &&  | &| &&     | &&     | &| &&  | && | && /&&     
+| &&  | &| &&  | &| &&  | &|   &&&&&&|  &&&&&&| &&     | &| &&&&&&&/ |  &&&&/    
+|__/  |__|__/  |__|__/  |__/ |______/ |_______|__/     |__| &&____/   |___/      
+                                                          | &&
+                                                          | &&
+                                                          |__/
+
+Annocript is a tool created by the Bioinformatic Lab of SZN of Naples. 
+Given a fasta file with a transcriptome, it will annotate your sequences and it will separate putative coding and long non-coding RNA sequences.
+ Reference: Musacchia F, Basu S, Petrosino G, Salvemini M, Sanges R. 
+ Annocript: a flexible pipeline for the annotation of transcriptomes which can also identify  putative long non-coding RNA. Bioinformatics (2015) doi:10.1093/bioinformatics/btv106
+***********************************************************************
+
+
+1. New session - 2. Use Previous - 3. Remove Session - 4. Do some utils - 5. Exit
+Your choice:  
+1
+Choose a name for your session: This name has already been taken, overwrite it?(y or n) 
+y
+Are you sure?(y or n) 
+y
+/home/mtop/Annocript_annotation/jobs/Skeletonema_sex created!
+Skeletonema_sex
+Copying the given config file in /home/mtop/Annocript_annotation/jobs/Skeletonema_sex
+#####################################################
+# CHECKING THE INTEGRITY OF THE CONFIGURATION FILES #
+#####################################################
+
+They are good. Annocript can proceed!
+###################################
+# RUNNING ANNOCRIPT CONFIGURATION #
+###################################
+
+Temporary files will be stored
+The database will be built downloading data from UniProt website.
+Some programs will be run. In the following are listed
+A BLASTX against SwissProt will be executed.
+A BLASTX against TrEMBL/UniRef will be executed.
+A RPS BLAST of your sequences will be done.
+A BLASTN of your sequences will be done.
+A PORTRAIT of your sequences will be done.
+DNA2PEP on your sequences will be done.
+The final table will be built
+A web page and file with statistics will be created
+Do you agree with it?(y or n) 
+y
+Ok!.. let's go!
+Path to control for fasta: /home/mtop/Annocript_annotation/skeletonema-marinoi_transcriptome_unannotated.fasta
+Sequences found in your working folder. Checking...
+Copying the fasta in session folder...
+Annocript detected that your sequences are transcripts
+Number of sequences: 39660
+Creating folder /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/data...
+Creating folder /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/log...
+Creating folder /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/output....
+Creating folder /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/stats...
+Creating folder /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/gff...
+Creating folder /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/output/blastx...
+Creating folder /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/output/rpstblastn...
+Creating folder /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/output/blastn...
+
+>>> Database settings (it will need a while):
+Checking your privileges for MySQL...Checking the links for the databases to download...(it may take a while)...
+Everything is ok!
+You chose to create the database. Do you want to create with UniRef (u) or TrEMBL (t)? (u or t)
+[Suggestion: if you want to blast against specific organisms you should use TrEMBL]
+ 
+u
+
+dbVersion: 2016_06
+Folder for DB will be: /home/mtop/Annocript_annotation/data/2016_06 and database name: uniref_2016_06
+A folder /home/mtop/Annocript_annotation/data/2016_06 is already existent. Annocript will continue...
+ A folder /home/mtop/Annocript_annotation/data/2016_06/tables is already existent. Annocript will continue...
+ Conserved domains database: Cdd
+Annocript will download several files for the database generation and BLAST execution.  Do you want to remove the file that Annocript will not use for the analysis? (y or n) [Suggested: n].
+ 
+n
+n
+You have enough memory to create more rapidly the db. Annocript will use a lot of memory now! :-D
+uniref_2016_06 already exists. It will be checked and completed if necessary. Continue?(y or n)
+ 
+y
+Are you sure?(y or n) 
+y
+
+>>> Programs settings:
+
+>>> Setting final statistics and outputs
+..OK! WELL DONE!
+Your configuration has been saved! A log file will be created in /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/log/annocript_exec_Thu_Jun_16_17-14-08_2016.log. 
+The overall computation usually depends from the number of sequences and the speed of the machine you are using. 
+You may want to check Annocript step-by-step with the following command: more /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/log/annocript_exec_Thu_Jun_16_17-14-08_2016.log.
+
+You will find all the results in the folder you chose here. Please take a look at
+ https://github.com/frankMusacchia/Annocript/blob/master/GUIDE/OUTPUT.md to understand the output from Annocript and the organization of folders.
+
+Please let us know if any problem occurs during the computation or you don't get from Annocript the expected result.
+You may want to use the forum at: https://groups.google.com/forum/#!forum/annocript.
+##########################################
+# STARTING ANNOCRIPT IN BACKGROUND! BYE! #
+##########################################
+
+
+
+ ####################### DB CREATION ########################
+
+Thu Jun 16 17:15:44 2016 
+Annocript is starting to create the database...
+
+(Thu Jun 16 17:15:44 2016) >>>>>>>>>>>>>CREATION OF DATABASE AND ITS TABLES<<<<<<<<<<<<<<
+Annocript will not create tables since they exist.
+
+(Thu Jun 16 17:15:44 2016) >>>>>>>>>>>>>DOWNLOAD OF THE NECESSARY FILES<<<<<<<<<<<<<<
+File /home/mtop/Annocript_annotation/data/2016_06/Cdd_LE.tar.gz already downloaded...
+
+ Uncompressing /home/mtop/Annocript_annotation/data/2016_06/Cdd_LE.tar.gz...
+Error listing contents of archive '/home/mtop/Annocript_annotation/data/2016_06/Cdd_LE.tar.gz': Cdd.aux
+Cdd.loo
+Cdd.phr
+Cdd.pin
+Cdd.psd
+Cdd.psi
+Cdd.psq
+Cdd.rps
+
+gzip: /home/mtop/Annocript_annotation/data/2016_06/Cdd_LE.tar.gz: unexpected end of file
+/bin/tar: Unexpected EOF in archive
+/bin/tar: Error is not recoverable: exiting now
+ at USEFUL/utilities.pm line 460.
+Read error on tarfile (missing data) 'Cdd.rps' at offset unknown at /usr/local/packages/perl-5.14.4/lib/5.14.4/Archive/Extract.pm line 872.
+...completed!
+Downloading: http://geneontology.org/external2go/pfam2go.....completed!
+Downloading: ftp://ftp.ebi.ac.uk/pub/databases/Rfam/11.0/Rfam.fasta.gz.....completed!
+
+ Uncompressing /home/mtop/Annocript_annotation/data/2016_06/Rfam.fasta.gz...
+...completed!
+Downloading: ftp://ftp.arb-silva.de/current/README.txt.....completed!
+Downloading: ftp://ftp.arb-silva.de/current/Exports/SILVA_123.1_LSUParc_tax_silva.fasta.gz.....completed!
+
+ Uncompressing /home/mtop/Annocript_annotation/data/2016_06/SILVA_123.1_LSUParc_tax_silva.fasta.gz...
+...completed!
+Downloading: ftp://ftp.arb-silva.de/current/Exports/SILVA_123.1_SSUParc_tax_silva.fasta.gz.....completed!
+
+ Uncompressing /home/mtop/Annocript_annotation/data/2016_06/SILVA_123.1_SSUParc_tax_silva.fasta.gz...
+...completed!
+
+ Downloading File http://www.uniprot.org/docs/speclist.txt...Downloading: http://www.uniprot.org/docs/speclist.txt.....completed!
+
+(Thu Jun 16 17:20:03 2016) >>>>>>>>>>>>>DOWNLOADING OF THE UNIREF AND SWISS-PROT FILES<<<<<<<<<<<<<<
+Downloading: ftp://ftp.uniprot.org/pub/databases/uniprot/current_release/uniref/uniref90/uniref90.fasta.gz.....completed!
+
+ Uncompressing /home/mtop/Annocript_annotation/data/2016_06/uniref90.fasta.gz...
+...completed!
+Downloading: ftp://ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/complete/uniprot_sprot.fasta.gz.....completed!
+
+ Uncompressing /home/mtop/Annocript_annotation/data/2016_06/uniprot_sprot.fasta.gz...
+...completed!
+
+(Thu Jun 16 23:06:58 2016) >>>>>>>>>>>>>Download of all the stuffs needed for the mapping table<<<<<<<<<<<<<<
+There is no uniprotkbMappingsTable in uniref_2016_06...creating it...
+Downloading: http://www.geneontology.org/doc/GO.terms_alt_ids.....completed!
+Downloading: ftp://ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/idmapping/idmapping_selected.tab.gz.....completed!
+
+ Uncompressing /home/mtop/Annocript_annotation/data/2016_06/idmapping_selected.tab.gz...
+...completed!
+
+ Downloading File ftp://ftp.expasy.org/databases/enzyme/enzyme.dat...Downloading: ftp://ftp.expasy.org/databases/enzyme/enzyme.dat.....completed!
+Downloading: http://www.uniprot.org/docs/pathway.txt.....completed!
+...DONE!
+
+(Fri Jun 17 00:44:49 2016) >>>>>>>>>>>>>DOWNLOADING A TABLE FOR CONSERVED DOMAINS INFORMATIONS<<<<<<<<<<<<<<
+There is no cdTable in uniref_2016_06...creating it...
+Downloading: ftp://ftp.ncbi.nih.gov/pub/mmdb/cdd/cddid_all.tbl.gz.....completed!
+
+ Uncompressing /home/mtop/Annocript_annotation/data/2016_06/cddid_all.tbl.gz...
+...completed!
+
+(Fri Jun 17 00:44:56 2016) >>>>>>>>>>>>>CREATION OF NON CODING RNA CUSTOMIZED DATABASE<<<<<<<<<<<<<<
+Concatenating /home/mtop/Annocript_annotation/data/2016_06/SILVA_123.1_LSUParc_tax_silva.fasta and /home/mtop/Annocript_annotation/data/2016_06/SILVA_123.1_SSUParc_tax_silva.fasta in /home/mtop/Annocript_annotation/data/2016_06/tempSILVA... ..completed. 
+Concatenating /home/mtop/Annocript_annotation/data/2016_06/Rfam.fasta and /home/mtop/Annocript_annotation/data/2016_06/tempSILVA in /home/mtop/Annocript_annotation/data/2016_06/ncRNA.fa... ..completed. 
+/home/mtop/Annocript_annotation/data/2016_06/tempSILVA deleted successfully.
+Finished creation of the non-coding customized database in	26981.4291670322 seconds
+
+
+(Fri Jun 17 00:45:25 2016) >>>>>>>>>>>>>CREATION OF THE UNIREF AND SWISS-PROT TABLES<<<<<<<<<<<<<<
+Annocript will insert both SwissProt informations and UniRef ones.
+There is no uniprotkb in uniref_2016_06...creating it...
+Creating SwissProt tables...
+A log of the operation will be written in /home/mtop/Annocript_annotation/data/2016_06/uniprotkb_headParsNAValues.log
+Creating a file with all the headers from /home/mtop/Annocript_annotation/data/2016_06/uniprot_sprot.fasta (it makes the db construction faster but it will need a while)......DONE!
+Creating UNIPROT table......DONE! 
+ Writing the hashes on file-tables.... 
+..descriptions table: OK! 
+....organisms table: OK! 
+......GN table: OK!
+........PE table: OK!
+..........SV table OK!
+............db types table:OK!
+
+ Now uploading tables to database: uniref_2016_06...
+
+....DONE!
+Finished Creating Swissprot table in	37.5034170150757 seconds
+
+There is no uniref in uniref_2016_06...creating it...
+Creating UniRef tables...
+A log of the operation will be written in /home/mtop/Annocript_annotation/data/2016_06/uniref_headParsNAValues.log
+Creating a file with all the information about the sequences. (This file is needed to have a faster process)....PLEASE WAIT...
+...DONE!
+Creating UNIREF table.....please wait
+
+ uniref table completed! 
+ Writing the hashes on file-tables.... 
+....descriptions table..ok... ....taxType table..ok......hash completed!  
+ Uploading tables to database: uniref_2016_06...

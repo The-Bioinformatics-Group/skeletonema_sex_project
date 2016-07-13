@@ -1,0 +1,60 @@
+***********************************************************************
+This program comes with ABSOLUTELY NO WARRANTY; for details http://opensource.org/licenses/GPL-3.0.
+This is free software, and you are welcome to redistribute it
+under certain conditions; http://opensource.org/licenses/GPL-3.0 for details.
+***********************************************************************
+  /&&&&&&                                              /&&           /&&          
+ /&&__  &&                                            |__/          | &&          
+| &&  | &&/&&&&&&& /&&&&&&&   /&&&&&&  /&&&&&&& /&&&&&& /&& /&&&&&& /&&&&&&       
+| &&&&&&&| &&__  &| &&__  && /&&__  &&/&&_____//&&__  &| &&/&&__  &|_  &&_/       
+| &&__  &| &&  | &| &&  | &|  &&  | &| &&     | &&  |__| &| &&  | && | &&         
+| &&  | &| &&  | &| &&  | &|  &&  | &| &&     | &&     | &| &&  | && | && /&&     
+| &&  | &| &&  | &| &&  | &|   &&&&&&|  &&&&&&| &&     | &| &&&&&&&/ |  &&&&/    
+|__/  |__|__/  |__|__/  |__/ |______/ |_______|__/     |__| &&____/   |___/      
+                                                          | &&
+                                                          | &&
+                                                          |__/
+
+Annocript is a tool created by the Bioinformatic Lab of SZN of Naples. 
+Given a fasta file with a transcriptome, it will annotate your sequences and it will separate putative coding and long non-coding RNA sequences.
+ Reference: Musacchia F, Basu S, Petrosino G, Salvemini M, Sanges R. 
+ Annocript: a flexible pipeline for the annotation of transcriptomes which can also identify  putative long non-coding RNA. Bioinformatics (2015) doi:10.1093/bioinformatics/btv106
+***********************************************************************
+
+
+1. New session - 2. Use Previous - 3. Remove Session - 4. Do some utils - 5. Exit
+Your choice:  
+2
+Choose your folder: Skeletonema_sex
+Copying the given config file in /home/mtop/Annocript_annotation/jobs/Skeletonema_sex
+A config file config_user.txt is already present in the folder /home/mtop/Annocript_annotation/jobs/Skeletonema_sex. Do you want to overwrite it?(y or n) [Suggested: y] 
+y
+#####################################################
+# CHECKING THE INTEGRITY OF THE CONFIGURATION FILES #
+#####################################################
+
+They are good. Annocript can proceed!
+###################################
+# RUNNING ANNOCRIPT CONFIGURATION #
+###################################
+
+Temporary files will be stored
+The database will be built downloading data from UniProt website.
+Some programs will be run. In the following are listed
+A BLASTX against SwissProt will be executed.
+A BLASTX against TrEMBL/UniRef will be executed.
+A RPS BLAST of your sequences will be done.
+A BLASTN of your sequences will be done.
+A PORTRAIT of your sequences will be done.
+DNA2PEP on your sequences will be done.
+The final table will be built
+A web page and file with statistics will be created
+Do you agree with it?(y or n) 
+y
+Ok!.. let's go!
+Sequences found in your session folder. Checking it...
+Annocript detected that your sequences are transcripts
+Number of sequences: 39660
+
+>>> Database settings (it will need a while):
+Checking your privileges for MySQL...ERROR: You do not have enough privileges to create the DB. Please ask your adiministrator. Annocript will close...

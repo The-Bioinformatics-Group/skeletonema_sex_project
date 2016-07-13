@@ -1,0 +1,31 @@
+The file of sequences is /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/skeletonema-marinoi_transcriptome_unannotated.fasta
+The total number of sequences is 39660
+The mean sequence length is 1375
+The minimum and maximum sequence length are respectively 201 and 19937
+Average percentage of Adenine: 27.25 
+ Average percentage of Guanine: 22.58 
+Average percentage of Thymine: 27.68 
+ Average percentage of Cytosine: 22.49 
+Average percentage of N: 0.00 
+ Average percentage of GC: 45.21 
+ Number of blast results:
+Swiss-Prot: 10157
+UniRef : 24466
+Domains: 15888
+Ribosomal RNAs: 1802
+
+Alignments in the positive strand:
+Swiss-Prot: 4409
+UniRef: 10846
+
+Alignments in the negative strand:
+Swiss-Prot: 5748
+UniRef: 13620
+
+Transcripts with at least one blast result: 25471
+
+Results in agreement with strand of the longest ORF: 20345
+
+Number of non coding sequences: 645 
+ (obtained with probability greater than: 0.95 and maximum length of the orf: 100)
+

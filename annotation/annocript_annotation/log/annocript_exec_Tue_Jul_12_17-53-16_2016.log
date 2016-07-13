@@ -1,0 +1,758 @@
+***********************************************************************
+This program comes with ABSOLUTELY NO WARRANTY; for details http://opensource.org/licenses/GPL-3.0.
+This is free software, and you are welcome to redistribute it
+under certain conditions; http://opensource.org/licenses/GPL-3.0 for details.
+***********************************************************************
+  /&&&&&&                                              /&&           /&&          
+ /&&__  &&                                            |__/          | &&          
+| &&  | &&/&&&&&&& /&&&&&&&   /&&&&&&  /&&&&&&& /&&&&&& /&& /&&&&&& /&&&&&&       
+| &&&&&&&| &&__  &| &&__  && /&&__  &&/&&_____//&&__  &| &&/&&__  &|_  &&_/       
+| &&__  &| &&  | &| &&  | &|  &&  | &| &&     | &&  |__| &| &&  | && | &&         
+| &&  | &| &&  | &| &&  | &|  &&  | &| &&     | &&     | &| &&  | && | && /&&     
+| &&  | &| &&  | &| &&  | &|   &&&&&&|  &&&&&&| &&     | &| &&&&&&&/ |  &&&&/    
+|__/  |__|__/  |__|__/  |__/ |______/ |_______|__/     |__| &&____/   |___/      
+                                                          | &&
+                                                          | &&
+                                                          |__/
+
+Annocript is a tool created by the Bioinformatic Lab of SZN of Naples. 
+Given a fasta file with a transcriptome, it will annotate your sequences and it will separate putative coding and long non-coding RNA sequences.
+ Reference: Musacchia F, Basu S, Petrosino G, Salvemini M, Sanges R. 
+ Annocript: a flexible pipeline for the annotation of transcriptomes which can also identify  putative long non-coding RNA. Bioinformatics (2015) doi:10.1093/bioinformatics/btv106
+***********************************************************************
+
+
+1. New session - 2. Use Previous - 3. Remove Session - 4. Do some utils - 5. Exit
+Your choice:  
+2
+Choose your folder: Skeletonema_sex
+Copying the given config file in /home/mtop/Annocript_annotation/jobs/Skeletonema_sex
+A config file config_user.txt is already present in the folder /home/mtop/Annocript_annotation/jobs/Skeletonema_sex. Do you want to overwrite it?(y or n) [Suggested: y] 
+n
+Ok, Annocript will use the one present there...
+#####################################################
+# CHECKING THE INTEGRITY OF THE CONFIGURATION FILES #
+#####################################################
+
+They are good. Annocript can proceed!
+###################################
+# RUNNING ANNOCRIPT CONFIGURATION #
+###################################
+
+Temporary files will be stored
+Some programs will be run. In the following are listed
+A PORTRAIT of your sequences will be done.
+DNA2PEP on your sequences will be done.
+The final table will be built
+A web page and file with statistics will be created
+Do you agree with it?(y or n) 
+y
+Ok!.. let's go!
+Sequences found in your session folder. Checking it...
+Annocript detected that your sequences are transcripts
+Number of sequences: 39660
+
+>>> Database settings (it will need a while):
+Checking your privileges for MySQL...DB Creation not active: Database will not be downloaded and installed.
+You chose to use an existent database, are you sure?(y or n):  
+y
+Available database versions:
+2016_07 2016_06 Choose the database version: 2016_07
+UniRef database is the only present. Using it...
+
+>>> Programs settings:
+
+>>> Setting final statistics and outputs
+..OK! WELL DONE!
+
+ WARNING: Some output files already exist! If you will run a program (BLAST, PORTRAIT, DNA2PEP) the corresponding output will be overwritten. Instead, output of BLASTx against UniRef will be different from that against TrEMBL. Continue?(y or n) 
+y
+Your configuration has been saved! A log file will be created in /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/log/annocript_exec_Tue_Jul_12_17-53-16_2016.log. 
+The overall computation usually depends from the number of sequences and the speed of the machine you are using. 
+You may want to check Annocript step-by-step with the following command: more /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/log/annocript_exec_Tue_Jul_12_17-53-16_2016.log.
+
+You will find all the results in the folder you chose here. Please take a look at
+ https://github.com/frankMusacchia/Annocript/blob/master/GUIDE/OUTPUT.md to understand the output from Annocript and the organization of folders.
+
+Please let us know if any problem occurs during the computation or you don't get from Annocript the expected result.
+You may want to use the forum at: https://groups.google.com/forum/#!forum/annocript.
+##########################################
+# STARTING ANNOCRIPT IN BACKGROUND! BYE! #
+##########################################
+
+
+
+ ####################### PROGRAM EXECUTION ########################
+
+Tue Jul 12 17:53:48 2016 
+Annocript is starting the execution of programs...
+
+Tue Jul 12 17:53:48 2016: Running PORTRAIT...
+PORTRAIT CLEAN: Cleaned the header of the input to be accepted by PORTRAIT!
+PORTRAIT CLEAN: Checked if are present strange chars!
+	No special chars found in the query file!
+PORTRAIT CLEAN: Checked the sequences! (Longest than 100000 are not accepted)
+PORTRAIT CLEAN: completed adaptation of your query file for PORTRAIT!
+Running portrait-1.1.pl...
+..splitting the file in pieces with 5000 sequences...
+
+ The command is: /home/mtop/Annocript-Annocript1.1.3/bin/portrait-1.1/portrait-1.1.pl -i sequence.fasta -q 1
+Completed the print the output for the blocks! 
+ Starting with the final piece of 4660
+ seqs...
+removed output files...
+Finished Portrait running in	3120.49802684784 seconds
+
+
+Tue Jul 12 18:45:49 2016: Running dna2pep...
+The command is: /home/mtop/Annocript-Annocript1.1.3/bin/dna2pep-1.1/dna2pep.py -O tab -o none -r all /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/cleanh_skeletonema-marinoi_transcriptome_unannotated.fasta > /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/output/dna2pepOut
+s/home/mtop/Annocript_annotation/jobs/Skeletonema_sex/cleanh_skeletonema-marinoi_transcriptome_unannotated.fasta deleted successfully.
+...DONE!
+DNA2PEP results written on /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/output/dna2pepOut
+Finished dna2pep running in	277.891486167908 seconds
+
+Cannot find /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/data/versions.txt
+
+Tue Jul 12 18:50:28 2016: Annocript has finished the execution of 2 programs in: 3399.38993692398 seconds
+
+
+ ####################### ############ ########################
+
+
+ ####################### OUTPUT CREATION ########################
+
+Tue Jul 12 18:50:28 2016 
+Annocript is starting the generation of the results table...
+Creating db gffDB_skeletonema_mar
+Number of seqs in the fasta file: 39660
+
+Number of seqs stored: 39660
+Your fasta file /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/skeletonema-marinoi_transcriptome_unannotated.fasta has been stored in gffDB_skeletonema_mar database
+Finished storing sequences in 78.8507452011108 seconds
+
+(Tue Jul 12 18:51:47 2016) >>>>>>>>>>>>>EXTRACTION OF INFO FROM THE BLASTX (BLASTP) OUTPUT WITH SWISS PROT<<<<<<<<<<<<<<
+A log of the operation will be written in /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/log/sp_genesMissingInDB.log
+
+You have 2 output files inside the folder /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/output/blastx...
+ Blast output extraction - Algorithm: blastx - Query:  
+..Reading (blast) from: /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/output/blastx/blastxSPOut1..
+ -> 1000 -> 2000 -> 3000 -> 4000 -> 5000 -> 6000 -> 7000 -> 8000 -> 9000 -> 10000 -> 11000 -> 12000 -> 13000 -> 14000 -> 15000 -> 16000 -> 17000 -> 18000 -> 19000 -> 20000 -> 21000 -> 22000 -> 23000 -> 24000 -> 25000 -> 26000 -> 27000 -> 28000 -> 29000 -> 30000 -> 31000 -> 32000 -> 33000 -> 34000 -> 35000 -> 36000 -> 37000 -> 38000 -> 39000 Annocript has found 10157 sp genes in the file /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/output/blastx/blastxSPOut1 which are not present in the database. Maybe you are using a BLAST output with version different from that of database Check this or contact us in the forum because something in the header of UniProt database might be changed.
+ SQL query which produced the fail:
+ SELECT OSType, description, go_ids FROM uniprotkbViewSeq WHERE  seqId='XXXXX') 
+ You can find all the gene accession ids in the log file at: /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/log/sp_genesMissingInDB.log.
+
+Finished storing output from blastx against SwissProt in	117.631808042526
+
+(Tue Jul 12 18:53:44 2016) >>>>>>>>>>>>>EXTRACTION OF INFO FROM THE BLASTX (BLASTP) OUTPUT WITH UNIREF<<<<<<<<<<<<<<
+A log of the operation will be written in /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/log/uniref_genesMissingInDB.log
+
+You have 2 output files inside the folder /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/output/blastx...
+ Blast output extraction - Algorithm: blastx - Query:  
+..Reading (blast) from: /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/output/blastx/blastxUnirefOut1..
+ -> 1000 -> 2000 -> 3000 -> 4000 -> 5000 -> 6000 -> 7000 -> 8000 -> 9000 -> 10000 -> 11000 -> 12000 -> 13000 -> 14000 -> 15000 -> 16000 -> 17000 -> 18000 -> 19000 -> 20000 -> 21000 -> 22000 -> 23000 -> 24000 -> 25000 -> 26000 -> 27000 -> 28000 -> 29000 -> 30000 -> 31000 -> 32000 -> 33000 -> 34000 -> 35000 -> 36000 -> 37000 -> 38000 -> 39000 
+No errors in the parsing. /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/log/uniref_genesMissingInDB.log will be erased.
+/home/mtop/Annocript_annotation/jobs/Skeletonema_sex/log/uniref_genesMissingInDB.log deleted successfully.
+Finished storing output from blastx against UniRef in	296.730536937714
+
+(Tue Jul 12 18:58:41 2016) >>>>>>>>>>>>>EXTRACTION OF INFO FROM THE RPS BLAST OUTPUT<<<<<<<<<<<<<<
+A log of the operation will be written in /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/log/none_genesMissingInDB.log
+
+You have 40 output files inside the folder /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/output/rpstblastn...
+ Blast output extraction - Algorithm: rpstblastn - Query:  
+..Reading (blast) from: /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/output/rpstblastn/rpstblastnOut1..
+  
+..Reading (blast) from: /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/output/rpstblastn/rpstblastnOut2..
+ -> 1000  
+..Reading (blast) from: /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/output/rpstblastn/rpstblastnOut3..
+ -> 2000  
+..Reading (blast) from: /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/output/rpstblastn/rpstblastnOut4..
+  
+..Reading (blast) from: /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/output/rpstblastn/rpstblastnOut5..
+ -> 3000  
+..Reading (blast) from: /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/output/rpstblastn/rpstblastnOut6..
+ -> 4000 -> 5000  
+..Reading (blast) from: /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/output/rpstblastn/rpstblastnOut7..
+ -> 6000  
+..Reading (blast) from: /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/output/rpstblastn/rpstblastnOut8..
+  
+..Reading (blast) from: /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/output/rpstblastn/rpstblastnOut9..
+ -> 7000  
+..Reading (blast) from: /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/output/rpstblastn/rpstblastnOut10..
+ -> 8000  
+..Reading (blast) from: /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/output/rpstblastn/rpstblastnOut11..
+ -> 9000  
+..Reading (blast) from: /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/output/rpstblastn/rpstblastnOut12..
+ -> 10000  
+..Reading (blast) from: /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/output/rpstblastn/rpstblastnOut13..
+  
+..Reading (blast) from: /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/output/rpstblastn/rpstblastnOut14..
+ -> 11000  
+..Reading (blast) from: /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/output/rpstblastn/rpstblastnOut15..
+ -> 12000  
+..Reading (blast) from: /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/output/rpstblastn/rpstblastnOut16..
+ -> 13000  
+..Reading (blast) from: /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/output/rpstblastn/rpstblastnOut17..
+ -> 14000  
+..Reading (blast) from: /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/output/rpstblastn/rpstblastnOut18..
+ -> 15000  
+..Reading (blast) from: /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/output/rpstblastn/rpstblastnOut19..
+  
+..Reading (blast) from: /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/output/rpstblastn/rpstblastnOut20..
+ -> 16000  
+..Reading (blast) from: /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/output/rpstblastn/rpstblastnOut21..
+ -> 17000  
+..Reading (blast) from: /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/output/rpstblastn/rpstblastnOut22..
+ -> 18000  
+..Reading (blast) from: /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/output/rpstblastn/rpstblastnOut23..
+  
+..Reading (blast) from: /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/output/rpstblastn/rpstblastnOut24..
+ -> 19000  
+..Reading (blast) from: /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/output/rpstblastn/rpstblastnOut25..
+ -> 20000  
+..Reading (blast) from: /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/output/rpstblastn/rpstblastnOut26..
+ -> 21000  
+..Reading (blast) from: /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/output/rpstblastn/rpstblastnOut27..
+ -> 22000  
+..Reading (blast) from: /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/output/rpstblastn/rpstblastnOut28..
+ -> 23000 -> 24000  
+..Reading (blast) from: /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/output/rpstblastn/rpstblastnOut29..
+ -> 25000 -> 26000  
+..Reading (blast) from: /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/output/rpstblastn/rpstblastnOut30..
+ -> 27000  
+..Reading (blast) from: /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/output/rpstblastn/rpstblastnOut31..
+ -> 28000  
+..Reading (blast) from: /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/output/rpstblastn/rpstblastnOut32..
+ -> 29000 -> 30000  
+..Reading (blast) from: /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/output/rpstblastn/rpstblastnOut33..
+ -> 31000 -> 32000  
+..Reading (blast) from: /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/output/rpstblastn/rpstblastnOut34..
+ -> 33000  
+..Reading (blast) from: /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/output/rpstblastn/rpstblastnOut35..
+ -> 34000  
+..Reading (blast) from: /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/output/rpstblastn/rpstblastnOut36..
+ -> 35000  
+..Reading (blast) from: /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/output/rpstblastn/rpstblastnOut37..
+ -> 36000 -> 37000  
+..Reading (blast) from: /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/output/rpstblastn/rpstblastnOut38..
+  
+..Reading (blast) from: /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/output/rpstblastn/rpstblastnOut39..
+ -> 38000  
+..Reading (blast) from: /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/output/rpstblastn/rpstblastnOut40..
+ -> 39000 
+Your blast output rpstblastnOut has been converted in a gff3 file named /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/gff/rpstblastn_out.gff
+GFF3 file for rpstblastn is always created to access data information faster.
+
+No errors in the parsing. /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/log/none_genesMissingInDB.log will be erased.
+/home/mtop/Annocript_annotation/jobs/Skeletonema_sex/log/none_genesMissingInDB.log deleted successfully.
+Finished storing output from rpsblast against domains in	310.958345890045 seconds
+Loading gff3 file inside a db named gffDB_skeletonema_mar...loading /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/gff/rpstblastn_out.gff...
+1000 features loaded in  0.34s ( 0.34s/1000 features)...                                                                                
+2000 features loaded in  0.68s ( 0.34s/1000 features)...                                                                                
+3000 features loaded in  1.01s ( 0.33s/1000 features)...                                                                                
+4000 features loaded in  1.35s ( 0.34s/1000 features)...                                                                                
+5000 features loaded in  1.68s ( 0.33s/1000 features)...                                                                                
+6000 features loaded in  2.02s ( 0.34s/1000 features)...                                                                                
+7000 features loaded in  2.35s ( 0.34s/1000 features)...                                                                                
+8000 features loaded in  2.69s ( 0.34s/1000 features)...                                                                                
+9000 features loaded in  3.03s ( 0.34s/1000 features)...                                                                                
+10000 features loaded in  3.37s ( 0.34s/1000 features)...                                                                                
+11000 features loaded in  3.72s ( 0.35s/1000 features)...                                                                                
+12000 features loaded in  4.06s ( 0.34s/1000 features)...                                                                                
+13000 features loaded in  4.41s ( 0.35s/1000 features)...                                                                                
+14000 features loaded in  4.75s ( 0.34s/1000 features)...                                                                                
+15000 features loaded in  5.10s ( 0.35s/1000 features)...                                                                                
+16000 features loaded in  5.45s ( 0.35s/1000 features)...                                                                                
+17000 features loaded in  5.80s ( 0.35s/1000 features)...                                                                                
+18000 features loaded in  6.15s ( 0.35s/1000 features)...                                                                                
+19000 features loaded in  6.50s ( 0.35s/1000 features)...                                                                                
+20000 features loaded in  6.85s ( 0.35s/1000 features)...                                                                                
+21000 features loaded in  7.20s ( 0.35s/1000 features)...                                                                                
+22000 features loaded in  7.55s ( 0.35s/1000 features)...                                                                                
+23000 features loaded in  7.90s ( 0.35s/1000 features)...                                                                                
+24000 features loaded in  8.25s ( 0.35s/1000 features)...                                                                                
+25000 features loaded in  8.60s ( 0.35s/1000 features)...                                                                                
+26000 features loaded in  8.96s ( 0.35s/1000 features)...                                                                                
+27000 features loaded in  9.31s ( 0.35s/1000 features)...                                                                                
+28000 features loaded in  9.66s ( 0.35s/1000 features)...                                                                                
+29000 features loaded in 10.00s ( 0.34s/1000 features)...                                                                                
+30000 features loaded in 10.36s ( 0.35s/1000 features)...                                                                                
+31000 features loaded in 10.71s ( 0.35s/1000 features)...                                                                                
+32000 features loaded in 11.06s ( 0.35s/1000 features)...                                                                                
+33000 features loaded in 11.41s ( 0.35s/1000 features)...                                                                                
+34000 features loaded in 11.76s ( 0.35s/1000 features)...                                                                                
+35000 features loaded in 12.11s ( 0.35s/1000 features)...                                                                                
+36000 features loaded in 12.46s ( 0.35s/1000 features)...                                                                                
+37000 features loaded in 12.82s ( 0.35s/1000 features)...                                                                                
+38000 features loaded in 13.16s ( 0.35s/1000 features)...                                                                                
+39000 features loaded in 13.52s ( 0.35s/1000 features)...                                                                                
+40000 features loaded in 13.87s ( 0.35s/1000 features)...                                                                                
+41000 features loaded in 14.23s ( 0.36s/1000 features)...                                                                                
+42000 features loaded in 14.58s ( 0.35s/1000 features)...                                                                                
+43000 features loaded in 14.93s ( 0.35s/1000 features)...                                                                                
+44000 features loaded in 15.29s ( 0.35s/1000 features)...                                                                                
+45000 features loaded in 15.64s ( 0.35s/1000 features)...                                                                                
+46000 features loaded in 15.99s ( 0.35s/1000 features)...                                                                                
+47000 features loaded in 16.34s ( 0.35s/1000 features)...                                                                                
+48000 features loaded in 16.70s ( 0.35s/1000 features)...                                                                                
+49000 features loaded in 17.05s ( 0.35s/1000 features)...                                                                                
+50000 features loaded in 17.40s ( 0.35s/1000 features)...                                                                                
+51000 features loaded in 17.76s ( 0.35s/1000 features)...                                                                                
+52000 features loaded in 18.11s ( 0.35s/1000 features)...                                                                                
+53000 features loaded in 18.46s ( 0.35s/1000 features)...                                                                                
+54000 features loaded in 18.81s ( 0.35s/1000 features)...                                                                                
+55000 features loaded in 19.16s ( 0.35s/1000 features)...                                                                                
+56000 features loaded in 19.52s ( 0.35s/1000 features)...                                                                                
+57000 features loaded in 19.88s ( 0.36s/1000 features)...                                                                                
+58000 features loaded in 20.23s ( 0.35s/1000 features)...                                                                                
+59000 features loaded in 20.58s ( 0.35s/1000 features)...                                                                                
+60000 features loaded in 20.93s ( 0.35s/1000 features)...                                                                                
+61000 features loaded in 21.28s ( 0.35s/1000 features)...                                                                                
+62000 features loaded in 21.64s ( 0.35s/1000 features)...                                                                                
+63000 features loaded in 21.99s ( 0.35s/1000 features)...                                                                                
+64000 features loaded in 22.34s ( 0.35s/1000 features)...                                                                                
+65000 features loaded in 22.70s ( 0.35s/1000 features)...                                                                                
+66000 features loaded in 23.05s ( 0.35s/1000 features)...                                                                                
+67000 features loaded in 23.40s ( 0.35s/1000 features)...                                                                                
+68000 features loaded in 23.76s ( 0.35s/1000 features)...                                                                                
+69000 features loaded in 24.11s ( 0.35s/1000 features)...                                                                                
+70000 features loaded in 24.46s ( 0.35s/1000 features)...                                                                                
+71000 features loaded in 24.81s ( 0.36s/1000 features)...                                                                                
+72000 features loaded in 25.17s ( 0.35s/1000 features)...                                                                                
+73000 features loaded in 25.52s ( 0.35s/1000 features)...                                                                                
+74000 features loaded in 25.87s ( 0.35s/1000 features)...                                                                                
+75000 features loaded in 26.23s ( 0.35s/1000 features)...                                                                                
+76000 features loaded in 26.58s ( 0.35s/1000 features)...                                                                                
+77000 features loaded in 26.94s ( 0.35s/1000 features)...                                                                                
+78000 features loaded in 27.28s ( 0.35s/1000 features)...                                                                                
+79000 features loaded in 27.64s ( 0.35s/1000 features)...                                                                                
+80000 features loaded in 28.00s ( 0.36s/1000 features)...                                                                                
+81000 features loaded in 28.35s ( 0.35s/1000 features)...                                                                                
+82000 features loaded in 28.70s ( 0.35s/1000 features)...                                                                                
+83000 features loaded in 29.06s ( 0.35s/1000 features)...                                                                                
+84000 features loaded in 29.42s ( 0.36s/1000 features)...                                                                                
+85000 features loaded in 29.77s ( 0.36s/1000 features)...                                                                                
+86000 features loaded in 30.12s ( 0.35s/1000 features)...                                                                                
+87000 features loaded in 30.48s ( 0.35s/1000 features)...                                                                                
+88000 features loaded in 30.88s ( 0.41s/1000 features)...                                                                                
+89000 features loaded in 31.26s ( 0.38s/1000 features)...                                                                                
+90000 features loaded in 31.63s ( 0.36s/1000 features)...                                                                                
+91000 features loaded in 31.99s ( 0.37s/1000 features)...                                                                                
+92000 features loaded in 32.35s ( 0.36s/1000 features)...                                                                                
+93000 features loaded in 32.72s ( 0.37s/1000 features)...                                                                                
+94000 features loaded in 33.10s ( 0.38s/1000 features)...                                                                                
+95000 features loaded in 33.46s ( 0.37s/1000 features)...                                                                                
+96000 features loaded in 33.83s ( 0.37s/1000 features)...                                                                                
+97000 features loaded in 34.20s ( 0.36s/1000 features)...                                                                                
+98000 features loaded in 34.56s ( 0.37s/1000 features)...                                                                                
+99000 features loaded in 35.05s ( 0.49s/1000 features)...                                                                                
+100000 features loaded in 35.54s ( 0.49s/1000 features)...                                                                                
+101000 features loaded in 36.03s ( 0.49s/1000 features)...                                                                                
+102000 features loaded in 36.52s ( 0.49s/1000 features)...                                                                                
+103000 features loaded in 37.00s ( 0.48s/1000 features)...                                                                                
+104000 features loaded in 37.51s ( 0.51s/1000 features)...                                                                                
+105000 features loaded in 38.01s ( 0.50s/1000 features)...                                                                                
+106000 features loaded in 38.52s ( 0.51s/1000 features)...                                                                                
+107000 features loaded in 39.02s ( 0.50s/1000 features)...                                                                                
+108000 features loaded in 39.51s ( 0.49s/1000 features)...                                                                                
+109000 features loaded in 39.98s ( 0.48s/1000 features)...                                                                                
+110000 features loaded in 40.47s ( 0.49s/1000 features)...                                                                                
+111000 features loaded in 40.95s ( 0.48s/1000 features)...                                                                                
+112000 features loaded in 41.45s ( 0.50s/1000 features)...                                                                                
+113000 features loaded in 41.94s ( 0.48s/1000 features)...                                                                                
+114000 features loaded in 42.44s ( 0.51s/1000 features)...                                                                                
+115000 features loaded in 42.93s ( 0.49s/1000 features)...                                                                                
+116000 features loaded in 43.44s ( 0.50s/1000 features)...                                                                                
+117000 features loaded in 43.92s ( 0.48s/1000 features)...                                                                                
+118000 features loaded in 44.42s ( 0.50s/1000 features)...                                                                                
+119000 features loaded in 44.90s ( 0.48s/1000 features)...                                                                                
+120000 features loaded in 45.38s ( 0.48s/1000 features)...                                                                                
+121000 features loaded in 45.87s ( 0.49s/1000 features)...                                                                                
+122000 features loaded in 46.36s ( 0.49s/1000 features)...                                                                                
+123000 features loaded in 46.86s ( 0.50s/1000 features)...                                                                                
+124000 features loaded in 47.35s ( 0.49s/1000 features)...                                                                                
+125000 features loaded in 47.84s ( 0.50s/1000 features)...                                                                                
+126000 features loaded in 48.33s ( 0.48s/1000 features)...                                                                                
+127000 features loaded in 48.82s ( 0.49s/1000 features)...                                                                                
+128000 features loaded in 49.30s ( 0.48s/1000 features)...                                                                                
+129000 features loaded in 49.78s ( 0.48s/1000 features)...                                                                                
+130000 features loaded in 50.27s ( 0.48s/1000 features)...                                                                                
+131000 features loaded in 50.76s ( 0.49s/1000 features)...                                                                                
+131991 features loaded in 51.24s                                                                                Building object tree... 0.00s
+Loading bulk data into database...25.97s
+load time: 77.22s
+total load time: 77.22s
+...DONE!
+Finished generation of GFF3 file in 9.5367431640625e-07 seconds
+
+(Tue Jul 12 19:05:09 2016) >>>>>>>>>>>>>EXTRACTION OF INFO FROM THE BLASTN (TBLASTN) OUTPUT<<<<<<<<<<<<<<
+A log of the operation will be written in /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/log/none_genesMissingInDB.log
+
+You have 1 output files inside the folder /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/output/blastn...
+ Blast output extraction - Algorithm: blastn - Query:  
+..Reading (blast) from: /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/output/blastn/blastnOut1..
+ -> 1000 -> 2000 -> 3000 -> 4000 -> 5000 -> 6000 -> 7000 -> 8000 -> 9000 -> 10000 -> 11000 -> 12000 -> 13000 -> 14000 -> 15000 -> 16000 -> 17000 -> 18000 -> 19000 -> 20000 -> 21000 -> 22000 -> 23000 -> 24000 -> 25000 -> 26000 -> 27000 -> 28000 -> 29000 -> 30000 -> 31000 -> 32000 -> 33000 -> 34000 -> 35000 -> 36000 -> 37000 -> 38000 -> 39000 
+No errors in the parsing. /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/log/none_genesMissingInDB.log will be erased.
+/home/mtop/Annocript_annotation/jobs/Skeletonema_sex/log/none_genesMissingInDB.log deleted successfully.
+Finished storing output from blastn against ncRNAs in	54.2817759513855 seconds
+
+(Tue Jul 12 19:06:03 2016) >>>>>>>>>>>>>EXTRACTION OF INFO FROM THE PORTRAIT OUTPUT<<<<<<<<<<<<<<
+Finished storing output from Portrait in 33.7720580101013 seconds
+
+(Tue Jul 12 19:06:37 2016) >>>>>>>>>>>>>EXTRACTION OF INFO FROM THE DNA2PEP OUTPUT<<<<<<<<<<<<<<
+Finished storing output from dna2pep in	67.8549308776855 seconds
+
+(Tue Jul 12 19:07:14 2016) >>>>>>>>>>>>>GENERATION OF THE TABULAR OUTPUT<<<<<<<<<<<<<<
+Creating the final Annocript output file...
+(39660 sequences) Sequences count: 0 - 1000 - 2000 - 3000 - 4000 - 5000 - 6000 - 7000 - 8000 - 9000 - 10000 - 11000 - 12000 - 13000 - 14000 - 15000 - 16000 - 17000 - 18000 - 19000 - 20000 - 21000 - 22000 - 23000 - 24000 - 25000 - 26000 - 27000 - 28000 - 29000 - 30000 - 31000 - 32000 - 33000 - 34000 - 35000 - 36000 - 37000 - 38000 - 39000 - DONE! 
+The output has been written in /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/output/skeletonema-marinoi_transcriptome_unannotated_uniref_2016_07_ann_out.txt.
+Finished printing the complete annotation in 203.253880023956 seconds
+I'm writing now ORF informations in a file fasta...please wait......DONE!
+The output has been written on /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/output/skeletonema-marinoi_transcriptome_unannotated_uniref_2016_07_orf_info.fasta.
+Finished writing orf informations in 0.978309869766235 seconds
+You don't need any GFF database so gffDB_skeletonema_mar will be destroyed.
+gffDB_skeletonema_mar correctly destroyed!
+
+Tue Jul 12 19:09:28 2016 Annocript has finished the creation of the output table in 1139.9907579422 seconds
+
+ ####################### ############ ########################
+
+
+ ####################### STATISTICS CREATION ########################
+
+Tue Jul 12 19:09:28 2016 
+Annocript is starting the generation of the statistics files and web page...
+
+ Now reading the Annocript output table for write statistics...
+Creating a file with the long non-coding RNA sequences and one for the coding selected by Annocript....The path to ann out: /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/output/skeletonema-marinoi_transcriptome_unannotated_uniref_2016_07_ann_out.txt
+..DONE!
+Files with coding sequences and lncRNA have been put in /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/output
+Finished writing NC information file in	1.1001558303833 seconds
+Creating an hash for the conserved domains........Completed!
+Starting the loop to extract informations...
+Finished with the creation of the statistics in	13.3067359924316 seconds
+
+Printing stats on a file.. it will need a while...
+A file GO_bp with biological processes percentages has been created...
+A file GO_mf with molecular functions percentages has been created...
+A file GO_cc with cellular components percentages has been created...
+There are no pathways first level in the output file. The statistics will not be created.
+There are no pathways second level in the output file. The statistics will not be created.
+There are no pathways third level in the output file. The statistics will not be created.
+A file for domains percentages has been created...
+There are no organisms info in the output file. The statistics will not be created.
+A file for percentages of ATGC has been created...
+File stats_skeletonema-marinoi_transcriptome_unannotated_uniref_2016_07_filt_ann_out.txt correctly written in /home/mtop/Annocript_annotation/jobs/Skeletonema_sex/stats...
+Finished writing an html file with statistics in	12.1207220554352 seconds. It has been stored in stats_skeletonema-marinoi_transcriptome_unannotated_uniref_2016_07_filt_ann_out.txt
+
+
+Tue Jul 12 19:09:54 2016 Annocript finished the creation of statistics in: 26.5277171134949 seconds
+
+ ####################### ############ ########################
+---->The Annocript is closed...............
+
+
+
+
+ CONFIGURATION FILES USED: 
+
+# File configuration for the user of Annocript
+# READ CAREFULLY!!!
+# This file has been written with a specific sintax. 
+# The variables MUST stay in the format: variable = value
+# A series of hashes (#########) closes the parameters to read
+# Parameters of BLAST programs without a value assigned will not be used (i.e. word_sizeX = )
+# When you want to execute something you have to write YES (in upper case) or NO otherwise
+# other strings will give error.
+##############################
+
+#Allowed characters [A-za-z0-9\_\-]. Allowed extensions (fa|fasta). Please use a dot only to separate the extension!
+fastaSeqs = skeletonema-marinoi_transcriptome_unannotated.fasta
+
+#organisms to blast ('all' means all the organisms in UniProt are taken)
+#please use 'all' or a file name with organisms names
+#Such file must be placed in your working directory (i.e. ann_works)
+#Selection of the organisms works only if the TrEMBL database is used!
+blastedOrganism = all
+
+#How to extract GO terms: you can choose to extract 
+#for proteins ('proteins'), domains ('domains') or for both ('both')
+goTermsAss = proteins
+
+#Steps to perform
+doDbCreation = NO
+doExecutePrograms = YES
+doBuildOutput = YES
+extractStatistics = YES
+
+#Analyses to execute
+doBlastxSP = NO
+doBlastxTRorUf = NO
+doRpstblastn = NO
+doBlastn = NO
+doPortrait = YES
+doDna2Pep = YES
+
+#Generation of a GFF database 
+useGFFDB = NO
+#Write YES, if you want GFF output files. Using NO increases the speed.)
+printGFFOutput = NO
+
+#BLASTX and BLASTP PARAMETERS (we use word_size 4 and threshold 18 to reduce computational time)
+#(outfmt can be only 0 with this version of Annocript)
+#Currently you can only use these parameters. Please ask in the forum if you need others.
+word_sizeX = 4
+evalueX = 1E-5
+num_descriptionsX = 5
+num_alignmentsX = 5
+max_target_seqsX =
+num_threadsX = 10
+thresholdX = 18
+matrixX = 
+
+#BLASTN PARAMETERS
+word_sizeN = 
+evalueN = 0.00001
+num_descriptionsN = 1
+num_alignmentsN = 1
+max_target_seqsN =
+num_threadsN = 4
+thresholdN =
+
+#RPSBLAST and RPSTBLASTN PARAMETERS 
+word_sizeRPS = 
+evalueRPS = 0.00001
+num_descriptionsRPS = 20
+num_alignmentsRPS = 20
+max_target_seqsRPS =
+thresholdRPS =
+
+#Number of threads for parallel executions (Used only for RPSBLAST)
+threads4Parallel = 10
+
+#BLAST results with evalue lower than evalMax will be shown in the tabular output
+evalMax = 0.00001
+
+#DNA2PEP PARAMETERS
+d2pMode = none
+
+#PLOTS
+#Number of top scored elements to show in the plots (maximum is 50)
+topToShow = 20
+#Type of plot to show [currently you can use only barplot]
+plotType = barplot
+
+#Thresholds to be non-coding. They guide the heuristic in Annocript
+#Minimum Portrait score
+NCThresh = 0.95
+#Maximum length of the ORF
+NCORFLength = 100
+#Minimum length of the transcript
+NCSeqLength = 200
+
+#FIXED PARAMETERS (You should set only once)#
+
+#Database account info
+mySqlUser = mtop
+mySqlPass = saturn
+
+#UNIPROT informations for access
+uniprotWebUser = anonymous
+uniprotWebPass = mats.topel@marine.gu.se
+
+#Programs Paths
+#blastPath = /usr/local/packages/ncbi-blast-2.3.0+/bin/
+#portraitPath = /usr/local/packages/Annocript-Annocript1.1.3/bin/portrait-1.1/portrait-1.1.pl
+#dna2pepPath = /usr/local/packages/Annocript-Annocript1.1.3/bin/dna2pep-1.1/dna2pep.py
+#Programs Paths
+blastPath = /usr/local/packages/ncbi-blast-2.3.0+/bin/
+portraitPath = /home/mtop/Annocript-Annocript1.1.3/bin/portrait-1.1/portrait-1.1.pl
+dna2pepPath = /home/mtop/Annocript-Annocript1.1.3/bin/dna2pep-1.1/dna2pep.py
+##############################
+
+
+
+
+# File configuration for Annocript
+# It contains parameters that are used very often by Annocript but very rarely by the user. 
+# We collected the parameters in RARELY CHANGED which means that an expert user can decide to change
+# and VERY RARELY CHANGED because it is very rare that an user wants to change
+# READ CAREFULLY!!!
+# This file has been written with a specific sintax. 
+# The variables MUST stay in the form: variable = value
+# A series of hashes (#########) closes the parameters to read
+# When you want to execute something you have to write YES (in upper case) or NO otherwise
+# other strings will give error.
+# THIS FILE SHOULD BE CHANGED ONLY IF YOU KNOW PERFECTLY WHAT YOU ARE DOING!!!
+##############################
+
+
+#RARELY CHANGED PARAMETERS
+#Links to Files
+#Uniprot databases are also present on expasy and ebi. Please use these domains if you want.
+swissprotDBLink = ftp://ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/complete/uniprot_sprot.fasta.gz
+tremblDBLink = ftp://ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/complete/uniprot_trembl.fasta.gz
+uniprotVerLink = ftp://ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/complete/reldate.txt
+GODBLink = ftp://ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/idmapping/idmapping_selected.tab.gz
+GOTermsLink = http://www.geneontology.org/doc/GO.terms_alt_ids
+enzymeDBLink = ftp://ftp.expasy.org/databases/enzyme/enzyme.dat
+cdDBLink = ftp://ftp.ncbi.nih.gov/pub/mmdb/cdd/little_endian/Cdd_LE.tar.gz
+rfamDBLink = ftp://ftp.ebi.ac.uk/pub/databases/Rfam/11.0/Rfam.fasta.gz
+unirefDBLink = ftp://ftp.uniprot.org/pub/databases/uniprot/current_release/uniref/uniref90/uniref90.fasta.gz
+unirefVerLink = ftp://ftp.uniprot.org/pub/databases/uniprot/current_release/uniref/uniref90/uniref90.release_note
+cdTableLink = ftp://ftp.ncbi.nih.gov/pub/mmdb/cdd/cddid_all.tbl.gz
+pathwaysTableLink = http://www.uniprot.org/docs/pathway.txt
+uniprotOrgListLink = http://www.uniprot.org/docs/speclist.txt
+pfam2GOLink = http://geneontology.org/external2go/pfam2go
+silvaVerLink = ftp://ftp.arb-silva.de/current/README.txt
+silvaLSULink = ftp://ftp.arb-silva.de/current/Exports/SILVA_[VERSION]_LSUParc_tax_silva.fasta.gz
+silvaSSULink = ftp://ftp.arb-silva.de/current/Exports/SILVA_[VERSION]_SSUParc_tax_silva.fasta.gz
+
+#If active (YES) permits to keep in memory all the tables that have been used to generate the database
+#You can use to see if the construction has been well done
+keepTempFiles = YES
+
+#This is a threshold. If you have more than this memory Annocript will use more and be faster.
+bigMemory = 20
+
+#Max tentatives to use when downloading or using some system function
+max_tentatives =  5
+
+#A separator for different results in the same field of the table
+separator = ]---[
+
+#Columns of Uniref ids in the idmapping.tab file
+#The columns start from zero (as for the arrays in PERL)
+uniprotIdPos4Cut = 0
+goPos4Cut = 6
+UniRef100PosIdMap = 7
+UniRef90PosIdMap = 8
+UniRef50PosIdMap = 9
+
+
+#Pathways.txt file from UniProt
+pwFileLinesToJump = 12
+
+#FASTA CONSTRAINTS
+#Maximum number of chars a FASTA file can have
+maxFastaSeqLen = 80
+#Regexes containing IUPAC allowed chars as from the ncbi website
+#http://www.ncbi.nlm.nih.gov/BLAST/blastcgihelp.shtml
+nuclIUPAC = ACGTURYSWKMBDHVN\-
+protIUPAC = ABCDEFGHIKLMNPQRSTUVWYZX\*\-
+
+#PORTRAIT CONSTRAINTS
+#to avoid stochastic interruption of Portrait split the transcriptome in N files
+split_num = 5000
+#Minimum and maximum lengths for a transcriptome to work with Portrait
+max_port_seq_length = 100000
+min_port_seq_length = 100
+#Maximum percentage of Ns that can be present or Portrait will not work
+max_perc_ns = 20
+
+
+##VERY RARELY CHANGED 
+#suffixes given to the output files
+outFileName = ann_out.txt
+outFiltered = filt_ann_out.txt
+ORFFastaFileName = orf_info.fasta 
+NCOutFile = lncRNAseqs.fasta
+codingOutFile = codingSeqs.fasta
+gcContentFile = out.geecee
+
+#Name of the file with non coding sequences
+ncDB = ncRNA.fa
+
+#Modify this value if you want to get plots showing a different domain database ids 
+#Possible values: cdd, cog, kog, pfam, prk, smart, tigr
+cdName4Expression = pfam
+
+#Names of the folders used by Annocript (A change will compromise Annocript)
+DBCreationFolder = DB_CREATION
+ProgExecFolder = PROGRAMS_EXEC
+GFFAndOutputFolder = GFF3_AND_OUTPUT
+usefulFolder = USEFUL
+guideFolder = GUIDE
+configFolder = CONFIGURATION
+
+#Database info
+platform = mysql
+host = localhost
+port = 3306
+
+#Programs output names
+rpstblastnOut = rpstblastnOut
+blastxSPOut = blastxSPOut
+blastxTROut = blastxTROut
+blastxUnirefOut = blastxUnirefOut
+blastnOut = blastnOut
+portraitOut = portraitOut
+dna2pepOut = dna2pepOut
+outCount = countOut
+
+#Other names
+outHashFile = outHashFile.hash
+parsingFilePath = db_headers.txt
+filtMappingFile = filtMappingFile.txt
+R_barplot_script = tables_2_barplot.R
+R_piechart_script = tables_2_pie_chart.R
+R_seqs_stats_script = ann_seqs_stats.R
+R_log_file = R.log
+
+#Database names
+gffDB = gffDB
+
+#Stats output files names
+bpStatsFile = GO_bp
+mfStatsFile = GO_mf
+ccStatsFile = GO_cc
+bpStatsFileDom = GO_dom_bp
+mfStatsFileDom = GO_dom_mf
+ccStatsFileDom = GO_dom_cc
+cdStatsFile = CD
+pathwaysL1File = pwl1
+pathwaysL2File = pwl2
+pathwaysL3File = pwl3
+ATGCPercFile = ATGC_Percentages.txt
+#Here the name should contain the word 'table'
+closerOSFile1 = closer_os_table1
+closerOSFile2 = closer_os_table2
+#Maximum length of descriptions in plots
+maxLengthDescs = 50
+#Database versions
+db_versions_file = db_versions.txt
+versions_file = versions.txt
+
+#BLAST databases names
+swissProtDB = uniprot_sprot.fasta
+tremblDB = uniprot_trembl.fasta
+
+#BLAST output type (you can use only: blast)
+blastOutType = blast
+
+#GFF3 Output file names
+blastxGFF3FileName = blastx_out.gff
+blastxTRGFF3FileName = blastxTremble_out.gff
+blastxSPGFF3FileName = blastxSprot_out.gff
+blastxUnirefGFF3FileName = blastxUniref_out.gff
+rpstblastnGFF3FileName = rpstblastn_out.gff
+blastnGFF3FileName = blastn_out.gff
+nonCodingAlgorithm = portrait
+nonCodingGFF3FileName = portait_out.gff
+orfAlgorithm = dna2pep
+orfGFF3FileName = dna2pep_out.gff
+
+#LOG FILES
+headParsNAValues = headParsNAValues.log
+uniprotGenesNotPresent = genesNotPresent.log
+genesMissingInDB = genesMissingInDB.log
+
+
+#HTML PAGES
+htmlHome = index.html
+htmlAnnotStats = annot_stats.html
+htmlSeqStats = seq_stats.html
+AnnocriptLogo = a_logo.png
+
+#EXTERNAL PROGRAMS
+faSomeRecords = faSomeRecords
+#############################

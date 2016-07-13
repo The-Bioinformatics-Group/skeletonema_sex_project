@@ -1,0 +1,955 @@
+row_ind	description	occurrences
+0	Thalassiosira pseudonana	10887
+1	Thalassiosira oceanica	9400
+2	Phaeodactylum tricornutum (strain CCAP 1055/1)	782
+3	Emiliania huxleyi	237
+4	Chrysochromulina sp. CCMP291	144
+5	Thalassiosira	98
+6	Skeletonema costatum	94
+7	Kordia	81
+8	Daphnia magna	78
+9	Bacillariophyta	60
+10	alpha proteobacterium Mf 1.05b.01	53
+11	Kordia algicida OT-1	52
+12	Aureococcus anophagefferens	50
+13	Ectocarpus siliculosus	48
+14	Phytophthora sojae (strain P6497)	44
+15	Thalassiosirales	41
+16	Phaeodactylum tricornutum	40
+17	Aphanomyces astaci	37
+18	Guillardia theta CCMP2712	36
+19	Kordia jejudonensis	34
+20	Chromera velia CCMP2878	33
+21	Aphanomyces invadans	31
+22	Sphaeroforma arctica JP610	30
+23	Nannochloropsis gaditana	30
+24	Trichomonas vaginalis	30
+25	Kordia sp. MCCC 1A00726	29
+26	Ostreococcus tauri	22
+27	Pythium ultimum DAOM BR144	21
+28	unknown	20
+29	Skeletonema marinoi	20
+30	Tetraselmis sp. GSL018	20
+31	Ruminococcus callidus ATCC 27760	17
+32	Eukaryota	16
+33	Plasmopara halstedii	15
+34	marine sediment metagenome	15
+35	Saprolegnia diclina VS20	15
+36	Vitrella brassicaformis CCMP3155	14
+37	Beggiatoa sp. PS	14
+38	Saprolegnia	13
+39	Phytophthora	13
+40	cellular organisms	13
+41	root	13
+42	Capnocytophaga canimorsus	12
+43	Micromonas pusilla (strain CCMP1545)	12
+44	Hyaloperonospora arabidopsidis (strain Emoy2)	11
+45	Micromonas commoda (strain RCC299 / NOUM17 / CCMP2709)	11
+46	Phytophthora ramorum	11
+47	Ruminococcus flavefaciens	11
+48	Acanthamoeba castellanii str. Neff	11
+49	Prevotella melaninogenica (strain ATCC 25845 / DSM 7089 / JCM 6325 / VPI 2381 / B282)	10
+50	Phytophthora parasitica	10
+51	Ciona savignyi	10
+52	Plasmodiophora brassicae	9
+53	Sediminimonas qiaohouensis	9
+54	Phytophthora infestans (strain T30-4)	9
+55	Flavobacteriaceae	9
+56	Capsaspora owczarzaki (strain ATCC 30864)	9
+57	Bacteroides	9
+58	Strongylocentrotus purpuratus	9
+59	mine drainage metagenome	9
+60	Paramecium tetraurelia	8
+61	Thalassiosira weissflogii	8
+62	Biomphalaria glabrata	8
+63	Salpingoeca rosetta (strain ATCC 50818 / BSB-021)	8
+64	methanogenic archaeon ISO4-H5	8
+65	Shewanella decolorationis S12	8
+66	Bathycoccus prasinos	8
+67	Mycoplasma yeatsii GM274B	8
+68	Pararhodospirillum photometricum DSM 122	8
+69	Mortierella verticillata NRRL 6337	8
+70	Branchiostoma floridae	7
+71	Crassostrea gigas	7
+72	Verrucomicrobia bacterium IMCC26134	7
+73	Spongospora subterranea	7
+74	Perkinsus marinus (strain ATCC 50983 / TXsc)	7
+75	Ostreococcus lucimarinus (strain CCE9901)	7
+76	Albugo candida	7
+77	Trepomonas sp. PC1	7
+78	Flavobacteria bacterium (strain MS024-2A)	6
+79	Bilateria	6
+80	Allomyces macrogynus ATCC 38327	6
+81	Albugo laibachii Nc14	6
+82	Hyalangium minutum	6
+83	Fundulus heteroclitus	6
+84	Chlamydia muridarum	6
+85	Ruminococcus sp. HUN007	6
+86	Lachnoanaerobaculum saburreum	6
+87	Verrucomicrobia bacterium SCGC AAA168-F10	6
+88	Candidatus Protochlamydia sp. R18	6
+89	Candidatus Protochlamydia amoebophila	6
+90	Thalassiosira pseudonana CCMP1335	5
+91	Chondrus crispus	5
+92	Leptolyngbya sp. JSC-1	5
+93	Nematostella vectensis	5
+94	Azospirillum sp. CAG 260	5
+95	Cylindrotheca fusiformis	5
+96	Monosiga brevicollis	5
+97	Pseudanabaena sp. PCC 6802	5
+98	Oscillatoria acuminata PCC 6304	5
+99	Methanomassiliicoccales archaeon RumEn M1	5
+100	Enterobius vermicularis	5
+101	Tisochrysis lutea	5
+102	Bacteroides faecis	5
+103	Siansivirga zeaxanthinifaciens CC-SAMT-1	5
+104	Bacteria	5
+105	Physcomitrella patens subsp. patens	5
+106	Alkaliflexus imshenetskii	5
+107	Ciona intestinalis	5
+108	Volvox carteri f. nagariensis	5
+109	Monoraphidium neglectum	5
+110	Fistulifera solaris	5
+111	Gonapodya prolifera JEL478	5
+112	Ruminococcus sp. 5_1_39BFAA	5
+113	Campylobacter coli	4
+114	Arenitalea lutea	4
+115	Stigmatella aurantiaca (strain DW4/3-1)	4
+116	candidate division TM6 bacterium GW2011_GWF2_30_66	4
+117	Leptolyngbya sp. PCC 7376	4
+118	Corethrella appendiculata	4
+119	Oscillatoria sp. PCC 10802	4
+120	Amoebophilus asiaticus (strain 5a2)	4
+121	Lottia gigantea	4
+122	Cylindrobasidium torrendii FP15055 ss-10	4
+123	Magnetospirillum gryphiswaldense	4
+124	Bodo saltans	4
+125	Zostera marina	4
+126	Lepeophtheirus salmonis	4
+127	Paraprevotella clara YIT 11840	4
+128	Clupea harengus	4
+129	Lewinella persica	4
+130	Rhodobacteraceae	4
+131	Streptomyces	4
+132	Exidia glandulosa HHB12029	4
+133	Colwellia sp. TT2012	4
+134	bacterium P201	4
+135	Thecamonas trahens ATCC 50062	4
+136	Mycobacterium tuberculosis	4
+137	Roseovarius tolerans	4
+138	Thalassiosira rotula	4
+139	Columba livia	4
+140	Danio rerio	4
+141	Pseudocohnilembus persalinus	4
+142	Angomonas deanei	3
+143	Mycoplasma primatum	3
+144	Cyanothece sp. CCY0110	3
+145	Stylonychia lemnae	3
+146	Arthrospira	3
+147	Synechococcus sp. RS9916	3
+148	Verrucomicrobia bacterium SCGC AAA164-O14	3
+149	Gelidibacter mesophilus	3
+150	Detonula confervacea	3
+151	Chlamydomonas reinhardtii	3
+152	Marinagarivorans algicola	3
+153	Roseburia intestinalis XB6B4	3
+154	Strigomonas culicis	3
+155	Ancylostoma ceylanicum	3
+156	bacterium UASB270	3
+157	Streptomyces sp. C	3
+158	Spinacia oleracea	3
+159	Oleiphilus	3
+160	Haloferula sp. BvORR071	3
+161	Tannerella forsythia	3
+162	Mycena chlorophos	3
+163	Mycoplasma capricolum	3
+164	Karlodinium veneficum	3
+165	Lewinella cohaerens	3
+166	Synechococcus sp. WH 8109	3
+167	Chlorella variabilis	3
+168	Salinimicrobium terrae	3
+169	uncultured bacterium	3
+170	Orycteropus afer afer	3
+171	Polysphondylium pallidum	3
+172	Bifidobacterium stercoris JCM 15918	3
+173	Nannochloropsis gaditana CCMP526	3
+174	Naegleria gruberi	3
+175	Staphylococcus lentus	3
+176	Dictyostelium fasciculatum (strain SH3)	3
+177	Algibacter alginolytica	3
+178	Limnohabitans	3
+179	Fistulifera pelliculosa	3
+180	Nocardia asteroides NBRC 15531	3
+181	Strigamia maritima	3
+182	Entomoplasma lucivorax	3
+183	Spizellomyces punctatus DAOM BR117	3
+184	Sandaracinus amylolyticus	3
+185	Clostridium sp. CAG 62	3
+186	Malassezia sympodialis (strain ATCC 42132)	3
+187	Cyclotella cryptica	3
+188	Coccomyxa subellipsoidea C-169	3
+189	Flavobacterium psychrophilum	3
+190	Erythranthe guttata	3
+191	Saprolegnia parasitica (strain CBS 223.65)	3
+192	Tolypothrix bouteillei	3
+193	Penicillium	3
+194	Candidatus Mycoplasma girerdii	3
+195	Lichtheimia	3
+196	Terrisporobacter glycolicus	3
+197	Trichinella	3
+198	Verticillium longisporum	3
+199	Oxytricha trifallax	3
+200	Treponema saccharophilum DSM 2985	3
+201	Shewanella violacea	3
+202	Octopus bimaculoides	3
+203	Lachnoanaerobaculum	3
+204	Rudanella lutea	3
+205	Rhodococcus	3
+206	Solanum	3
+207	Mesoflavibacter zeaxanthinifaciens	3
+208	Astyanax mexicanus	2
+209	Tepidicaulis marinus	2
+210	Rhodosporidium toruloides (strain NP11)	2
+211	Ruminococcus sp. CAG 624	2
+212	Halanaerobium praevalens (strain ATCC 33744 / DSM 2228 / GSL)	2
+213	Bacillus cereus VD156	2
+214	Gloeobacter violaceus (strain PCC 7421)	2
+215	Alteromonadaceae	2
+216	Dictyostelium lacteum	2
+217	Elaeis guineensis var. tenera	2
+218	Photobacterium sp. SKA34	2
+219	Neonectria ditissima	2
+220	Nelumbo nucifera	2
+221	Flavobacterium sp. Leaf359	2
+222	Capnocytophaga haemolytica	2
+223	Aureispira sp. CCB-QB1	2
+224	Flexithrix dorotheae	2
+225	Cicer arietinum	2
+226	Curvibacter putative symbiont of Hydra magnipapillata	2
+227	Solanum tuberosum	2
+228	Anoplophora glabripennis	2
+229	Arthrobacter aurescens (strain TC1)	2
+230	Burkholderia multivorans (strain ATCC 17616 / 249)	2
+231	Microcystis aeruginosa PCC 9717	2
+232	Candidatus Magnetomorum sp. HK-1	2
+233	Vespertilionidae	2
+234	Heterosigma akashiwo	2
+235	Corynebacterium ureicelerivorans	2
+236	Tateyamaria sp. ANG-S1	2
+237	Desmodus rotundus	2
+238	Campylobacterales	2
+239	Bacilli	2
+240	Desulfobacter vibrioformis	2
+241	Conidiobolus coronatus (strain ATCC 28846 / CBS 209.66 / NRRL 28638)	2
+242	Rhizophagus irregularis (strain DAOM 181602 / DAOM 197198 / MUCL 43194)	2
+243	Tannerella sp. oral taxon BU063 isolate Cell 6/7/9	2
+244	Bacteroidetes	2
+245	Propionibacterium freudenreichii subsp. freudenreichii	2
+246	Streptococcus pneumoniae	2
+247	Aquimarina megaterium	2
+248	Hebeloma cylindrosporum h7	2
+249	Brucella	2
+250	Dasypus novemcinctus	2
+251	groundwater metagenome	2
+252	SAR324 cluster	2
+253	Vulgatibacter incomptus	2
+254	Ruminococcus albus SY3	2
+255	Ruegeria sp. ANG-S4	2
+256	Hordeum vulgare var. distichum	2
+257	Microscilla marina ATCC 23134	2
+258	Porphyromonadaceae bacterium COT-184 OH4590	2
+259	Lysobacter antibioticus	2
+260	unclassified Verrucomicrobia (miscellaneous)	2
+261	Reticulomyxa filosa	2
+262	Polaribacter sp. Hel1_33_49	2
+263	Skermanella aerolata	2
+264	Acyrthosiphon pisum	2
+265	Sistotremastrum	2
+266	Talaromyces marneffei PM1	2
+267	Stramenopiles	2
+268	Mycobacterium chelonae group	2
+269	uncultured alpha proteobacterium HF0070_14E07	2
+270	Salmo salar	2
+271	Pseudoalteromonas rubra	2
+272	Ichthyophthirius multifiliis (strain G5)	2
+273	Candidatus Entotheonella	2
+274	Lentisphaera araneosa HTCC2155	2
+275	Brachyspira alvinipulli	2
+276	Bacteroides cellulosilyticus	2
+277	Pediculus humanus subsp. corporis	2
+278	Eubacterium limosum	2
+279	Bacteroidales bacterium 6E	2
+280	gamma proteobacterium HIMB55	2
+281	Trichoplax adhaerens	2
+282	Trichuris trichiura	2
+283	Rhizobium sp. CF097	2
+284	Neolamprologus brichardi	2
+285	Marinobacter sp. T13-3	2
+286	Lingula unguis	2
+287	Populus	2
+288	Saprolegniaceae	2
+289	Pseudomonas sp. 250J	2
+290	Halomonas titanicae BH1	2
+291	Hirschia maritima	2
+292	Burkholderia	2
+293	Beggiatoa sp. SS	2
+294	Loktanella cinnabarina LL-001	2
+295	Cryptosporidium muris (strain RN66)	2
+296	Aquimarina atlantica	2
+297	Rhodobacteraceae bacterium HLUCCO18	2
+298	Haliangium ochraceum	2
+299	 Oscillatoria  sp. PCC 6506	2
+300	Dongia sp. URHE0060	2
+301	Phaseoleae	2
+302	Leptolyngbya sp. PCC 7375	2
+303	uncultured Chromatiales bacterium HF0200_41F04	2
+304	Rasamsonia emersonii CBS 393.64	2
+305	Protochlamydia amoebophila (strain UWE25)	2
+306	Paenibacillus	2
+307	Rhizobium leguminosarum	2
+308	Cyprinodontoidei	2
+309	Ruminococcus sp. CAG 108	2
+310	Firmicutes bacterium CAG 552	2
+311	Synechococcus sp. MIT S9508	2
+312	Variovorax sp. WDL1	2
+313	Galdieria sulphuraria	2
+314	Oomycetes	2
+315	Ruminococcus sp. NK3A76	2
+316	Rhodosporidium toruloides	2
+317	Lucilia cuprina	2
+318	Medicago truncatula	2
+319	Mycoplasma mycoides group	2
+320	Pelomonas sp. Root1217	2
+321	Pleurocapsa sp. PCC 7319	2
+322	Salinibacter ruber	2
+323	Clostridium sulfidigenes	2
+324	Pycnoporus cinnabarinus	2
+325	Jatropha curcas	2
+326	Roseibacterium elongatum	2
+327	Vibrio cholerae	2
+328	Flavobacteriales bacterium ALC-1	2
+329	Saitoella complicata NRRL Y-17804	2
+330	Kaistia adipata	2
+331	Tolypothrix sp. PCC 7601	2
+332	Amphimedon queenslandica	2
+333	Phanerochaete carnosa (strain HHB-10118-sp)	2
+334	Chlorogloeopsis fritschii	2
+335	Haliscomenobacter hydrossis (strain ATCC 27775 / DSM 1100 / LMG 10767 / O)	2
+336	Karenia brevis	2
+337	Botryobasidium botryosum FD-172 SS1	2
+338	Beta vulgaris subsp. vulgaris	2
+339	Naumovozyma dairenensis (strain ATCC 10597 / BCRC 20456 / CBS 421 / NBRC 0211 / NRRL Y-12639)	2
+340	Bacteroides sp. CAG 754	2
+341	Galerina marginata CBS 339.88	2
+342	Phytomonas sp. isolate Hart1	2
+343	uncultured marine group II/III euryarchaeote KM3_60_A11	2
+344	Mycoplasma sp. HU2014	2
+345	Trametes versicolor (strain FP-101664)	2
+346	Burkholderia pseudomallei	2
+347	Cystobacter violaceus	2
+348	Butyrivibrio	2
+349	Faecalibacterium sp. CAG 74	2
+350	Solanum chacoense	2
+351	Aspergillus	2
+352	Nafulsella turpanensis	2
+353	Rhinocladiella mackenziei CBS 650.93	2
+354	Butyrivibrio sp. VCD2006	2
+355	Microcystis aeruginosa	2
+356	Chloroflexus aurantiacus (strain ATCC 29366 / DSM 635 / J-10-fl)	2
+357	Eucalyptus grandis	2
+358	Algibacter lectus	2
+359	Cystobacter fuscus	2
+360	Hyphomonas	2
+361	Thioploca ingrica	2
+362	Tessaracoccus sp. SIT7	2
+363	Flaviramulus ichthyoenteri	2
+364	Flavobacteriia	2
+365	Schizophyllum commune (strain H4-8 / FGSC 9210)	2
+366	Onchocerca volvulus	2
+367	Sarcocystidae	2
+368	Durinskia baltica	2
+369	Solimonas soli	2
+370	Epulopiscium sp. 'N.t. morphotype B'	1
+371	Aspergillus calidoustus	1
+372	Paenibacillus gorillae	1
+373	Chloroflexus	1
+374	Pentapetalae	1
+375	Thermoplasmatales archaeon SG8-52-1	1
+376	Candida auris	1
+377	Gonium pectorale	1
+378	Bifidobacterium longum subsp. infantis CCUG 52486	1
+379	Crinalium epipsammum PCC 9333	1
+380	Clostridia bacterium 62_21	1
+381	Pseudogulbenkiania sp. (strain NH8B)	1
+382	Lachnospiraceae bacterium MA2020	1
+383	Chondromyces apiculatus DSM 436	1
+384	Heterobasidion irregulare TC 32-1	1
+385	Phytophthora parasitica (strain INRA-310)	1
+386	Candidatus Koribacter	1
+387	Pyrococcus sp. ST04	1
+388	Pseudomonas sp. URHB0015	1
+389	Ruminococcus albus	1
+390	Chlamydia trachomatis	1
+391	Haliangium ochraceum (strain DSM 14365 / JCM 11303 / SMP-2)	1
+392	Pichia sorbitophila (strain ATCC MYA-4447 / BCRC 22081 / CBS 7064 / NBRC 10061 / NRRL Y-12695)	1
+393	Paraburkholderia mimosarum	1
+394	Sphaerobacter thermophilus (strain DSM 20745 / S 6022)	1
+395	Leptospira interrogans serovar Icterohaemorrhagiae str. Verdun HP	1
+396	Boreoeutheria	1
+397	Thiocystis violascens (strain ATCC 17096 / DSM 198 / 6111)	1
+398	Pelagibacterium halotolerans (strain JCM 15775 / CGMCC 1.7692 / B2)	1
+399	Acidimicrobium sp. BACL17 MAG-120924-bin0	1
+400	Spirosoma linguale (strain ATCC 33905 / DSM 74 / LMG 10896)	1
+401	Wolbachia endosymbiont of Armadillidium vulgare str. wVulC	1
+402	Sorangium cellulosum (strain So ce56)	1
+403	Cupriavidus sp. amp6	1
+404	Ketogulonicigenium vulgare	1
+405	Cellulophaga algicola (strain DSM 14237 / IC166 / ACAM 630)	1
+406	Bovine viral diarrhea virus	1
+407	Heliobacterium modesticaldum (strain ATCC 51547 / Ice1)	1
+408	Saccoglossus kowalevskii	1
+409	Oceanospirillum beijerinckii	1
+410	Prevotella falsenii	1
+411	Inquilinus limosus MP06	1
+412	Magnetospira sp. QH-2	1
+413	Lyngbya majuscula	1
+414	Finegoldia magna ATCC 53516	1
+415	unclassified Bacteroidetes (miscellaneous)	1
+416	Acholeplasma granularum	1
+417	Osedax symbiont Rs2	1
+418	Dictyostelium purpureum	1
+419	Lachnoanaerobaculum sp. OBRC5-5	1
+420	Arthroderma otae (strain ATCC MYA-4605 / CBS 113480)	1
+421	Anoplopoma fimbria	1
+422	uncultured actinobacterium HF0500_35G12	1
+423	Camelus bactrianus	1
+424	Grimontia marina	1
+425	Lacinutrix sp. Hel_I_90	1
+426	Caulobacter	1
+427	Methylococcus capsulatus (strain ATCC 33009 / NCIMB 11132 / Bath)	1
+428	Citrobacter sp. 30_2	1
+429	Pseudomonas sp. Chol1	1
+430	Lachnospiraceae bacterium V9D3004	1
+431	Loa loa	1
+432	Cucumis sativus	1
+433	Sulfitobacter mediterraneus	1
+434	Ralstonia sp. NT80	1
+435	Paenibacillus sp. P22	1
+436	Edhazardia aedis (strain USNM 41457)	1
+437	Flavobacterium succinicans	1
+438	Mycoplasma lipofaciens	1
+439	Roseburia intestinalis M50/1	1
+440	Variovorax paradoxus	1
+441	Opisthokonta	1
+442	Esox lucius	1
+443	Paenibacillus sp. Soil787	1
+444	Psychroflexus torquis (strain ATCC 700755 / ACAM 623)	1
+445	Komagataeibacter xylinus E25	1
+446	Neptuniibacter caesariensis	1
+447	Leersia perrieri	1
+448	Camelina sativa	1
+449	uncultured bacterium Contig90	1
+450	Thermopetrobacter sp. TC1	1
+451	Paracoccus halophilus	1
+452	Sphingobacterium spiritivorum	1
+453	Clostridiales bacterium oral taxon 876 str. F0540	1
+454	Hyphomicrobium denitrificans 1NES1	1
+455	Brassica napus	1
+456	Oncorhynchus mykiss	1
+457	Sulfolobus islandicus (strain Y.N.15.51 / Yellowstone  2)	1
+458	Spathaspora passalidarum (strain NRRL Y-27907 / 11-Y1)	1
+459	Neospora caninum (strain Liverpool)	1
+460	Laetiporus sulphureus 93-53	1
+461	Ruegeria sp. ANG-R	1
+462	Poaceae	1
+463	Hassallia byssoidea VB512170	1
+464	Nocardia cyriacigeorgica (strain GUH-2)	1
+465	Cordyceps confragosa RCEF 1005	1
+466	Rhodobacteraceae bacterium HLUCCA08	1
+467	Scleropages formosus	1
+468	Rhizophagus irregularis	1
+469	Mucor	1
+470	Eubacterium sp. CAG 841	1
+471	Nitrosospira multiformis (strain ATCC 25196 / NCIMB 11849)	1
+472	Anabaena cylindrica (strain ATCC 27899 / PCC 7122)	1
+473	Nomascus leucogenys	1
+474	Prevotella disiens	1
+475	Lutibaculum	1
+476	Microbacterium sp. Leaf436	1
+477	Cryomorphaceae bacterium BACL21 MAG-121220-bin10	1
+478	Firmicutes bacterium CAG 313	1
+479	Prochlorothrix hollandica	1
+480	Leptospira interrogans	1
+481	Prevotella sp. CAG 474	1
+482	Vigna radiata var. radiata	1
+483	Cystobacter violaceus Cb vi76	1
+484	Trypanosoma congolense (strain IL3000)	1
+485	Prevotella	1
+486	Winogradskyella	1
+487	Paenibacillus taiwanensis	1
+488	Propionibacterium	1
+489	Porphyromonas asaccharolytica	1
+490	Oscillatoriales	1
+491	Pezizomycotina	1
+492	Spirosoma spitsbergense	1
+493	Prochlorococcus sp. scB245a_521A19	1
+494	Saccharothrix sp. NRRL B-16348	1
+495	Streptomyces sp. AA4	1
+496	Oikopleura dioica	1
+497	Bacteroidetes bacterium HLUCCA01	1
+498	Hymenobacter sp. DG5B	1
+499	Lawsonella clevelandensis	1
+500	Pseudocrenilabrinae	1
+501	Capnocytophaga sp. oral taxon 332 str. F0381	1
+502	candidate division TM6 bacterium GW2011_GWF2_33_332	1
+503	Maylandia zebra	1
+504	Scytonema hofmanni PCC 7110	1
+505	hydrocarbon metagenome	1
+506	uncultured delta proteobacterium HF0770_45N15	1
+507	Nicotiana tabacum	1
+508	Candidatus Entotheonella sp. TSY1	1
+509	Meiothermus cerbereus	1
+510	Pseudomonas pelagia	1
+511	uncultured bacterium BAC13K9BAC	1
+512	Haemophilus influenzae	1
+513	Collinsella aerofaciens ATCC 25986	1
+514	Dactylococcopsis salina	1
+515	Salipiger mucosus DSM 16094	1
+516	Cynara cardunculus var. scolymus	1
+517	Thermophagus xiamenensis	1
+518	Pseudanabaena sp. PCC 7367	1
+519	Cyanothece	1
+520	Enterobacteria phage RB49	1
+521	Aestuariivita boseongensis	1
+522	Legionellaceae	1
+523	Phycomyces blakesleeanus (strain ATCC 8743b / FGSC 10004 / NBRC 33097 / NRRL 1555)	1
+524	bacterium MS4	1
+525	Thamnophis sirtalis	1
+526	Gilvimarinus	1
+527	Proteobacteria	1
+528	Syntrophus aciditrophicus (strain SB)	1
+529	Selaginella moellendorffii	1
+530	OM182 bacterium BACL3 MAG-120619-bin3	1
+531	Hirsutella minnesotensis 3608	1
+532	Pseudomonadaceae	1
+533	Clostridium sp. CAG 352	1
+534	human gut metagenome	1
+535	Flammeovirga sp. OC4	1
+536	Streptomyces ghanaensis ATCC 14672	1
+537	Streptomyces clavuligerus (strain ATCC 27064 / DSM 738 / JCM 4710 / NBRC 13307 / NCIMB 12785 / NRRL 3585 / VKM Ac-602)	1
+538	Achromatium	1
+539	Plasmodium falciparum (isolate HB3)	1
+540	Alteromonas	1
+541	Polaribacter	1
+542	Candidatus Amoebophilus asiaticus	1
+543	Plasmodium vinckei vinckei	1
+544	Aquimarina agarivorans	1
+545	Prevotella sp. CAG 891	1
+546	Kalmanozyma brasiliensis (strain GHG001)	1
+547	Pseudomonas stutzeri	1
+548	Haemonchus placei	1
+549	Flavobacterium daejeonense	1
+550	Arenibacter certesii	1
+551	Dokdonia	1
+552	Thielavia terrestris (strain ATCC 38088 / NRRL 8126)	1
+553	Rhizophagus irregularis DAOM 197198w	1
+554	Chryseobacterium indologenes	1
+555	Candidatus Bacteroides timonensis	1
+556	Saccharomyces cerevisiae	1
+557	Clostridiales	1
+558	Deinococcus radiodurans (strain ATCC 13939 / DSM 20539 / JCM 16871 / LMG 4051 / NBRC 15346 / NCIMB 9279 / R1 / VKM B-1422)	1
+559	Schizopora paradoxa	1
+560	Tamlana sedimentorum	1
+561	Burkholderia sp. MSHR3999	1
+562	Gemmatirosa kalamazoonesis	1
+563	Opisthocomus hoazin	1
+564	Eptesicus fuscus	1
+565	Pseudomonas aeruginosa	1
+566	Genlisea aurea	1
+567	Brevundimonas bacteroides	1
+568	Myxococcales bacterium SG8_38_1	1
+569	Microgenomates group bacterium GW2011_GWA2_39_19	1
+570	Desulfosporosinus orientis (strain ATCC 19365 / DSM 765 / NCIMB 8382 / VKM B-1628)	1
+571	Aureococcus anophagefferens virus	1
+572	Eubacterium ventriosum ATCC 27560	1
+573	Fragilariopsis kerguelensis	1
+574	Nonlabens sp. YIK11	1
+575	Amborella trichopoda	1
+576	Ceratosolen solmsi marchali	1
+577	Cyanobium gracile (strain ATCC 27147 / PCC 6307)	1
+578	Spirochaeta cellobiosiphila	1
+579	Paenibacillus chondroitinus	1
+580	Macaca mulatta	1
+581	Desulfurobacterium sp. TC5-1	1
+582	Ruminococcus albus (strain ATCC 27210 / DSM 20455 / JCM 14654 / NCDO 2250 / 7)	1
+583	unidentified microheliozoan	1
+584	Arthrobacter nitrophenolicus	1
+585	Drosophila mojavensis	1
+586	Mucor ambiguus	1
+587	Bubalus bubalis	1
+588	Ottowia thiooxydans	1
+589	Treponema saccharophilum	1
+590	Oryza punctata	1
+591	Vibrio sagamiensis	1
+592	Ajellomyces capsulatus	1
+593	Pontibacter korlensis	1
+594	Gilliamella apicola SCGC AB-598-B02	1
+595	Thaumarchaeota archaeon N4	1
+596	Novosphingobium	1
+597	Algoriphagus mannitolivorans	1
+598	Mycoplasma agalactiae	1
+599	Geobacter lovleyi (strain ATCC BAA-1151 / DSM 17278 / SZ)	1
+600	Gallibacterium anatis	1
+601	Emticicia oligotrophica (strain DSM 17448 / GPTSA100-15)	1
+602	Nicotiana	1
+603	Charadrius vociferus	1
+604	Coscinodiscus radiatus	1
+605	Plasmodium falciparum	1
+606	Cellulophaga	1
+607	Thiohalorhabdus denitrificans	1
+608	Synechococcus sp. (strain CC9605)	1
+609	Colwellia piezophila	1
+610	Musa acuminata subsp. malaccensis	1
+611	Chryseobacterium koreense CCUG 49689	1
+612	Acetobacterium bakii	1
+613	Alteromonas sp. Nap_26	1
+614	Pelomonas	1
+615	Microchaetaceae	1
+616	Sesamum indicum	1
+617	Vitis vinifera	1
+618	Batrachochytrium dendrobatidis (strain JAM81 / FGSC 10211)	1
+619	hydrothermal vent metagenome	1
+620	Ectothiorhodospiraceae	1
+621	Alphaproteobacteria	1
+622	Phaeospirillum molischianum	1
+623	Cystobacter fuscus DSM 2262	1
+624	Sambucus nigra	1
+625	Pseudocercospora musae	1
+626	Spirochaeta	1
+627	Prevotella sp. RM4	1
+628	Rhizoctonia solani 123E	1
+629	Eubacterium sp. CAG 202	1
+630	Trichuris	1
+631	Wasmannia auropunctata	1
+632	Penicillium nordicum	1
+633	Jaculus jaculus	1
+634	Asticcacaulis sp. AC460	1
+635	Verrucomicrobium	1
+636	Acidobacteria bacterium OLB17	1
+637	Plasmodium (Plasmodium)	1
+638	Atopobacter phocae	1
+639	Saccharomyces eubayanus	1
+640	Brucellaceae	1
+641	Haloglycomyces albus	1
+642	Budvicia aquatica	1
+643	delta proteobacterium PSCGC 5451	1
+644	Tetraodontidae	1
+645	Pleurocapsa sp. PCC 7327	1
+646	Blautia sp. GD9	1
+647	Roseobacter sp. AzwK-3b	1
+648	Herbaspirillum sp. YR522	1
+649	Moritella viscosa	1
+650	Paxillus rubicundulus Ve08.2h10	1
+651	Apteryx australis mantelli	1
+652	uncultured Desulfobacterium sp.	1
+653	Crocosphaera watsonii	1
+654	unclassified Porticoccaceae	1
+655	Anisakis simplex	1
+656	Entomoplasma luminosum	1
+657	Vibrio parahaemolyticus 49	1
+658	Subdoligranulum sp. CAG 314	1
+659	Arsukibacterium ikkense	1
+660	Fibrisoma limi BUZ 3	1
+661	Faecalitalea cylindroides ATCC 27803	1
+662	Apibacter mensalis	1
+663	Lachnospiraceae bacterium 10-1	1
+664	Ilyobacter polytropus (strain DSM 2926 / CuHBu1)	1
+665	Ornithobacterium rhinotracheale	1
+666	Cyclotella	1
+667	 Clostridium  hylemonae DSM 15053	1
+668	Ruminococcus flavefaciens 007c	1
+669	uncultured bacterium Contig1758	1
+670	Mucor circinelloides f. circinelloides (strain 1006PhL)	1
+671	Coscinodiscophyceae	1
+672	Phalacrocorax carbo	1
+673	Propionibacterium acnes	1
+674	Pseudorhodobacter antarcticus	1
+675	Azoarcus sp. CIB	1
+676	Amniota	1
+677	Psychroserpens mesophilus	1
+678	Halomonas sp. BC04	1
+679	Clostridium sp. CAG 678	1
+680	Methylomicrobium alcaliphilum (strain DSM 19304 / NCIMB 14124 / VKM B-2133 / 20Z)	1
+681	Pseudorhodobacter aquimaris	1
+682	Roseivivax isoporae LMG 25204	1
+683	Pseudorhodobacter psychrotolerans	1
+684	Moritella	1
+685	Falco peregrinus	1
+686	Eutrema salsugineum	1
+687	Treponema denticola	1
+688	Aotus nancymaae	1
+689	Moorea producens 3L	1
+690	Catelliglobosispora koreensis	1
+691	Sorangium cellulosum So0157-2	1
+692	Blautia schinkii	1
+693	Eudoraea adriatica	1
+694	Acinetobacter	1
+695	Blastocystis hominis	1
+696	Scleroderma citrinum Foug A	1
+697	Flavobacterium sp. WG21	1
+698	Trichodesmium erythraeum	1
+699	Uliginosibacterium gangwonense	1
+700	Leptolyngbya sp. NIES-2104	1
+701	Homo sapiens	1
+702	Flavobacterium sp. ABG	1
+703	Bacteroides sp. 3_1_33FAA	1
+704	Stegodyphus mimosarum	1
+705	Butyrivibrio sp. AE2032	1
+706	Fibulorhizoctonia sp. CBS 109695	1
+707	Bacteroides paurosaccharolyticus	1
+708	Deferribacter	1
+709	Thermoplasmatales archaeon BRNA1	1
+710	Flammeovirgaceae bacterium 311	1
+711	Arthrobacter sp. PAMC 25486	1
+712	Piloderma croceum F 1598	1
+713	Enterobacteriaceae	1
+714	Actinomyces odontolyticus ATCC 17982	1
+715	Verruconis gallopava	1
+716	Caulobacter sp. (strain K31)	1
+717	Ferrimicrobium	1
+718	Ardenticatena maritima	1
+719	Anaerotruncus sp. CAG 390	1
+720	Parastrongyloides trichosuri	1
+721	Photobacterium phosphoreum	1
+722	Arabis alpina	1
+723	Colletotrichum higginsianum (strain IMI 349063)	1
+724	Staphylococcus xylosus	1
+725	Ruminococcus bicirculans	1
+726	Lachnospiraceae bacterium TF01-11	1
+727	Pseudooceanicola batsensis (strain ATCC BAA-863 / DSM 15984 / KCTC 12145 / HTCC2597)	1
+728	Jannaschia aquimarina	1
+729	Ruminococcus sp. CAG 488	1
+730	Acremonium chrysogenum (strain ATCC 11550 / CBS 779.69 / DSM 880 / JCM 23072 / IMI 49137)	1
+731	Streptomyces thermolilacinus	1
+732	Blastocystis sp. ST4	1
+733	Heterocephalus glaber	1
+734	Gynuella sunshinyii YC6258	1
+735	Poeciliopsis prolifica	1
+736	Brevibacillus choshinensis	1
+737	Nakamurella multipartita (strain ATCC 700099 / DSM 44233 / JCM 9543 / Y-104)	1
+738	Verticillium	1
+739	Daucus carota subsp. sativus	1
+740	Flavobacterium indicum	1
+741	Herpetosiphon aurantiacus (strain ATCC 23779 / DSM 785)	1
+742	Modestobacter marinus	1
+743	Takifugu rubripes	1
+744	Chaetomium thermophilum (strain DSM 1495 / CBS 144.50 / IMI 039719)	1
+745	Lachnospiraceae oral taxon 107 str. F0167	1
+746	Pandoravirus inopinatum	1
+747	Sarcophilus harrisii	1
+748	Acidobacteriaceae bacterium URHE0068	1
+749	Rickettsia felis	1
+750	Rhodococcus aetherivorans	1
+751	Lachnospiraceae	1
+752	Chrysochloris asiatica	1
+753	Lacinutrix mariniflava	1
+754	Tamlana	1
+755	Escherichia coli	1
+756	Solirubrobacter sp. URHD0082	1
+757	Cryomorphaceae bacterium BACL29 MAG-121220-bin8	1
+758	Pseudomonas putida	1
+759	Lactobacillus crispatus	1
+760	Flavobacteriales	1
+761	Cyanobium sp. CACIAM 14	1
+762	Microplitis demolitor	1
+763	Prevotella sp. oral taxon 299 str. F0039	1
+764	Pseudomonas sp. RIT-PI-o	1
+765	Aspergillus parasiticus (strain ATCC 56775 / NRRL 5862 / SRRC 143 / SU-1)	1
+766	Eutypa lata (strain UCR-EL1)	1
+767	Trypanosoma rangeli SC58	1
+768	Nanosalinarum sp. (strain J07AB56)	1
+769	Planococcus halocryophilus	1
+770	uncultured Rhizobiales bacterium HF4000_32B18	1
+771	Flavobacterium sp. 316	1
+772	Corynebacterium pseudogenitalium ATCC 33035	1
+773	Ophiophagus hannah	1
+774	Jejuia pallidilutea	1
+775	Morus notabilis	1
+776	Malus domestica	1
+777	Arabidopsis thaliana	1
+778	Gimesia maris DSM 8797	1
+779	Mannheimia varigena USDA-ARS-USMARC-1261	1
+780	Thaumarchaeota archaeon SCGC AB-539-E09	1
+781	Ricinus communis	1
+782	uncultured bacterium 125003-E23	1
+783	Pseudomonas sp. ML96	1
+784	Bacteroidetes bacterium UKL13-3	1
+785	Labrenzia	1
+786	Maribacter sp. (strain HTCC2170 / KCCM 42371)	1
+787	Mollicutes bacterium HR1	1
+788	Hyphomonas polymorpha PS728	1
+789	Echinops telfairi	1
+790	Coccolithovirus	1
+791	Oryza sativa subsp. japonica	1
+792	Flavobacteriaceae bacterium S85	1
+793	Butyrivibrio sp. MC2021	1
+794	Indibacter alkaliphilus LW1	1
+795	Vibrio neptunius	1
+796	Roseivirga	1
+797	Lactobacillus reuteri	1
+798	Alistipes	1
+799	Butyrivibrio sp. WCD3002	1
+800	Oreochromis niloticus	1
+801	Euteleostomi	1
+802	Marinobacter sp. HL-58	1
+803	Tropicibacter multivorans	1
+804	Theobroma cacao	1
+805	Acetivibrio ethanolgignens	1
+806	Mangrovimonas sp. TPBH4	1
+807	Malassezia	1
+808	Triticum aestivum	1
+809	Piscirickettsia salmonis	1
+810	Rhizobium ecuadorense	1
+811	Wolbachia pipientis	1
+812	Marinobacter	1
+813	Phytophthora nicotianae	1
+814	Streptococcus	1
+815	Streptococcus equi subsp. equi	1
+816	Candidatus Phaeomarinobacter ectocarpi	1
+817	alpha proteobacterium HIMB59	1
+818	Plasmodium yoelii 17X	1
+819	Cesiribacter andamanensis AMV16	1
+820	Coffea canephora	1
+821	Lachnospiraceae bacterium oral taxon 082 str. F0431	1
+822	Chryseobacterium jeonii	1
+823	Spongiibacter tropicus	1
+824	Malassezia globosa (strain ATCC MYA-4612 / CBS 7966)	1
+825	Gasterosteus aculeatus	1
+826	Psychroserpens burtonensis	1
+827	Roseburia intestinalis L1-82	1
+828	Azohydromonas australica	1
+829	Frischella perrara	1
+830	Setaria italica	1
+831	Ruminococcus sp. SR1/5	1
+832	Vibrio pacinii	1
+833	Streptomyces coelicoflavus ZG0656	1
+834	Desulforegula conservatrix	1
+835	Parcubacteria group bacterium GW2011_GWA2_42_14	1
+836	Rhodococcus sp. RD6.2	1
+837	Providencia	1
+838	Mesorhizobium	1
+839	Mycoplasma feriruminatoris	1
+840	Papilio xuthus	1
+841	Cladophialophora	1
+842	bacterium L21-Spi-D4	1
+843	Pseudobacteroides cellulosolvens ATCC 35603   DSM 2933	1
+844	Achromatium sp. WMS2	1
+845	Oscillatoriales cyanobacterium JSC-12	1
+846	Cyanothece sp. (strain ATCC 51142)	1
+847	Lachnospiraceae bacterium AD3010	1
+848	Phytophthora parasitica P10297	1
+849	Euryhalocaulis caribicus	1
+850	synthetic construct	1
+851	Formosa algae	1
+852	Populus trichocarpa	1
+853	unclassified Holosporaceae	1
+854	Legionella anisa	1
+855	Jannaschia donghaensis	1
+856	Bathycoccus sp. RCC1105 virus BpV2	1
+857	Calocera viscosa TUFC12733	1
+858	Flavobacterium aquatile LMG 4008	1
+859	Desulfovibrio magneticus	1
+860	Oscillatoriophycideae	1
+861	Amycolatopsis benzoatilytica	1
+862	Phaeobacter sp. CECT 5382	1
+863	Clostridium sp. 1_1_41A1FAA	1
+864	Thermicanus aegyptius	1
+865	Bacillus sp. FJAT-14578	1
+866	Auricularia subglabra (strain TFB-10046 / SS5)	1
+867	Clostridium sp. DL-VIII	1
+868	Peptococcaceae bacterium CEB3	1
+869	Chloroflexi bacterium OLB14	1
+870	Fomitopsis pinicola (strain FP-58527)	1
+871	Bacillus	1
+872	Thermotoga sp. TBYP3.1.4.1	1
+873	Anaeromyxobacter dehalogenans	1
+874	Staphylococcus haemolyticus	1
+875	Prevotella saccharolytica F0055	1
+876	Helobdella robusta	1
+877	Burkholderiales bacterium GJ-E10	1
+878	Colletotrichum orbiculare (strain 104-T / ATCC 96160 / CBS 514.97 / LARS 414 / MAFF 240422)	1
+879	Microtus ochrogaster	1
+880	Marmoricola aequoreus	1
+881	Capnocytophaga cynodegmi	1
+882	Candidatus Filomicrobium marinum	1
+883	Hungatella hathewayi	1
+884	Thiorhodococcus sp. AK35	1
+885	Anaerofustis stercorihominis DSM 17244	1
+886	Oceanithermus profundus (strain DSM 14977 / NBRC 100410 / VKM B-2274 / 506)	1
+887	Chryseobacterium kwangjuense	1
+888	Phaeobacter sp. CECT 7735	1
+889	Pseudomonas sp. LFM046	1
+890	Phoenix dactylifera	1
+891	Prevotella sp. CAG 1185	1
+892	Aureobasidium pullulans EXF-150	1
+893	Acidovorax sp. MR-S7	1
+894	Cellvibrio	1
+895	Rhodococcus ruber	1
+896	Ruminococcus sp. CAG 330	1
+897	Legionella quateirensis	1
+898	Pleurobrachia bachei	1
+899	Acetobacteraceae	1
+900	Verticillium alfalfae (strain VaMs.102 / ATCC MYA-4576 / FGSC 10136)	1
+901	Candidatus Methanomassiliicoccus intestinalis Issoire-Mx1	1
+902	bacterium UASB14	1
+903	Eubacterium sp. 14-2	1
+904	Acaryochloris	1
+905	Butyrivibrio sp. AE3009	1
+906	Rhodotorula graminis (strain WP1)	1
+907	Robinsoniella	1
+908	Candidatus Dadabacteria bacterium CSP1-2	1
+909	Gossypium raimondii	1
+910	Microvirga flocculans	1
+911	Torrubiella hemipterigena	1
+912	Spermatophyta	1
+913	Rubrivivax gelatinosus S1	1
+914	Pooideae	1
+915	Pseudomonas sp. 11/12A	1
+916	Physarum polycephalum	1
+917	Dechlorosoma suillum (strain ATCC BAA-33 / DSM 13638 / PS)	1
+918	Erysipelotrichaceae	1
+919	Agaricomycetes incertae sedis	1
+920	Saccharomyces cerevisiae (strain FostersB)	1
+921	Ornithorhynchus anatinus	1
+922	Acidocella	1
+923	Gibberella zeae	1
+924	Capnocytophaga ochracea F0287	1
+925	Muroidea	1
+926	Pseudomonas resinovorans	1
+927	Aquimarina sp. RZW4-3-2	1
+928	Pichia kudriavzevii	1
+929	Candidatus Scalindua brodae	1
+930	Roseivirga sp. D-25	1
+931	Albugo	1
+932	Rhodospirillum photometricum	1
+933	Acinetobacter sp. NIPH 236	1
+934	Marinobacter similis	1
+935	Kitasatospora sp. Root187	1
+936	Corynebacterium mustelae	1
+937	Myotis lucifugus	1
+938	Zonotrichia albicollis	1
+939	Rhizopus delemar (strain RA 99-880 / ATCC MYA-4621 / FGSC 9543 / NRRL 43880)	1
+940	Gluconobacter frateurii NBRC 103465	1
+941	Debaryomycetaceae	1
+942	unclassified Acidimicrobiia	1
+943	Capnocytophaga sp. oral taxon 863 str. F0517	1
+944	Oryzinae	1
+945	Sorghum bicolor	1
+946	Pragia fontium	1
+947	unidentified eubacterium SCB49	1
+948	Thalassiosiraceae	1
+949	Desulfosporosinus sp. Tol-M	1
+950	Prevotella sp. CAG 5226	1
+951	Monodelphis domestica	1
+952	Candidatus Thiomargarita nelsonii	1
+953	Lactobacillus casei (strain BD-II)	1
